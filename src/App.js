@@ -9,13 +9,11 @@ function App() {
   return (
       <BrowserRouter>
         <Header/>
-    <div className="container pt-4">
 <Switch>
   <Route path={'/main'} exact component={Main}/>
   <Route path={'/form'} component={Form}/>
     <Route path={'/catalog'} component={Catalog}/>
 </Switch>
-    </div>
       </BrowserRouter>
   );
 }
