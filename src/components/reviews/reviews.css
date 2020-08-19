@@ -1,0 +1,13 @@
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1050px;
+    height: 457px;
+    border: 1px solid;
+}
+.reviews__wrapper {
+    height: 275px;
+    width: 876px;
+    border: 1px solid;
+}
