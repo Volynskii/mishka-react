@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/features/features.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/features.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews/reviews.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews/reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-product/week-product.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +33,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -73,6 +84,9 @@
       <workItem from="1597582846629" duration="4891000" />
       <workItem from="1597637616302" duration="33666000" />
       <workItem from="1597839427908" duration="8235000" />
+      <workItem from="1597895821694" duration="8915000" />
+      <workItem from="1597998332997" duration="11595000" />
+      <workItem from="1598067611965" duration="21507000" />
     </task>
     <servers />
   </component>

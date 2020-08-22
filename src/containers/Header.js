@@ -12,7 +12,7 @@ export const Header = () => (
 
                     <ul className="nav-container container-two">
                     <NavLink to="/form" className="nav-container__item form">Вязание на заказ</NavLink>
-                    <NavLink to="/" exact className="nav-container__item main">3</NavLink>
+                    <NavLink name="navigation" to="/" exact className="nav-container__item main">3</NavLink>
                     </ul>
 
                 </div>

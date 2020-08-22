@@ -1,5 +1,5 @@
 import React from "react";
-import './main-headline.css'
+import './main-headline.less'
 
 export const MainHeadline = () => {
     return (

@@ -6,22 +6,22 @@ export const Reviews = () => {
     return (
        <article className="reviews">
            <div className="reviews__wrapper">
-<span>Отзывы</span><button>Написать</button>
+<span className="reviews__headline">Отзывы</span> <button className="reviews__button">Написать</button>
 
-               <p>Я молодая мама, но всё равно фотографии не набирали
+               <p className="reviews__comment">Я молодая мама, но всё равно фотографии не набирали
                    и близко такого количества лайков,
                    как у популярных инстамамочек. В отчаянии,
                    я накупила аксессуаров и игрушек в Мишке,
                    и мои фотографии сразу стали более стильными,
                    а также набирают больше лайков!</p>
 
-               <ul>
-               <li>Анастасия Красильникова</li>
-                   <li>@misssssiskras</li>
+               <ul className="reviews__author">
+               <li className="reviews__author__name">Анастасия Красильникова</li>
+                   <li className="reviews__author__email">@misssssiskras</li>
                </ul>
-               <ul>
-                   <li>лево</li>
-                   <li>право</li>
+               <ul className="reviews__slider">
+                   <li className="reviews__slider__left"></li>
+                   <li className="reviews__slider__right"></li>
                </ul>
 
 
