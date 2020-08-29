@@ -9,13 +9,13 @@ export const Header = () => (
                 <div className="nav-container">
 
                     <ul className="nav-container container-two">
-                        <NavLink to="/catalog"  className="nav-container__item catalog">
+                        <NavLink to="/catalog"  className="nav-container__item nav-catalog">
                             Каталог товаров</NavLink>
 
 
-                        <NavLink to="/form" className="nav-container__item form">Вязание на заказ</NavLink>
+                        <NavLink to="/form" className="nav-container__item nav-form">Вязание на заказ</NavLink>
                     </ul>
-                    <NavLink name="navigation" to="/" exact className="nav-container__item main"/>
+                    <NavLink name="navigation" to="/" exact className="nav-container__item nav-main"/>
 
 
                 </div>

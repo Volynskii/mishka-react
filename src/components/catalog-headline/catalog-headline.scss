@@ -1,0 +1,49 @@
+@import "../../utilities/variables";
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid;
+  width: 1050px;
+  height: 940px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.catalog__headline {
+text-align: center;
+  font-size: $headline-font-size-desktop;
+  line-height: $headline-font-size-desktop;
+  font-weight: bold;
+  margin: 0;
+}
+.catalog__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding:0;
+width: 1050px;
+  list-style-type: none;
+}
+.catalog__list__item {
+width: 316px;
+  height: 660px;
+  border: 1px solid;
+  background-image: url("../../../public/logo512.png");
+}
+.catalog__list__item__image {
+
+}
+.catalog__list__item__name {
+
+}
+.catalog__list__item__description {
+
+}
+.catalog__list__item__price {
+
+}
+.catalog__list__item__badge {
+
+}

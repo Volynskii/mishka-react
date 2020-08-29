@@ -44,7 +44,7 @@
         opacity: 0.4;
     }
 
-    .catalog {
+    .nav-catalog {
         order: 2;
         width: 218px;
         line-height: 17px;
@@ -62,12 +62,12 @@
         border-right: 1px solid #e7e7e7;
     }
 
-    .form {
+    .nav-form {
         width: 224px;
         order: 3;
     }
 
-    .main {
+    .nav-main {
         width: 320px;
         background: url("../images/header/desktop/logotype.png") no-repeat left;
 
@@ -197,7 +197,7 @@
         opacity: 0.4;
     }
 
-    .catalog {
+    .nav-catalog {
         width: 218px;
         font-size: $basic-font-size-desktop;
         line-height: 17px;
@@ -212,11 +212,11 @@
         border-right: 1px solid #e7e7e7;
     }
 
-    .form {
+    .nav-form {
         width: 224px;
     }
 
-    .main {
+    .nav-main {
         width: 250px;
         background: url("../images/header/desktop/logotype.png") no-repeat center;
     }

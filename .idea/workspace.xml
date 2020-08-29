@@ -2,41 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-mishka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-mishka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/features.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/features.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/features.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-headline/images/background-green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-headline/images/hero-desktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-headline/images/triple-set-desktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews/reviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-product/week-product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/images/header/cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/images/header/green-background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/images/header/hero-desktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/images/header/logotype.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/images/header/search-sign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +84,7 @@
       <workItem from="1598183452636" duration="13236000" />
       <workItem from="1598270368665" duration="5607000" />
       <workItem from="1598536968268" duration="3912000" />
-      <workItem from="1598686034630" duration="11134000" />
+      <workItem from="1598686034630" duration="19147000" />
     </task>
     <servers />
   </component>
