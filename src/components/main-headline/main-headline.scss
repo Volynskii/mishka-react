@@ -1,0 +1,264 @@
+@import "../../utilities/variables";
+
+/*tablet-tablet-tablet */
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+    .introduction-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 670px;
+        height: 650px;
+        border: 1px solid;
+        margin: 0 auto 72px;
+        background: url("../../images/main-headline/desktop/hero-desktop.png") bottom;
+    }
+
+    .introduction-container__headline {
+        margin: 58px auto 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 670px;
+        font-size: $headline-font-size-tablet;
+        line-height: $headline-font-size-tablet;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .introduction-container__buttons-container {
+        font-weight: bold;
+        font-size: $second-font-size-desktop;
+        color: white;
+        line-height: 30px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 119px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        background-image: url("../../images/main-headline/desktop/zigzag.png");
+        background-position: bottom;
+    }
+    .zigzag-container {
+        position: absolute;
+        top: 635px;
+        width: 100%;
+        height: 20px;
+        background-image: url("../../images/main-headline/desktop/zigzag-line-desktop-v2.png");
+    }
+
+    .introduction-container__buttons-container__interior-decorations {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        width: 50%;
+        margin: 0;
+        padding: 37px;
+        background-image:url("../../images/main-headline/desktop/left-button-green-desktop.png");
+        transition: 500ms ease-in-out;
+    }
+
+    .introduction-container__buttons-container__interior-decorations:hover {
+        background-image: url("../../images/main-headline/desktop/left-button-green-desktop-hover.png");
+    }
+
+    .introduction-container__buttons-container__interior-decorations:active {
+        background-image: url("../../images/main-headline/desktop/left-button-green-desktop-active.png");
+    }
+
+    .introduction-container__buttons-container__interior-decorations__name {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 58px;
+        transition: 500ms;
+    }
+
+    .introduction-container__buttons-container__interior-decorations__name:hover {
+        height: 68px;
+    }
+    .introduction-container__buttons-container__interior-decorations__name:active {
+        opacity: 0.5;
+    }
+
+    .introduction-container__buttons-container__interior-decorations__picture {
+        height: 62px;
+    }
+
+    .introduction-container__buttons-container__kids-toys {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        width: 50%;
+        margin: 0;
+        padding: 37px;
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop.png");
+        transition: 500ms ease-in-out;
+    }
+
+    .introduction-container__buttons-container__kids-toys:hover {
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop-hover.png");
+    }
+
+    .introduction-container__buttons-container__kids-toys:active {
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop-active.png");
+    }
+
+    .introduction-container__buttons-container__kids-toys__name {
+        height: 58px;
+        transition: 500ms ease-in-out;
+    }
+
+    .introduction-container__buttons-container__kids-toys__name:hover {
+        height: 68px;
+    }
+    .introduction-container__buttons-container__kids-toys__name:active {
+        opacity: 0.5;
+    }
+
+    .introduction-container__buttons-container__kids-toys__picture {
+        height: 62px;
+    }
+};
+
+
+
+
+
+
+
+
+/*desktop-desktop-desktop */
+@media (min-width: $desktop-width-min) {
+
+.introduction-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1050px;
+    height: 650px;
+    border: 1px solid;
+    margin: 0 auto 72px;
+    background: url("../../images/main-headline/desktop/hero-desktop.png") bottom;
+}
+
+.introduction-container__headline {
+    margin: 58px auto 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 670px;
+font-size: $headline-font-size-desktop;
+    line-height: $headline-font-size-desktop;
+    font-weight: bold;
+    text-align: center;
+}
+
+.introduction-container__buttons-container {
+    font-weight: bold;
+    font-size: $second-font-size-desktop;
+    color: white;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 119px;
+display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-image: url("../../images/main-headline/desktop/zigzag.png");
+    background-position: bottom;
+}
+    .zigzag-container {
+        position: absolute;
+        top: 635px;
+        width: 1050px;
+        //width: 100%;
+        height: 20px;
+        background-image: url("../../images/main-headline/desktop/zigzag-line-desktop-v2.png");
+    }
+
+.introduction-container__buttons-container__interior-decorations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 50%;
+    margin: 0;
+    padding: 37px;
+    background-image:url("../../images/main-headline/desktop/left-button-green-desktop.png");
+    transition: 500ms ease-in-out;
+}
+
+    .introduction-container__buttons-container__interior-decorations:hover {
+        background-image: url("../../images/main-headline/desktop/left-button-green-desktop-hover.png");
+    }
+
+    .introduction-container__buttons-container__interior-decorations:active {
+        background-image: url("../../images/main-headline/desktop/left-button-green-desktop-active.png");
+    }
+
+    .introduction-container__buttons-container__interior-decorations__name {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 58px;
+        transition: 500ms;
+    }
+
+    .introduction-container__buttons-container__interior-decorations__name:hover {
+        height: 68px;
+    }
+    .introduction-container__buttons-container__interior-decorations__name:active {
+        opacity: 0.5;
+    }
+
+.introduction-container__buttons-container__interior-decorations__picture {
+    height: 62px;
+}
+
+.introduction-container__buttons-container__kids-toys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    width: 50%;
+    margin: 0;
+    padding: 37px;
+    background-image:url("../../images/main-headline/desktop/right-button-green-desktop.png");
+    transition: 500ms ease-in-out;
+}
+
+    .introduction-container__buttons-container__kids-toys:hover {
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop-hover.png");
+    }
+
+    .introduction-container__buttons-container__kids-toys:active {
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop-active.png");
+    }
+
+.introduction-container__buttons-container__kids-toys__name {
+    height: 58px;
+    transition: 500ms ease-in-out;
+}
+
+    .introduction-container__buttons-container__kids-toys__name:hover {
+        height: 68px;
+    }
+    .introduction-container__buttons-container__kids-toys__name:active {
+        opacity: 0.5;
+    }
+
+.introduction-container__buttons-container__kids-toys__picture {
+    height: 62px;
+}
+
+};
+

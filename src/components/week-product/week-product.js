@@ -1,5 +1,5 @@
 import React,{Fragment} from "react";
-import './week-product.css'
+import './week-product.scss'
 
 export const WeekProduct = () => {
     return <Fragment>

@@ -1,4 +1,4 @@
-import './reviews.css'
+import './reviews.scss'
 import React from "react";
 
 export const Reviews = () => {
@@ -20,8 +20,8 @@ export const Reviews = () => {
                    <li className="reviews__author__email">@misssssiskras</li>
                </ul>
                <ul className="reviews__slider">
-                   <li className="reviews__slider__left"></li>
-                   <li className="reviews__slider__right"></li>
+                   <li className="reviews__slider__left"/>
+                   <li className="reviews__slider__right"/>
                </ul>
 
 

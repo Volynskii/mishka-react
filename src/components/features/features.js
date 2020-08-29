@@ -1,4 +1,4 @@
-import './features.css'
+import './features.scss'
 import React from "react";
 
 export const Features = () => {
@@ -9,18 +9,18 @@ export const Features = () => {
 <section>
     <ul className="features__list">
         <li className="features__list__item">
-            <div className="features__list__item__picture--one"></div>
+            <div className="features__list__item__picture--one"/>
             <div>Экологически чистые материалы</div>
             </li>
 
         <li className="features__list__item">
-            <div className="features__list__item__picture--two"></div>
+            <div className="features__list__item__picture--two"/>
             <div>Связано вручную с
             любовью и умилением</div>
             </li>
 
         <li className="features__list__item">
-            <div className="features__list__item__picture--three"></div>
+            <div className="features__list__item__picture--three"/>
             <div>Скандинавский стиль
             по российской цене</div>
             </li>

@@ -1,0 +1,151 @@
+@import "../../utilities/variables";
+
+
+/*tablet-tablet-tablet */
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+    .features {
+        width: 670px;
+        margin: 0 auto;
+        padding-top: 50px;
+        border: 1px solid;
+        background-image: url("./images/zig-zag.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+    }
+    span {
+        font-size: $headline-font-size-tablet;
+        font-weight: bold;
+        margin: 0;
+        margin-left: 190px;
+    }
+    .features__list {
+        border: 1px solid;
+        width: 670px;
+        margin: 0;
+        margin-bottom: 93px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 31px;
+        padding: 0;
+        font-size: 20px;
+        color: $navigation-color;
+        line-height: 22px;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+    }
+    .features__list__item {
+        width: 295px;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 62px;
+    }
+    .features__list__item__picture--one {
+        height: 38px;
+        background-image: url("./images/icon-1.png");
+        background-repeat: no-repeat;
+        background-position: left 8px top;
+    }
+    .features__list__item__picture--two {
+        height: 38px;
+        background-image: url("./images/icon-2.png");
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--three {
+        height: 38px;
+        background-image: url("./images/icon-3.png");
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--four {
+        height: 38px;
+        background-image: url("./images/icon-4.png");
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--five {
+        height: 38px;
+        background-image: url("./images/icon-5.png");
+        background-position: left 8px top;
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--six {
+        height: 38px;
+        background-image: url("./images/icon-6.png");
+        background-repeat: no-repeat;
+    }
+};
+/*desktop-desktop-desktop */
+@media (min-width: $desktop-width-min) {
+    .features {
+        width: 1050px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid;
+    }
+    span {
+        font-size: $headline-font-size-desktop;
+        font-weight: bold;
+        margin-left: 85px;
+    }
+    .features__list {
+        border: 1px solid;
+        width: 876px;
+        margin: 0;
+        margin-bottom: 93px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 31px;
+        padding: 0;
+        font-size: 20px;
+        color: #000000;
+        line-height: 22px;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: none;
+    }
+    .features__list__item {
+        width: 295px;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 62px;
+    }
+    .features__list__item__picture--one {
+        height: 38px;
+        background-image: url("./images/icon-1.png");
+        background-repeat: no-repeat;
+        background-position: left 8px top;
+    }
+    .features__list__item__picture--two {
+        height: 38px;
+        background-image: url("./images/icon-2.png");
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--three {
+        height: 38px;
+        background-image: url("./images/icon-3.png");
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--four {
+        height: 38px;
+        background-image: url("./images/icon-4.png");
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--five {
+        height: 38px;
+        background-image: url("./images/icon-5.png");
+        background-position: left 8px top;
+        background-repeat: no-repeat;
+    }
+    .features__list__item__picture--six {
+        height: 38px;
+        background-image: url("./images/icon-6.png");
+        background-repeat: no-repeat;
+    }
+};

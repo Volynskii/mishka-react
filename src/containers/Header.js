@@ -1,24 +1,27 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import './Header.css';
+import './Header.scss';
 
 
 export const Header = () => (
         <div className="main-header">
             <div className="main-header__wrapper">
                 <div className="nav-container">
-                    <NavLink to="/catalog"  className="nav-container__item catalog">
-                        Каталог товаров</NavLink>
 
                     <ul className="nav-container container-two">
-                    <NavLink to="/form" className="nav-container__item form">Вязание на заказ</NavLink>
-                    <NavLink name="navigation" to="/" exact className="nav-container__item main">3</NavLink>
+                        <NavLink to="/catalog"  className="nav-container__item catalog">
+                            Каталог товаров</NavLink>
+
+
+                        <NavLink to="/form" className="nav-container__item form">Вязание на заказ</NavLink>
                     </ul>
+                    <NavLink name="navigation" to="/" exact className="nav-container__item main"/>
+
 
                 </div>
 
                 <div className="helper-container">
-                    <div className="helper-container__search"></div>
+                    <div className="helper-container__search"/>
                     <div className="helper-container__basket">Корзина:&nbsp;пока пуста</div>
                 </div>
 

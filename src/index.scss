@@ -1,7 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
+@import "utilities/variables";
 
 body {
-  width: 1090px;
+  max-width: 1090px;
+  min-width: $mobile-width-min;
   margin: 0 auto;
   padding: 0 auto;
   font-family: 'Open Sans', serif;

@@ -1,4 +1,4 @@
-import './our-contacts.scss'
+import './catalog-headline.scss';
 import React from "react";
 
 export const OurContacts = () => {
