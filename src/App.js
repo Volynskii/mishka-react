@@ -4,9 +4,12 @@ import {Main} from "./pages/Main";
 import {Form} from "./pages/Form";
 import {Catalog} from "./pages/Catalog";
 import {Header} from "./containers/Header.js";
+import Footer from "./containers/footer/footer.jsx"
+
 
 function App() {
   return (
+<>
       <BrowserRouter>
         <Header/>
 <Switch>
@@ -15,6 +18,8 @@ function App() {
     <Route path={'/catalog'} component={Catalog}/>
 </Switch>
       </BrowserRouter>
+<Footer/>
+    </>
   );
 }
 

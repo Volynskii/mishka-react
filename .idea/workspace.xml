@@ -4,11 +4,31 @@
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/facebook-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/facebook-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/html-academy-sign-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/html-academy-sign-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/html-academy-sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/insta-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/insta-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/insta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/logo-footer-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/logo-footer-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/logo-footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/mishka-logo-desktop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/twitter-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/twitter-hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/images/twitter.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Catalog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +104,8 @@
       <workItem from="1598183452636" duration="13236000" />
       <workItem from="1598270368665" duration="5607000" />
       <workItem from="1598536968268" duration="3912000" />
-      <workItem from="1598686034630" duration="19147000" />
+      <workItem from="1598686034630" duration="19940000" />
+      <workItem from="1598850201280" duration="19126000" />
     </task>
     <servers />
   </component>

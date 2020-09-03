@@ -11,12 +11,53 @@ export const CatalogHeadline = () => {
 <ul className="catalog__list">
     <li className="catalog__list__item">
 
-    <img   className="catalog__list__item__image" alt="kartinka"/>
-    <div className="catalog__list__item__name">Зайчик-попрыгайчик</div>
-    <div className="catalog__list__item__description">Рост 30 см, вес 200 г</div>
-    <div className="catalog__list__item__price">  1 200 руб.</div>
-    <div className="catalog__list__item__badge">значок</div>
+    <div  className="catalog__list__item__image"/>
+        <div className="catalog__list__item__wrapper">
+    <section className="catalog__list__item__param">
+    <div className="catalog__list__item__param__name">Зайчик-попрыгайчик</div>
+    <div className="catalog__list__item__param__description">Рост 30 см, вес 200 г </div>
+    </section>
+    <ul className="catalog__list__item__order">
+        <li className="catalog__list__item__order__price">  1 200 руб.</li>
+        <li className="catalog__list__item__order__basket"> </li>
+    </ul>
+        </div>
 </li>
+
+    <li className="catalog__list__item">
+
+        <div  className="catalog__list__item__image"/>
+        <div className="catalog__list__item__wrapper">
+            <section className="catalog__list__item__param">
+                <div className="catalog__list__item__param__name">Зайчик-попрыгайчик</div>
+                <div className="catalog__list__item__param__description">Рост 30 см, вес 200 г </div>
+            </section>
+            <ul className="catalog__list__item__order">
+                <li className="catalog__list__item__order__price">  1 200 руб.</li>
+                <li className="catalog__list__item__order__basket"> </li>
+            </ul>
+        </div>
+    </li>
+
+    <li className="catalog__list__item">
+
+        <div  className="catalog__list__item__image"/>
+        <div className="catalog__list__item__wrapper">
+            <section className="catalog__list__item__param">
+                <div className="catalog__list__item__param__name">Зайчик-попрыгайчик</div>
+                <div className="catalog__list__item__param__description">Рост 30 см, вес 200 г </div>
+            </section>
+            <ul className="catalog__list__item__order">
+                <li className="catalog__list__item__order__price">  1 200 руб.</li>
+                <li className="catalog__list__item__order__basket"> </li>
+            </ul>
+        </div>
+    </li>
+
+
+
+
+
 
 </ul>
         </article>
