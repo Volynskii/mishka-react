@@ -9,6 +9,9 @@ body {
   font-family: 'Open Sans', serif;
   color:#444444;
 }
+label {
+  cursor: $button-cursor;
+}
 tr {
   font-size: 15px;
   border-bottom: 1px solid;

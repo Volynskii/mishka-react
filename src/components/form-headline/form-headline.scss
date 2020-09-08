@@ -1,0 +1,28 @@
+@import "../../utilities/variables";
+
+.form-introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1050px;
+  height: 320px;
+  border: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+.form-introduction__headline {
+font-size: $headline-font-size-desktop;
+  line-height: $headline-font-size-desktop;
+}
+.form-introduction__text {
+  margin: 0;
+  padding: 0;
+  width: 680px;
+  font-size: $basic-font-size-desktop;
+  line-height: 30px;
+}
+
+
+

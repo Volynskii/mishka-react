@@ -135,11 +135,14 @@
     display: flex;
     align-items: flex-end;
 }
+    #map {
+        height: 100%;
+    }
 .our-contacts__map__wrapper {
     height: 457px;
     width: 100%;
     border: 1px solid;
-    background-image: url("./images/map-desktop@1x.png");
+    //background-image: url("./images/map-desktop@1x.png");
 }
 .our-contacts__contacts__wrapper {
     border: 1px solid;

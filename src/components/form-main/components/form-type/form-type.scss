@@ -1,0 +1,198 @@
+@import "../../../../utilities/variables";
+
+/*desktop-desktop-desktop-desktop- */
+@media (min-width: $desktop-width-min) {
+  .form__type {
+    display: flex;
+    width: 1050px;
+    height: 130px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .form__type__wrapper {
+    display: flex;
+  }
+  .form__span {
+    color: $span-catalog-color;
+    font-size: $basic-font-size-desktop;
+    width: 185px;
+    margin: 15px 0 0 0;
+  }
+  .form__type__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form__type__list__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid;
+  }
+
+  input[type="radio"] {
+    transition: $transition-radio;
+    display: none;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  input[type="radio"] + label {
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 0;
+
+  }
+  input[type="radio"] + label::before {
+    transition: $transition-radio;
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+  input[type="radio"] + label:hover::before {
+    border: 2px solid #99e1d2;
+  }
+;
+  input[type="radio"] + label:active::before {
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+;
+
+  input[type="radio"]:checked + label::before {
+    transition: $transition-radio;
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: 1px solid #000000;
+    background-image: url("../../../../images/Form/input-range-checked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  input[type="radio"]:checked + label:hover::before {
+    border: 2px solid $catalog-checkbox-radio-hover;
+  }
+;
+  input[type="radio"]:checked + label:active::before {
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+};
+/*tablet-tablet-tablet- */
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+  .form__type {
+    display: flex;
+    width: 100%;
+    height: 130px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .form__type__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__span {
+    color: $span-catalog-color;
+    font-size: $basic-font-size-desktop;
+    width: 10%;
+    margin-top: 15px;
+    margin-right: 14%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .form__type__list {
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form__type__list__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid;
+  }
+
+  input[type="radio"] {
+    transition: $transition-radio;
+    display: none;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  input[type="radio"] + label {
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 0;
+
+  }
+  input[type="radio"] + label::before {
+    transition: $transition-radio;
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+  input[type="radio"] + label:hover::before {
+    border: 2px solid #99e1d2;
+  }
+;
+  input[type="radio"] + label:active::before {
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+;
+
+  input[type="radio"]:checked + label::before {
+    transition: $transition-radio;
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: 1px solid #000000;
+    background-image: url("../../../../images/Form/input-range-checked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  input[type="radio"]:checked + label:hover::before {
+    border: 2px solid $catalog-checkbox-radio-hover;
+  }
+;
+  input[type="radio"]:checked + label:active::before {
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+}
