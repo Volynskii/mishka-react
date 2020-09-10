@@ -27,13 +27,7 @@ export const OurContacts = () => {
                 </div>
             </section>
             <section className="our-contacts__map">
-                <article id="map">
-                </article>
-
-                <script src="../map/map.js"></script>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBme58AN9wAyTA0qRNM7P2pJ-zW0tA9Cww&callback=initMap">
-                </script>
+                КАРТА ТУТ
             </section>
             <button className="our-contacts__bottom-button">НАПИШИТЕ НАМ</button>
         </article>

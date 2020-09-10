@@ -187,3 +187,96 @@
     border: 2px solid $catalog-checkbox-radio-active;
   }
 }
+
+/*mobile-mobile-mobile */
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .form__color {
+    display: flex;
+    align-items: center;
+    width: 320px;
+    height: 400px;
+    border: 1px solid;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+  }
+  .form__color__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 260px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__color__list {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-row-gap: 22px;
+    grid-template-columns: 1fr;
+  }
+  .form__color__list__item {
+    font-size: 17px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid;
+  }
+
+  input[type="checkbox"] {
+    transition: $transition;
+    display: none;
+    margin-top: 0;
+    margin-right: 24px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  input[type="checkbox"] + label {
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 0;
+
+  }
+  input[type="checkbox"] + label::before {
+    transition: $transition;
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 24px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #000000;
+  }
+  input[type="checkbox"]:active + label::before {
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+  input[type="checkbox"]:checked + label::before {
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 24px;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: 1px solid #000000;
+    background-image: url("../../../../images/Form/input-checkbox-checked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  input[type="checkbox"]:checked + label:hover::before {
+    border: 2px solid $catalog-checkbox-radio-hover;
+  }
+  input[type="checkbox"]:checked + label:active::before {
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+}

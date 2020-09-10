@@ -196,3 +196,110 @@
     border: 2px solid $catalog-checkbox-radio-active;
   }
 }
+
+
+
+/*mobile-mobile-mobile- */
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .form__type {
+    display: flex;
+    width: 320px;
+    height: 175px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .form__type__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 260px;
+    height: 100%;
+    border: 1px solid green;
+    margin: 0 auto;
+    padding-right:200px;
+    padding-left: auto;
+  }
+  legend {
+
+  }
+  .form__span {
+    width: 260px;
+    color: $span-catalog-color;
+    font-size: $basic-font-size-desktop;
+  }
+  .form__type__list {
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form__type__list__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid;
+  }
+
+  input[type="radio"] {
+    transition: $transition-radio;
+    display: none;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  input[type="radio"] + label {
+    font-size: 17px;
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 0;
+
+  }
+  input[type="radio"] + label::before {
+    transition: $transition-radio;
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 23px;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+;
+  input[type="radio"] + label:active::before {
+    width: 36px;
+    height: 36px;
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+;
+
+  input[type="radio"]:checked + label::before {
+    transition: $transition-radio;
+    content: "";
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 28px;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: 1px solid #000000;
+    background-image: url("../../../../images/Form/input-range-checked.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+;
+  input[type="radio"]:checked + label:active::before {
+    width: 36px;
+    height: 36px;
+    border: 2px solid $catalog-checkbox-radio-active;
+  }
+};

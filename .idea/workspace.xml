@@ -3,10 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/footer/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/footer/footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/footer/footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_variables.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,7 +97,8 @@
       <workItem from="1599194204089" duration="14324000" />
       <workItem from="1599365467012" duration="28185000" />
       <workItem from="1599480080790" duration="1269000" />
-      <workItem from="1599537891014" duration="14413000" />
+      <workItem from="1599537891014" duration="19890000" />
+      <workItem from="1599718540334" duration="16063000" />
     </task>
     <servers />
   </component>

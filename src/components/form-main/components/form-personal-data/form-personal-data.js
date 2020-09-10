@@ -6,7 +6,7 @@ export const FormPersonalData = () => {
     return (
         <section className="form__personal-data">
             <div className="form__personal-data__wrapper">
-                <span className="form__span">ФИО</span>
+                <span className="form__span personal-span">ФИО</span>
                 <ul className="form__personal-data__list">
 
                     <li className="form__personal-data__list__item">

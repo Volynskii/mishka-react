@@ -85,7 +85,7 @@
 };
 
 
-/*desktop-desktop-desktop   */
+/*tablet-tablet-tablet   */
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
   .form__contact-information {
     display: flex;
@@ -125,6 +125,92 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .label-number,
+  .label-email {
+    font-size: $basic-font-size-desktop;
+    color: #63d1bb;
+    margin: 0;
+    width: 23%;
+  }
+  input#number {
+    background-image: url("../../../../images/Form/phone.png");
+  }
+  input#number:focus {
+    background-image: url("../../../../images/Form/phone-focus.png");
+  }
+  input#number:hover {
+    background-image: url("../../../../images/Form/phone-focus.png");
+  }
+  input#email {
+    background-image: url("../../../../images/Form/mail.png");
+  }
+  input#number,
+  input#email {
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    transition: $transition;
+    margin: 0;
+    padding: 0;
+    flex-grow: 10;
+    height: 52px;
+    border: 0;
+    border-bottom: 2px solid #555555;
+    background-color: transparent;
+  }
+  input#number:focus,
+  input#email:focus {
+    flex-grow: 1;
+    height: 52px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid $catalog-checkbox-radio-hover;
+  }
+};
+
+
+/*mobile-mobile-mobile   */
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+  .form__contact-information {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 320px;
+    height: 250px;
+    border: 1px solid;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #f1f1f1;
+  }
+  .form__contact-information__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 130px;
+  }
+  .form__contact-information__list {
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form__contact-information__list__item {
+    width: 100%;
+    font-size: 19px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .label-number,

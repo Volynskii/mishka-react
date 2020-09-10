@@ -5,7 +5,7 @@ export const FormType = () => {
 
             <section className="form__type">
                 <div className="form__type__wrapper">
-                    <strong className="form__span">ТИП</strong>
+                    <div className="form__span">ТИП</div>
                     <ul className="form__type__list">
                         <li className="form__type__list__item">
                             <input type="radio" id="typeChoice1"
