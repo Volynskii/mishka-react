@@ -23,6 +23,8 @@ export const Header = () => (
                 <div className="helper-container">
                     <div className="helper-container__search"/>
                     <div className="helper-container__basket">Корзина:&nbsp;пока пуста</div>
+                    <br/>
+                    <div className="free-delivery-tablet">Бесплатная доставка по России</div>
                 </div>
 
             </div>

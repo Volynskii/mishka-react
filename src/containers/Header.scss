@@ -74,9 +74,10 @@
     }
 
     .helper-container {
-        height: 88px;
+        height: 175px;
         width: 500px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -154,7 +155,10 @@
     }
 
     .free-delivery {
-        width: 310px;
+        display: none;
+    }
+    .free-delivery-tablet {
+        flex-grow: 1;
         text-align: center;
     }
 };
@@ -302,5 +306,8 @@
     .free-delivery {
         width: 310px;
         text-align: center;
+    }
+    .free-delivery-tablet {
+        display: none;
     }
 };
