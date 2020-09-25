@@ -1,26 +1,35 @@
-const redux = require('redux');
+import customerReviews from "../../mocks/comments-mock";
+
 const initialState = {
-    index:0
-}
+    index: 0,
 
-// Reducer
-const reducer = (state = initialState, action) => {
-if (action.type === 'NEXT') {
-    return {
-        index: state.index + 1
+};
+
+export const commentsReducer = (state = initialState,action) => {
+    switch (action.type) {
+        case 'NEXT':
+            if(state.index === customerReviews.length - 1) {
+                return {
+                    ...state
+                };
+            }
+            return {
+                ...state,
+                index: state.index + 1
+            };
+        case'PREV':
+            if(state.index === 0) {
+                return {
+                    ...state
+                }
+            }
+            return {
+                ...state,
+                index: state.index - 1
+            };
+        default:
+            return state;
     }
-}
-return state;
+
 };
 
-//Store
-const store = redux.createStore(reducer);
-console.log(store.getState())
-
-// Actions
-const addCounter = {
-    type:'NEXT'
-};
-
-store.dispatch(addCounter);
-console.log(store.getState());

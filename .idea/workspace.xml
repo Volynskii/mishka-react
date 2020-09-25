@@ -4,13 +4,18 @@
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews/reviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews/reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Header.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mocks/comments-mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mocks/comments-mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Catalog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/comments/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/comments/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +105,17 @@
       <workItem from="1599888655024" duration="10332000" />
       <workItem from="1599978940210" duration="9671000" />
       <workItem from="1599998874834" duration="7609000" />
-      <workItem from="1600166358144" duration="1082000" />
+      <workItem from="1600166358144" duration="9995000" />
+      <workItem from="1600242440661" duration="34000" />
+      <workItem from="1600242735517" duration="13847000" />
+      <workItem from="1600328935592" duration="7821000" />
+      <workItem from="1600511139619" duration="20033000" />
+      <workItem from="1600549721681" duration="3256000" />
+      <workItem from="1600575936914" duration="8503000" />
+      <workItem from="1600602592406" duration="37439000" />
+      <workItem from="1600841329100" duration="23725000" />
+      <workItem from="1600923043276" duration="11404000" />
+      <workItem from="1601011950961" duration="4254000" />
     </task>
     <servers />
   </component>

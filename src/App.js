@@ -1,13 +1,13 @@
 import React from 'react';
 import {BrowserRouter, Route,Switch} from 'react-router-dom'
-import {Main} from "./pages/Main";
+import Main from "./pages/Main";
+
 import {Form} from "./pages/Form";
-import {Catalog} from "./pages/Catalog";
-import {Header} from "./containers/Header.js";
+import Catalog from "./pages/Catalog";
+import Header from "./containers/header/Header";
 import Footer from "./containers/footer/footer.jsx"
 
-
-function App() {
+function App(props) {
   return (
 <>
       <BrowserRouter>
