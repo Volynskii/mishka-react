@@ -1,30 +1,42 @@
 import React from "react";
 import cn from "classnames";
+import {useDispatch} from "react-redux";
 
-const CatalogItem = ({catalogItemsData, basketItems, index, name, weight, height, price, addToBasket,  removeFromBasket}) => {
+const CatalogItem = ({catalogItemsData,
+                         basketItems,
+                         id,
+                         name,
+                         paramOneName,
+                         paramOneValue,
+                         paramTwoName,
+    paramTwoValue,
+                         price,
+                         addToBasket,
+                         src}) => {
 
-    const basketId = basketItems.map((item) => {
+    const basketIds = basketItems.map((item) => {
         return item.id
     });
-    const catalogId = catalogItemsData.map((item) => {
+    const catalogIds = catalogItemsData.map((item) => {
         return item.id
     });
 
-    const isActive = basketId.includes(catalogId[index]);
+    const isActive = basketIds.includes(catalogIds[id]);
 
-    const onClick = (evt) => {
+    const onClick = (evt) =>  {
 
-  addToBasket(catalogItemsData[index])
-     // removeFromBasket(catalogItemsData[index])
+  addToBasket(catalogItemsData[id])
     };
+
     return (
         <li className="catalog__list__item">
 
-            <div  className="catalog__list__item__image"/>
+            <img src={src} alt="картинка товара"  className="catalog__list__item__image"/>
             <div className="catalog__list__item__wrapper">
                 <section className="catalog__list__item__param">
                     <div className="catalog__list__item__param__name">{name}</div>
-                    <div className="catalog__list__item__param__description">рост {height} см, вес {weight} г </div>
+                    <div className="catalog__list__item__param__description">{paramOneName} {paramOneValue}
+                    см, {paramTwoName} {paramTwoValue} г </div>
                 </section>
                 <ul className="catalog__list__item__order">
                     <li className="catalog__list__item__order__price">{price} р</li>

@@ -31,7 +31,7 @@ export default function BasketItem({removeItemFromBasket, basketItems,index,item
                 </tr>
                 </tbody>
             </table>
-            <div onClick={onClick} className="remove-item-sign">удалить</div>
+            <button onClick={onClick} className="remove-item-sign"></button>
         </div>
     </div>
 

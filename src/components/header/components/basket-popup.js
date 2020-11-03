@@ -1,18 +1,23 @@
-import React from "react";
+import React,{useContext} from "react";
+import {Context} from "../context";
 import './basket-popup.scss'
 import BasketItem from './components/basket-item'
 
 export default function BasketPopup(props) {
-console.log('BasketPopUp', props)
+
+    const {onShowBasket,display,onHideBasket, isPlaying} = useContext(Context);
+
 const totalPrice = props.basketItems.reduce((currentTotal, item) => {
     return item.itemPrice * item.itemQuantity + currentTotal
 }, 0);
-return (
-<article className="basket-popup">
-<section className="basket-popup__header">
-    <p className="basket-popup__header__text"></p>
 
-        <div className="cl-btn-2">
+console.log(display)
+return  (
+<article style={{display:isPlaying }} className="basket-popup">
+<section className="basket-popup__header">
+    <p className="basket-popup__header__text"/>
+
+        <div onClick={onHideBasket} className="cl-btn-2">
             <div>
                 <div className="leftright"/>
                 <div className="rightleft"/>
@@ -39,7 +44,7 @@ return (
         <div>Всего:</div>
         <div>{totalPrice} руб.</div>
 </div>
-        <button>Оформить заказ</button>
+        <button className="basket-popup__price-block__submit-button">Оформить заказ</button>
     </section>
 </article>
 

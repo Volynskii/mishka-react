@@ -1,17 +1,13 @@
 import './reviews.scss'
-import React, {Component} from "react";
+import React from "react";
 
- class Reviews extends Component {
-
-render() {
-
-    const {comments, index, onNext, onSub} = this.props;
+export const Reviews = ({comments, index, nextComment, prevComment, toggleDisplay}) => {
 
     return (
         <article className="reviews">
             <div className="reviews__wrapper">
                 <span className="reviews__headline">Отзывы</span>
-                <button className="reviews__button">Написать</button>
+                <button onClick={toggleDisplay} className="reviews__button">Написать</button>
 
                 <p className="reviews__comment">{comments[index].comment}</p>
 
@@ -20,13 +16,13 @@ render() {
                     <li className="reviews__author__email">{comments[index].email}</li>
                 </ul>
                 <section className="reviews__slider">
-                    <button     onClick={() => onNext()} className="reviews__slider__left"/>
-                    <button   onClick={() => onSub()}  className="reviews__slider__right"/>
+                    <button onClick={prevComment} className="reviews__slider__left"/>
+                    <button onClick={nextComment}  className="reviews__slider__right"/>
                 </section>
             </div>
         </article>
     )
-}
-}
+};
+
 
  export default Reviews;

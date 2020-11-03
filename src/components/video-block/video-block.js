@@ -1,12 +1,20 @@
 import './video-block.scss';
-import React from "react";
-// import {VideoPlayer} from './components/video-player.jsx';
+import React, { useState} from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
 
 export const VideoBlock = () => {
+
+    const [isFull, setFull] = useState(false);
+    const promo = useSelector((state) => state.promo);
+    const dispatch = useDispatch();
+    const history = useHistory();
+
 return <article className="video-block">
-    <div className="video-block__video">
-        {/*<VideoPlayer/>*/}
-    </div>
+    <video width="480" controls poster="https://www.youtube.com/watch?v=rY-g472sb4o&t=1230s&ab_channel=chizhny" >
+        <source src="https://www.youtube.com/watch?v=rY-g472sb4o&t=1230s&ab_channel=chizhny" type="video/mp4"/>
+
+    </video>
 
     <section className="video-block__order">
         <div className="video-block__order__wrapper">
