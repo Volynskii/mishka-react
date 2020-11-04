@@ -1,7 +1,6 @@
 import './catalog-headline.scss';
 import React from "react";
 import CatalogItem from "./components/catalogItem";
-// import {addItemToBasket} from "../../redux/basket-items/actions";
 
 export const CatalogHeadline = ({catalogItemsData,basketItems, onPushItemToBasket, addItemToBasket, ...props}) => {
 console.log(addItemToBasket)

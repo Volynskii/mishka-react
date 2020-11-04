@@ -3,58 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/components/catalogItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/components/catalogItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/images/huge-arrow-left-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/images/huge-arrow-left-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/images/huge-arrow-left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/images/huge-arrow-right-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/images/huge-arrow-right-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/images/huge-arrow-right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/images/review.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/reviews.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/video-block/video-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/video-block/video-block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/footer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/facebook-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/facebook-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/html-academy-sign-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/html-academy-sign-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/html-academy-sign.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/insta-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/insta-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/insta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/logo-footer-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/logo-footer-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/logo-footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/mishka-logo-desktop.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/twitter-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/twitter-hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/footer/images/twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/Header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/components/basket-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/components/basket-popup.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/header/components/components/basket-item.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/Catalog/catalog-item-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mocks/catalog-items-mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mocks/catalog-items-mock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Catalog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/basket-items/actionTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/basket-items/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/basket-items/basketItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/comments/actionTypes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/comments/actions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/comments/comments.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/video-block/components/video-player.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/video-block/video-block.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/video-block/video-block.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +129,7 @@
       <workItem from="1604318331753" duration="2158000" />
       <workItem from="1604320529840" duration="11008000" />
       <workItem from="1604415744001" duration="6142000" />
+      <workItem from="1604470964679" duration="11732000" />
     </task>
     <servers />
   </component>
