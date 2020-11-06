@@ -1,13 +1,13 @@
 import './reviews.scss'
 import React from "react";
 
-export const Reviews = ({comments, index, nextComment, prevComment, toggleDisplay}) => {
+export const Reviews = ({comments, index, nextComment, prevComment, openPopup}) => {
 
     return (
         <article className="reviews">
             <div className="reviews__wrapper">
                 <span className="reviews__headline">Отзывы</span>
-                <button onClick={toggleDisplay} className="reviews__button">Написать</button>
+                <button onClick={openPopup} className="reviews__button">Написать</button>
 
                 <p className="reviews__comment">{comments[index].comment}</p>
 

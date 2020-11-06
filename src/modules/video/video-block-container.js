@@ -12,14 +12,12 @@ export const VideoBlockContainer = ({ className, id,  title, poster, trailer }) 
     }, [timerId]);
 
     const handleMouseEnter = () => {
-        console.log('MOUSEENTER')
         timerId = setTimeout(() => {
             setPlaying(true);
         }, 1000);
     };
 
     const handleMouseLeave = () => {
-        console.log('mouseLeave')
         clearTimeout(timerId);
         setPlaying(false);
     };
@@ -28,7 +26,7 @@ export const VideoBlockContainer = ({ className, id,  title, poster, trailer }) 
                 width={580}
                 height={455}
                 src={"https://upload.wikimedia.org/wikipedia/commons/transcoded/b/b3/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm"}
-                poster={"./images/catalog/video-desktop.png"}
+                poster={"./images/catalog/video-desktopv2.png"}
                 isPlaying={isPlaying}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}

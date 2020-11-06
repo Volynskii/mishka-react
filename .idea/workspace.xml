@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/video-block/components/video-player.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/video-block/video-block.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/video-block/video-block.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main-page/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main-page/main-page.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +130,9 @@
       <workItem from="1604318331753" duration="2158000" />
       <workItem from="1604320529840" duration="11008000" />
       <workItem from="1604415744001" duration="6142000" />
-      <workItem from="1604470964679" duration="11732000" />
+      <workItem from="1604470964679" duration="12317000" />
+      <workItem from="1604588896947" duration="5391000" />
+      <workItem from="1604647708227" duration="20320000" />
     </task>
     <servers />
   </component>

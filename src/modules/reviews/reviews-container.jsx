@@ -13,15 +13,6 @@ export const ReviewsContainer = () => {
 
     const [display,setDisplay] = useState("none");
 
-
-    const toggleDisplay = () => {
-        if (display === "none") {
-            setDisplay('flex')
-        } else {
-            setDisplay("none")
-        }
-
-    };
     const nextComment = () => {
 
         if(index === comments.length - 1) {
@@ -37,6 +28,13 @@ export const ReviewsContainer = () => {
         }
         setIndex(index - 1);
     };
+const openPopup = () => {
+        setDisplay("flex");
+    };
+
+    const closePopup = () => {
+        setDisplay("none");
+    };
 
     return (
         <>
@@ -45,12 +43,13 @@ export const ReviewsContainer = () => {
         index={index}
         nextComment={nextComment}
         prevComment={prevComment}
-        toggleDisplay={toggleDisplay}
+        openPopup={openPopup}
     />
     <FormReviews
     isOpened={display}
+    closePopup={closePopup}
     />
             </>
-    )
+    );
 
 };

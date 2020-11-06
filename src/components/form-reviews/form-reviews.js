@@ -1,13 +1,27 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './form-reviews.scss';
 
-
-export const FormReviews = ({isOpened}) => {
+export const FormReviews = ({isOpened, closePopup}) => {
     const onSubmit = () => {
        alert('submit')
-    }
+    };
+    const overlayClassName = "popup";
+
+    useEffect(() => {
+        document.addEventListener('click', (evt) => {
+
+            evt.preventDefault();
+             evt.stopPropagation();
+            if (evt.target.className === overlayClassName) {
+                closePopup();
+            }
+
+        });
+    }, []);
     return (
-        <form style={{display: isOpened}}  onSubmit={onSubmit} >
+        <>
+            <div  style={{display: isOpened}}  className="popup">
+        <form className="form-popup" onSubmit={onSubmit} >
         <section className="form-reviews__personal-data">
             <div className="form-reviews__personal-data__wrapper">
                 <ul className="form-reviews__personal-data__list">
@@ -32,5 +46,8 @@ export const FormReviews = ({isOpened}) => {
             </div>
         </section>
         </form>
+
+            </div>
+            </>
     )
 };
