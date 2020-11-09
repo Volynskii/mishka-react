@@ -2,7 +2,8 @@ import React, {useCallback} from "react";
 import cn from "classnames";
 import {addItemToBasket as action} from "../../../../store/basket-items/actions";
 
-const CatalogItem = ({catalogItemsData,
+const CatalogItem = ({
+                         catalogItemsData,
                          basketItems,
                          id,
                          name,
@@ -26,13 +27,13 @@ const CatalogItem = ({catalogItemsData,
     });
 
     const isActive = basketIds.includes(catalogIds[id]);
-    const addItemToBasket = useCallback(
-        () => dispatch({type: `ADD_ITEM_TO_BASKET`, payload:catalogItemsData[id]}),[catalogItemsData]
-    );
+    // const addItemToBasket = useCallback(
+    //     () => dispatch({type: `ADD_ITEM_TO_BASKET`, payload:catalogItemsData[id]}),[catalogItemsData]
+    // );
     const onClick = (evt) =>  {
 
 
-         // addToBasket(catalogItemsData[id])
+        addToBasket(catalogItemsData[id])
 
     };
 
@@ -48,7 +49,7 @@ const CatalogItem = ({catalogItemsData,
                 </section>
                 <ul className="catalog__list__item__order">
                     <li className="catalog__list__item__order__price">{price} р</li>
-                    <li onClick={addItemToBasket} className={cn(`catalog__list__item__order__basket`, {
+                    <li onClick={onClick} className={cn(`catalog__list__item__order__basket`, {
                         [`tabs__item--active`]: isActive   })}> </li>
                 </ul>
             </div>

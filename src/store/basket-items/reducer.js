@@ -8,7 +8,7 @@ const initialState = {
 };
 
 export const basketItemsReducer = (state = initialState, {type,payload}) => {
-console.log('TYPE',type,state)
+console.log('TYPE',type,state, payload)
     switch (type) {
         case types.ADD_ITEM_TO_BASKET:
            return  hasDublicate(state.basketItems,payload);

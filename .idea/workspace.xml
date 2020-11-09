@@ -3,25 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/catalog-headline.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/components/catalogItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/images/logotype.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/catalog-headline/images/photo-1-desktop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/components/basket-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/components/basket-popup.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/components/components/basket-item.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/context.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline-container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/basket-items/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/basket-items/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/comments/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/comments/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +145,7 @@
       <workItem from="1604935680667" duration="4502000" />
       <workItem from="1604940267832" duration="505000" />
       <workItem from="1604940793953" duration="144000" />
-      <workItem from="1604941037191" duration="2733000" />
+      <workItem from="1604941037191" duration="6201000" />
     </task>
     <servers />
   </component>

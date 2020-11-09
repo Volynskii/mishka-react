@@ -3,7 +3,7 @@ import React from "react";
 import CatalogItem from "./components/catalogItem";
 
 export const CatalogHeadline = ({catalogItemsData,basketItemsData,  addItemToBasket, dispatch, useCallback}) => {
-
+console.log(addItemToBasket)
     return (
         <article className="catalog">
    <h5 className="catalog__headline">Каталог товаров</h5>
