@@ -2,8 +2,8 @@ import './catalog-headline.scss';
 import React from "react";
 import CatalogItem from "./components/catalogItem";
 
-export const CatalogHeadline = ({catalogItemsData,basketItems, onPushItemToBasket, addItemToBasket, ...props}) => {
-console.log(addItemToBasket)
+export const CatalogHeadline = ({catalogItemsData,basketItemsData,  addItemToBasket, dispatch, useCallback}) => {
+
     return (
         <article className="catalog">
    <h5 className="catalog__headline">Каталог товаров</h5>
@@ -16,7 +16,7 @@ console.log(addItemToBasket)
                addToBasket={addItemToBasket}
                key={catalogItemsData[index].id}
                id={catalogItemsData[index].id}
-               basketItems={basketItems}
+               basketItems={basketItemsData}
                catalogItemsData={catalogItemsData}
                name={catalogItemsData[index].itemName}
                paramOneName={catalogItemsData[index].itemParamOneName}
@@ -25,6 +25,8 @@ console.log(addItemToBasket)
                paramTwoValue={catalogItemsData[index].itemParamTwoValue}
                price={catalogItemsData[index].itemPrice}
                quantity={catalogItemsData[index].itemQuantity}
+                dispatch={dispatch}
+                useCallback={useCallback}
            />
         )
     })}

@@ -1,4 +1,4 @@
-@import "../../utilities/variables";
+@import "../../../utilities/variables";
 
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
     .main-header {
@@ -69,7 +69,7 @@
 
     .nav-main {
         width: 320px;
-        background: url("../../images/header/desktop/logotype.png") no-repeat left;
+        background: url("../../../images/header/desktop/logotype.png") no-repeat left;
 
     }
 
@@ -90,17 +90,17 @@
         height: 88px;
         border: 1px solid #e7e7e7;
         border-left: 0;
-        background: url("../../images/header/desktop/search-sign.png") no-repeat center;
+        background: url("../../../images/header/desktop/search-sign.png") no-repeat center;
         transition: 500ms ease-in-out;
         cursor: pointer;
     }
 
     .helper-container__search:hover {
-        background: url("../../images/header/desktop/search-sign-hover.png") no-repeat center;
+        background: url("../../../images/header/desktop/search-sign-hover.png") no-repeat center;
     }
 
     .helper-container__search:active {
-        background: url("../../images/header/desktop/search-sign-active.png") no-repeat center;
+        background: url("../../../images/header/desktop/search-sign-active.png") no-repeat center;
     }
 
     .helper-container__basket {
@@ -115,16 +115,16 @@
         text-align: center;
         align-items: center;
         border-bottom: 1px solid #e7e7e7;
-        background: url("../../images/header/desktop/cart.png") no-repeat 30px;
+        background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
         transition: $transition;
         cursor: pointer;
     }
     .helper-container__basket:hover {
-        background-image: url("../../images/header/desktop/cart-hover.png");
+        background-image: url("../../../images/header/desktop/cart-hover.png");
         opacity: 0.6;
     }
     .helper-container__basket:active {
-        background-image: url("../../images/header/desktop/cart-active.png");
+        background-image: url("../../../images/header/desktop/cart-active.png");
         opacity: 0.4;
     }
 
@@ -222,7 +222,7 @@
 
     .nav-main {
         width: 250px;
-        background: url("../../images/header/desktop/logotype.png") no-repeat center;
+        background: url("../../../images/header/desktop/logotype.png") no-repeat center;
     }
 
     .helper-container {
@@ -240,17 +240,17 @@
         height: 100%;
         border: 1px solid #e7e7e7;
         border-left: 0;
-        background: url("../../images/header/desktop/search-sign.png") no-repeat center;
+        background: url("../../../images/header/desktop/search-sign.png") no-repeat center;
         transition: 500ms ease-in-out;
         cursor: pointer;
     }
 
     .helper-container__search:hover {
-        background: url("../../images/header/desktop/search-sign-hover.png") no-repeat center;
+        background: url("../../../images/header/desktop/search-sign-hover.png") no-repeat center;
     }
 
     .helper-container__search:active {
-        background: url("../../images/header/desktop/search-sign-active.png") no-repeat center;
+        background: url("../../../images/header/desktop/search-sign-active.png") no-repeat center;
     }
 
     .helper-container__basket {
@@ -265,20 +265,20 @@
         text-align: center;
         align-items: center;
         border-bottom: 1px solid #e7e7e7;
-        background: url("../../images/header/desktop/cart.png") no-repeat 30px;
+        background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
         transition: 500ms ease-in-out;
         cursor: pointer;
     }
     .helper-container__basket:hover {
-        background-image: url("../../images/header/desktop/cart-hover.png");
+        background-image: url("../../../images/header/desktop/cart-hover.png");
         opacity: 0.6;
     }
     .helper-container__basket:active {
-        background-image: url("../../images/header/desktop/cart-active.png");
+        background-image: url("../../../images/header/desktop/cart-active.png");
         opacity: 0.4;
     }
     .helper-container__basket-active {
-        background-image: url("../../images/header/desktop/cart-hover.png");
+        background-image: url("../../../images/header/desktop/cart-hover.png");
         opacity: 0.6;
     }
 

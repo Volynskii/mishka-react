@@ -10,7 +10,7 @@ const initialState = {
 
 
 export const commentsReducer = (state = initialState,{type,payload}) => {
-    console.log(type)
+   // console.log(type, payload)
     switch (type) {
         case types.NEXT:
             if(state.index === state.comments.length - 1) {

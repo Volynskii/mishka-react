@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useCallback} from "react";
 import cn from "classnames";
-import {useDispatch} from "react-redux";
+import {addItemToBasket as action} from "../../../../store/basket-items/actions";
 
 const CatalogItem = ({catalogItemsData,
                          basketItems,
@@ -12,7 +12,11 @@ const CatalogItem = ({catalogItemsData,
     paramTwoValue,
                          price,
                          addToBasket,
-                         src}) => {
+                         src,
+                          dispatch,
+                          useCallback
+}) => {
+
 
     const basketIds = basketItems.map((item) => {
         return item.id
@@ -22,10 +26,14 @@ const CatalogItem = ({catalogItemsData,
     });
 
     const isActive = basketIds.includes(catalogIds[id]);
-
+    const addItemToBasket = useCallback(
+        () => dispatch({type: `ADD_ITEM_TO_BASKET`, payload:catalogItemsData[id]}),[catalogItemsData]
+    );
     const onClick = (evt) =>  {
 
-  addToBasket(catalogItemsData[id])
+
+         // addToBasket(catalogItemsData[id])
+
     };
 
     return (
@@ -40,7 +48,7 @@ const CatalogItem = ({catalogItemsData,
                 </section>
                 <ul className="catalog__list__item__order">
                     <li className="catalog__list__item__order__price">{price} р</li>
-                    <li onClick={onClick} className={cn(`catalog__list__item__order__basket`, {
+                    <li onClick={addItemToBasket} className={cn(`catalog__list__item__order__basket`, {
                         [`tabs__item--active`]: isActive   })}> </li>
                 </ul>
             </div>

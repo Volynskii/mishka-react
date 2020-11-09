@@ -55,7 +55,7 @@ return (
         <p className="video-block__order__text">По просьбам наших любимых фолловеров
             мы сняли для вас подробное видео о
             том, как появляются наши товары.</p>
-        <button className="video-block__order__button">СДЕЛАТЬ ЗАКАЗ</button>
+        <Link  to={`/form`} className="video-block__order__button">СДЕЛАТЬ ЗАКАЗ</Link>
         </div>
     </section>
 </article>

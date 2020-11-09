@@ -1,4 +1,4 @@
-@import "../../utilities/variables";
+@import "../../../utilities/variables";
 
 /*tablet-tablet-tablet */
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
@@ -94,13 +94,13 @@
   .catalog__list__item__order__basket {
     height: 18px;
     width: 22px;
-    background-image: url("../../images/header/desktop/cart.png");
+    background-image: url("../../../images/header/desktop/cart.png");
   }
   .catalog__list__item__order__basket:hover {
-    background-image: url("../../images/header/desktop/cart-hover.png");
+    background-image: url("../../../images/header/desktop/cart-hover.png");
   }
   .catalog__list__item__order__basket:active {
-    background-image: url("../../images/header/desktop/cart-active.png");
+    background-image: url("../../../images/header/desktop/cart-active.png");
   }
 };
 
@@ -184,15 +184,15 @@
   .catalog__list__item__order__basket {
     height: 18px;
     width: 22px;
-    background-image: url("../../images/header/desktop/cart.png");
+    background-image: url("../../../images/header/desktop/cart.png");
   }
   .catalog__list__item__order__basket:hover {
-    background-image: url("../../images/header/desktop/cart-hover.png");
+    background-image: url("../../../images/header/desktop/cart-hover.png");
   }
   .catalog__list__item__order__basket:active {
-    background-image: url("../../images/header/desktop/cart-active.png");
+    background-image: url("../../../images/header/desktop/cart-active.png");
   }
   .tabs__item--active {
-    background-image: url("../../images/header/desktop/cart-hover.png");
+    background-image: url("../../../images/header/desktop/cart-hover.png");
   }
 };
