@@ -5,8 +5,10 @@
          itemName:'Зайчик-попрыгайчик',
          itemParamOneName:'рост',
          itemParamOneValue: 30,
+         itemParamOneUnit: 'см',
          itemParamTwoName: 'вес',
          itemParamTwoValue: 200,
+         itemParamTwoUnit: 'г',
          itemQuantity: 1
      },
      {id:1,
@@ -15,8 +17,10 @@
          itemName:'Корзинка для белья',
          itemParamOneName:'Диаметр',
          itemParamOneValue: 15,
+         itemParamOneUnit: 'см',
          itemParamTwoName: 'высота',
          itemParamTwoValue: 10,
+         itemParamTwoUnit: 'см',
          itemQuantity: 1
      },
      {id:2,
@@ -25,8 +29,10 @@
          itemName:'Большая корзинка для игрушек',
          itemParamOneName:'Диаметр',
          itemParamOneValue: 30,
+         itemParamOneUnit: 'см',
          itemParamTwoName: 'высота',
          itemParamTwoValue: 30,
+         itemParamTwoUnit: 'см',
          itemQuantity: 1},
 
 ];

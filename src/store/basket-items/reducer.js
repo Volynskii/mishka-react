@@ -8,14 +8,20 @@ const initialState = {
 };
 
 export const basketItemsReducer = (state = initialState, {type,payload}) => {
-console.log('TYPE',type,state, payload)
+
     switch (type) {
         case types.ADD_ITEM_TO_BASKET:
-           return  hasDublicate(state.basketItems,payload);
+           return {
+               ...state,
+               basketItems: hasDublicate(state.basketItems,payload)
+           };
 
         case types.REMOVE_ITEM_FROM_BASKET:
+            return {
+                ...state,
+                basketItems: state.basketItems.filter(item => item.id !== payload)
+            };
 
-            return  state.basketItems.filter(item => item.id !== payload.id);
         default:
             return state;
     }

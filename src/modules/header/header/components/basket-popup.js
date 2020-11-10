@@ -8,6 +8,8 @@ export default function BasketPopup({
                                         // onShowBasket,
                                         display,
                                         onHideBasket,
+                                        dispatch,
+                                        removeItem
 }) {
 
 const totalPrice = basketItems.reduce((currentTotal, item) => {
@@ -30,15 +32,21 @@ return  (
 
 </section>
     <section className="basket-popup__main">
-         {basketItems.map((item,index) => <BasketItem
-             // removeItemFromBasket={onRemoveItemFromBasket}
-             basketItems={basketItems}
-             key={index}
-             index={index}
+         {basketItems.map((item,index) =>
+             <BasketItem
+                 dispatch={dispatch}
+                 removeItem={removeItem}
+                 basketItem={basketItems[index]}
+             key={basketItems[index].id}
+                 itemSrc={basketItems[index].src}
              itemPrice={basketItems[index].itemPrice}
              itemName={basketItems[index].itemName}
-             itemHeight={basketItems[index].itemHeight}
-             itemWeight={basketItems[index].itemWeight}
+             itemParamOneName={basketItems[index].itemParamOneName}
+             itemParamOneValue={basketItems[index].itemParamOneValue}
+                 itemParamOneUnit={basketItems[index].itemParamOneUnit}
+             itemParamTwoName={basketItems[index].itemParamTwoName}
+             itemParamTwoValue={basketItems[index].itemParamTwoValue}
+                 itemParamTwoUnit={basketItems[index].itemParamTwoUnit}
              itemQuantity={basketItems[index].itemQuantity}
          />)}
     </section>

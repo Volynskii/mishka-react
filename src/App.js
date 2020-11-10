@@ -11,7 +11,7 @@ function App(props) {
   return (
 <>
       <BrowserRouter>
-        {/*<HeaderContainer/>*/}
+        <HeaderContainer/>
 <Switch>
   <Route path={'/'} exact component={Main}/>
   <Route path={'/form'} component={Form}/>

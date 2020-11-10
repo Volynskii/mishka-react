@@ -1,56 +1,55 @@
-import React, {useCallback} from "react";
+import React from "react";
 import cn from "classnames";
-import {addItemToBasket as action} from "../../../../store/basket-items/actions";
 
 const CatalogItem = ({
-                         catalogItemsData,
+                         catalogItems,
                          basketItems,
                          id,
                          name,
                          paramOneName,
                          paramOneValue,
+                         paramOneUnit,
                          paramTwoName,
-    paramTwoValue,
+                         paramTwoValue,
+                         paramTwoUnit,
                          price,
                          addToBasket,
                          src,
-                          dispatch,
-                          useCallback
-}) => {
+                         dispatch
+                     }) => {
 
-
+const isActiveItem = () => {
     const basketIds = basketItems.map((item) => {
         return item.id
     });
-    const catalogIds = catalogItemsData.map((item) => {
+    const catalogIds = catalogItems.map((item) => {
         return item.id
     });
 
-    const isActive = basketIds.includes(catalogIds[id]);
-    // const addItemToBasket = useCallback(
-    //     () => dispatch({type: `ADD_ITEM_TO_BASKET`, payload:catalogItemsData[id]}),[catalogItemsData]
-    // );
-    const onClick = (evt) =>  {
+    return basketIds.includes(catalogIds[id]);
+};
 
 
-        addToBasket(catalogItemsData[id])
-
+    const onClick = () => {
+        dispatch(addToBasket(catalogItems[id]))
     };
 
     return (
         <li className="catalog__list__item">
 
-            <img src={src} alt="картинка товара"  className="catalog__list__item__image"/>
+            <img src={src} alt="картинка товара" className="catalog__list__item__image"/>
             <div className="catalog__list__item__wrapper">
                 <section className="catalog__list__item__param">
                     <div className="catalog__list__item__param__name">{name}</div>
                     <div className="catalog__list__item__param__description">{paramOneName} {paramOneValue}
-                    см, {paramTwoName} {paramTwoValue} г </div>
+                        {paramOneUnit}, {paramTwoName} {paramTwoValue} {paramTwoUnit}
+                    </div>
                 </section>
                 <ul className="catalog__list__item__order">
                     <li className="catalog__list__item__order__price">{price} р</li>
                     <li onClick={onClick} className={cn(`catalog__list__item__order__basket`, {
-                        [`tabs__item--active`]: isActive   })}> </li>
+                        [`tabs__item--active`]: isActiveItem()
+                    })}/>
                 </ul>
             </div>
         </li>

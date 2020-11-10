@@ -1,13 +1,14 @@
-import React, {useEffect, useState} from "react";
-import { useSelector } from "react-redux";
+import React, {useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
 import {Header} from "./header/header";
+import {removeItemFromBasket as action} from "../../store/basket-items/actions";
 
 export const HeaderContainer = () => {
 
     const [display,setDisplay] = useState('none');
+    const dispatch = useDispatch();
 
     const basketItems = useSelector((state) => state.basketItems.basketItems);
-    console.log(basketItems)
     const totalQuantity = basketItems.reduce((currentTotal, item) => {
         return item.itemQuantity + currentTotal
     }, 0);
@@ -17,7 +18,7 @@ export const HeaderContainer = () => {
 
     const isMoreThenOneItem =  totalQuantity > 1 ? 'товара' : 'товар';
 
-    const basketTextContent = isActiveBasket ? totalQuantity +  isMoreThenOneItem : 'Пока пуста';
+    const basketTextContent = isActiveBasket ? totalQuantity  +  isMoreThenOneItem : 'Пока пуста';
     let timerId;
 
 
@@ -39,13 +40,13 @@ export const HeaderContainer = () => {
          <Header
              display={display}
              isActiveBasket={isActiveBasket}
-             isMoreThenOneItem={isMoreThenOneItem}
              basketTextContent={basketTextContent}
              handleMouseEnter={handleMouseEnter}
              handleMouseLeave={handleMouseLeave}
-             // onShowBasket={onShowBasket}
-             // onHideBasket={onHideBasket}
              basketItems={basketItems}
+             dispatch={dispatch}
+             removeItem={action}
+
          />
         </>
     );

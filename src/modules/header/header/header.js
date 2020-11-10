@@ -8,17 +8,15 @@ import {Context} from "./context";
 
 export const Header = ({
                            isActiveBasket,
-                           isMoreThenOneItem,
                            basketTextContent,
                            handleMouseEnter,
                            handleMouseLeave,
-                           // onShowBasket,
-                           // onHideBasket,
                            display,
-                           basketItems
+                           basketItems,
+    dispatch,
+                           removeItem
 
                        }) => {
-
 
 
     return <div className="main-header">
@@ -36,10 +34,11 @@ export const Header = ({
 
             </div>
 
+
             <div className="helper-container">
                 <div className="helper-container__search"/>
 
-                <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+                <div onMouseEnter={handleMouseEnter} onMouseLeave={null}
                      className={cn(`helper-container__basket`,
                          {
                              [`helper-container__basket-active`]:
@@ -47,8 +46,10 @@ export const Header = ({
                          })}>Корзина:  &nbsp;
                     {basketTextContent}</div>
                 <BasketPopupBasketPopup
-                                        display={display}
-                                        basketItems={basketItems}
+                    display={display}
+                    basketItems={basketItems}
+                    dispatch={dispatch}
+                    removeItem={removeItem}
 
 
                 />

@@ -1,33 +1,23 @@
-import React, {useCallback} from "react";
+import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {CatalogHeadline} from "./catalog-headline/catalog-headline";
 import {addItemToBasket as action} from "../../store/basket-items/actions";
-import {connect} from "react-redux";
-import {addItemToBasket} from "../../store/basket-items/actions";
-import {basketItemsReducer} from "../../store/basket-items/reducer";
 
 
-export const CatalogHeadlineContainer = ({catalogItems,basketItems, addItemToBasket}) => {
+export const CatalogHeadlineContainer = () => {
+    const dispatch = useDispatch();
+
+    const catalogItems = useSelector((state) => state.basketItems.catalogItems);
+    const basketItems = useSelector((state) => state.basketItems.basketItems);
+
     return (
         <>
             <CatalogHeadline
-                catalogItemsData={catalogItems}
                 basketItemsData={basketItems}
-                addItemToBasket={addItemToBasket}
+                catalogItemsData={catalogItems}
+                addItemToBasket={action}
+                dispatch={dispatch}
             />
         </>
     );
-
 };
-function mapStateToProps({basketItems}) {
-    return {
-        catalogItems: basketItems.catalogItems,
-        basketItems:basketItems.basketItems
-    }
-}
-
-const mapDispatchToProps = {
-    addItemToBasket
-};
-
-export default connect(mapStateToProps,mapDispatchToProps) (CatalogHeadlineContainer);

@@ -18,14 +18,18 @@ export const hasDublicate = (state,payload) => {
             ...state,
             {
                 id: payload.id,
+                src: payload.src,
                 itemPrice: payload.itemPrice,
                 itemName:payload.itemName,
                 itemParamOneName: payload.itemParamOneName,
                 itemParamOneValue: payload.itemParamOneValue,
+                itemParamOneUnit: payload.itemParamOneUnit,
                 itemParamTwoName : payload.itemParamTwoName,
                 itemParamTwoValue : payload.itemParamTwoValue,
+                itemParamTwoUnit: payload.itemParamTwoUnit,
                 itemQuantity: payload.itemQuantity
             }
-        ]);
+        ]
+    );
 
 };
