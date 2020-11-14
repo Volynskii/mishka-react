@@ -1,10 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import {NavLink} from "react-router-dom";
 import './header.scss';
 import BasketPopupBasketPopup from "./components/basket-popup";
-import {connect} from "react-redux";
 import cn from "classnames";
-import {Context} from "./context";
 
 export const Header = ({
                            isActiveBasket,
@@ -13,11 +11,12 @@ export const Header = ({
                            handleMouseLeave,
                            display,
                            basketItems,
-    dispatch,
-                           removeItem
+                           dispatch,
+                           removeItem,
+                           closePopup,
+                           togglePopup
 
                        }) => {
-
 
     return <div className="main-header">
         <div className="main-header__wrapper">
@@ -38,7 +37,7 @@ export const Header = ({
             <div className="helper-container">
                 <div className="helper-container__search"/>
 
-                <div onMouseEnter={handleMouseEnter} onMouseLeave={null}
+                <div onClick={togglePopup}  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                      className={cn(`helper-container__basket`,
                          {
                              [`helper-container__basket-active`]:
@@ -50,8 +49,9 @@ export const Header = ({
                     basketItems={basketItems}
                     dispatch={dispatch}
                     removeItem={removeItem}
-
-
+                    handleMouseEnter={handleMouseEnter}
+                    handleMouseLeave={handleMouseLeave}
+                    closePopup={closePopup}
                 />
                 <br/>
                 <div className="free-delivery-tablet">Бесплатная доставка по России</div>
@@ -69,14 +69,3 @@ export const Header = ({
         </div>
     </div>;
 };
-
-function mapDispatchToProps(dispatch) {
-    return {
-        onRemoveItemFromBasket: (itemIndex) => dispatch({type: 'REMOVE_ITEM_FROM_BASKET', payload: itemIndex})
-    }
-}
-
-export default connect(
-    null,
-    mapDispatchToProps
-) (Header);

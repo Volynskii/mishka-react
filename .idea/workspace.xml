@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline-container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/catalog-page/catalog-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/basket-items/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/comments/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/comments/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/comments/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/comments/reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,6 +150,12 @@
       <workItem from="1604940267832" duration="505000" />
       <workItem from="1604940793953" duration="144000" />
       <workItem from="1604941037191" duration="6201000" />
+      <workItem from="1604984410182" duration="21081000" />
+      <workItem from="1605111058895" duration="6813000" />
+      <workItem from="1605165553946" duration="5494000" />
+      <workItem from="1605189216176" duration="8083000" />
+      <workItem from="1605259139966" duration="16060000" />
+      <workItem from="1605355877579" duration="1697000" />
     </task>
     <servers />
   </component>

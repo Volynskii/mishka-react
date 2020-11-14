@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Header} from "./header/header";
 import {removeItemFromBasket as action} from "../../store/basket-items/actions";
@@ -20,21 +20,42 @@ export const HeaderContainer = () => {
 
     const basketTextContent = isActiveBasket ? totalQuantity  +  isMoreThenOneItem : 'Пока пуста';
     let timerId;
+let timerIdTwo;
 
-
-
+    useEffect(() => {
+        return () => clearTimeout(timerId);
+    }, [timerId]);
+    useEffect(() => {
+        return () => clearTimeout(timerIdTwo);
+    }, [timerIdTwo]);
     const handleMouseEnter = () => {
+        clearTimeout(timerIdTwo);
         timerId = setTimeout(() => {
             setDisplay('flex');
-        }, 0);
+        }, 500);
     };
 
     const handleMouseLeave = () => {
         clearTimeout(timerId);
+        timerIdTwo = setTimeout(() => {
+            setDisplay('none');
+        }, 1000);
+    };
+
+    const togglePopup = () => {
+        clearTimeout(timerId);
+        clearTimeout(timerIdTwo);
+        if(display === "none") {
+            setDisplay('flex');
+        } else
         setDisplay('none');
     };
 
-
+    const closePopup = () => {
+        clearTimeout(timerId);
+        clearTimeout(timerIdTwo);
+        setDisplay('none');
+    };
     return (
         <>
          <Header
@@ -46,7 +67,8 @@ export const HeaderContainer = () => {
              basketItems={basketItems}
              dispatch={dispatch}
              removeItem={action}
-
+             closePopup={closePopup}
+             openPopup={togglePopup}
          />
         </>
     );

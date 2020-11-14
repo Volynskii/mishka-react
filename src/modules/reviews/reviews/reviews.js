@@ -1,7 +1,11 @@
 import './reviews.scss'
 import React from "react";
 
-export const Reviews = ({comments, index, nextComment, prevComment, openPopup}) => {
+export const Reviews = ({comments,
+                            index,
+                            nextComment,
+                            prevComment,
+                            openPopup}) => {
 
     return (
         <article className="reviews">
@@ -23,6 +27,5 @@ export const Reviews = ({comments, index, nextComment, prevComment, openPopup}) 
         </article>
     )
 };
-
 
  export default Reviews;
