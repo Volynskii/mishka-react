@@ -1,6 +1,6 @@
 import './our-contacts.scss'
 import React from "react";
-import {WrappedMap} from "../google-map/google-map";
+import MyMap from "../google-map/google-map";
 
 export const OurContacts = () => {
 
@@ -29,8 +29,9 @@ export const OurContacts = () => {
             </section>
             <section className="our-contacts__map">
 
-                             КАРТА ТУТ
+                <MyMap/>
             </section>
+
             <button className="our-contacts__bottom-button">НАПИШИТЕ НАМ</button>
         </article>
     )

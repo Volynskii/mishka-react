@@ -1,35 +1,28 @@
-// import React from "react";
-// import {GoogleMap, withScriptjs, withGoogleMap} from "react-google-maps";
-//
-// export const Map = () => {
-//     return (
-//         <GoogleMap
-// defaultZoom={10}
-// defaultCenter={{lat: 55.755825 , lng : 37.617298}}
-//         />
-//     )
-// };
-//
-// export const WrappedMap = withScriptjs(withGoogleMap(Map))
-//
-// export const MapBlock = () => {
-//     return (
-//     <section className="our-contacts__map">
-//         КАРТА ТУТ
-//     </section>
-//     )
-// };
 import React from "react";
 import {
     GoogleMap,
-    useLoadScript,
-    Marker,
-    InfoWindow
+    useLoadScript
 } from "@react-google-maps/api";
-import {formatRelative} from "date-fns";
 
-export default function App () {
-    const {} = useLoadScript({
-        googleMapsApiKey: process.env.Reac
-    })
+const libraries = ["places"];
+const mapContainerStyle = {
+    width: `100%`,
+    height: `100%`
+};
+
+const center = {
+lat: 55.755825,
+    lng: 37.617298
+};
+export default function MyMap () {
+    const {isLoaded, loadError} = useLoadScript({
+        googleMapsApiKey : process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+       libraries
+    });
+
+    if (loadError) return "Error loading maps";
+    if (!isLoaded) return "Loading Maps"
+    return (
+        <GoogleMap mapContainerStyle={mapContainerStyle} zoom={8} center={center}> </GoogleMap>
+    )
 }

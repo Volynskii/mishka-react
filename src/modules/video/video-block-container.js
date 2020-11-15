@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import {VideoBlock} from "./video-block/video-block";
 
 export const VideoBlockContainer = ({ className, id,  title, poster, trailer }) => {

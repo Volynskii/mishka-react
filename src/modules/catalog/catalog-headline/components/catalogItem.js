@@ -7,7 +7,6 @@ const CatalogItem = ({catalogItems, basketItems}) => {
     const dispatch = useDispatch();
 
     const {src,
-        id,
         itemName,
         itemParamOneName,
         itemParamOneValue,

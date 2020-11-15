@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import './form-reviews.scss';
 import {useDispatch} from "react-redux";
 import {createReview} from "../../store/comments/actions";
-import {delay} from "../../helpers/delay";
 
 export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
     const dispatch = useDispatch();
@@ -27,7 +26,7 @@ export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
         };
         document.addEventListener(`keydown`, onEscKeyDown);
         return () => document.removeEventListener(`keydown`, onEscKeyDown);
-    }, []);
+    }, [closePopup]);
 
     const onConfirmClick = (evt) => {
         evt.stopPropagation();

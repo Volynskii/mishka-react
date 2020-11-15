@@ -17,7 +17,6 @@ setComments(commentsData)
          const [index, setIndex] = useState(indexData);
 
     const nextComment = () => {
-console.log('index', index)
         if(index === comments.length - 1) {
                return;
         }

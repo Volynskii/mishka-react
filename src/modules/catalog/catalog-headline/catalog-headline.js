@@ -13,20 +13,9 @@ export const CatalogHeadline = ({catalogItemsData,basketItemsData}) => {
         return (
 
            <CatalogItem
-               // src={catalogItemsData[index].src}
                 key={catalogItemsData[index].id}
-             //  id={catalogItemsData.id}
                basketItems={basketItemsData}
                catalogItems={catalogItem}
-               // name={catalogItemsData[index].itemName}
-               // paramOneName={catalogItemsData[index].itemParamOneName}
-               // paramOneValue={catalogItemsData[index].itemParamOneValue}
-               // paramOneUnit={catalogItemsData[index].itemParamOneUnit}
-               // paramTwoName={catalogItemsData[index].itemParamTwoName}
-               // paramTwoValue={catalogItemsData[index].itemParamTwoValue}
-               // paramTwoUnit={catalogItemsData[index].itemParamTwoUnit}
-               // price={catalogItemsData[index].itemPrice}
-               // quantity={catalogItemsData[index].itemQuantity}
            />
         )
     })}

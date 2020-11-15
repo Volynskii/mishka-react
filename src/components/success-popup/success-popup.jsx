@@ -11,7 +11,7 @@ const SuccessPopup = ({ className, title, children, onConfirm, successPopupDispl
         };
         document.addEventListener(`keydown`, onEscKeyDown);
         return () => document.removeEventListener(`keydown`, onEscKeyDown);
-    }, []);
+    }, [closeSuccessPopup]);
 
     const onConfirmClick = (evt) => {
         evt.stopPropagation();

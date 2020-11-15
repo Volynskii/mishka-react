@@ -30,7 +30,7 @@ export const VideoBlock = ({width,height,src,poster,isPlaying, onMouseEnter, onM
         } else {
             video.load();
         }
-    }, [isPlaying]);
+    }, [isLoading,isPlaying]);
 
 return (
     <article className="video-block">
