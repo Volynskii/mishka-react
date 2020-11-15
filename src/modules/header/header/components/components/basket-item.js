@@ -1,30 +1,32 @@
 import React from "react";
+import {removeItemFromBasket} from "../../../../../store/basket-items/actions";
+import {useDispatch} from "react-redux";
 
-export default function BasketItem({
-                                       dispatch,
-                                       removeItem,
-                                       basketItem,
-                                       itemSrc,
-                                       itemPrice,
-                                       itemName,
-                                       itemParamOneName,
-                                       itemParamOneValue,
-                                       itemParamOneUnit,
-                                       itemParamTwoName,
-                                       itemParamTwoValue,
-                                       itemParamTwoUnit,
-                                       itemQuantity
-}) {
+
+export default function BasketItem({basketItem}) {
+
+    const {
+        src,
+        itemPrice,
+        itemName,
+        itemParamOneName,
+        itemParamOneValue,
+        itemParamOneUnit,
+        itemParamTwoValue,
+        itemParamTwoName,
+        itemParamTwoUnit,
+        itemQuantity
+    } = basketItem;
+
+    const dispatch = useDispatch();
     const onClick = (evt) => {
-       dispatch(removeItem(basketItem.id))
+       dispatch(removeItemFromBasket(basketItem.id))
     };
     return (
 <>
     <div className="basket-popup__main__wrapper">
 
-        <img src={itemSrc} className="basket-popup__main__picture">
-
-        </img>
+        <img alt="basket-popup__main__picture" src={src} className="basket-popup__main__picture"/>
         <div className="basket-popup__main__item-decription">
             <span className="basket-popup__main__price">{itemPrice}р</span>
             <p className="basket-popup__main__text">{itemName}</p>

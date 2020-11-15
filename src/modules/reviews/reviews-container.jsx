@@ -8,13 +8,12 @@ export const ReviewsContainer = () => {
 
     const commentsData = useSelector((state) => state.comments.comments);
     const indexData = useSelector((state) => state.comments.index);
-console.log('REVIEWS-CONTAINER',commentsData)
+
 
     const [comments, setComments] = useState(commentsData);
     useEffect(() => {
 setComments(commentsData)
     }, [commentsData]);
-         console.log('REVIEWS-CONTAINER',comments)
          const [index, setIndex] = useState(indexData);
 
     const nextComment = () => {

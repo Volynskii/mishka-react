@@ -11,8 +11,6 @@ export const Header = ({
                            handleMouseLeave,
                            display,
                            basketItems,
-                           dispatch,
-                           removeItem,
                            closePopup,
                            togglePopup
 
@@ -47,8 +45,6 @@ export const Header = ({
                 <BasketPopupBasketPopup
                     display={display}
                     basketItems={basketItems}
-                    dispatch={dispatch}
-                    removeItem={removeItem}
                     handleMouseEnter={handleMouseEnter}
                     handleMouseLeave={handleMouseLeave}
                     closePopup={closePopup}

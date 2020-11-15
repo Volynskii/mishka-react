@@ -6,8 +6,6 @@ import BasketItem from './components/basket-item'
 export default function BasketPopup({
                                         basketItems,
                                         display,
-                                        dispatch,
-                                        removeItem,
                                         handleMouseEnter,
                                         handleMouseLeave,
                                         closePopup
@@ -32,22 +30,10 @@ const totalPrice = basketItems.reduce((currentTotal, item) => {
 
             </section>
             <section className="basket-popup__main">
-                {basketItems.map((item, index) =>
+                {basketItems.map((basketItem, index) =>
                     <BasketItem
-                        dispatch={dispatch}
-                        removeItem={removeItem}
-                        basketItem={basketItems[index]}
-                        key={basketItems[index].id}
-                        itemSrc={basketItems[index].src}
-                        itemPrice={basketItems[index].itemPrice}
-                        itemName={basketItems[index].itemName}
-                        itemParamOneName={basketItems[index].itemParamOneName}
-                        itemParamOneValue={basketItems[index].itemParamOneValue}
-                        itemParamOneUnit={basketItems[index].itemParamOneUnit}
-                        itemParamTwoName={basketItems[index].itemParamTwoName}
-                        itemParamTwoValue={basketItems[index].itemParamTwoValue}
-                        itemParamTwoUnit={basketItems[index].itemParamTwoUnit}
-                        itemQuantity={basketItems[index].itemQuantity}
+                        basketItem={basketItem}
+                        key={basketItem.id}
                     />)}
             </section>
             <section className="basket-popup__footer">

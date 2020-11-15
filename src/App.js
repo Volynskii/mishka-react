@@ -7,7 +7,7 @@ import {Catalog} from "./pages/catalog-page/catalog-page";
 import {HeaderContainer} from "./modules/header/header-container";
 import Footer from "./components/footer/footer";
 
-function App(props) {
+const App = () => {
   return (
 <>
       <BrowserRouter>
