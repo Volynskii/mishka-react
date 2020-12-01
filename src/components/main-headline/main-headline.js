@@ -10,7 +10,6 @@ export const MainHeadline = () => {
         <ul className="introduction-container__buttons-container__interior-decorations">
         <li className="introduction-container__buttons-container__interior-decorations__name">
             Предметы <br/> интерьера </li>
-            <li className="introduction-container__buttons-container__interior-decorations__picture"> </li>
         </ul>
         <ul className="introduction-container__buttons-container__kids-toys">
         <li className="introduction-container__buttons-container__kids-toys__name">Детские <br/>

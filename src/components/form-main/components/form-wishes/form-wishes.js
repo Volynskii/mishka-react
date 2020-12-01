@@ -9,7 +9,7 @@ export const FormWishes = () => {
                 <ul className="form__wishes__list">
 
                     <li className="form__wishes__list__item">
-                        <label className="label-textarea" htmlFor="textarea">ДОП </label>
+                        <label className="label-textarea form__span" htmlFor="textarea">ДОП </label>
                         <textarea className="form__wishes__list__item__textarea" id="textarea" placeholder="Опишите все ваши пожелания к заказу" />
                     </li>
 

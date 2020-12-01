@@ -2,7 +2,7 @@ import './video-block.scss';
 import React, { useState, useRef, useEffect} from "react";
 import { Link } from "react-router-dom";
 
-export const VideoBlock = ({width,height,src,poster,isPlaying, onMouseEnter, onMouseLeave}) => {
+export const VideoBlock = ({src,poster,isPlaying, onMouseEnter, onMouseLeave}) => {
 
     const videoRef = useRef(null);
 
@@ -35,10 +35,11 @@ export const VideoBlock = ({width,height,src,poster,isPlaying, onMouseEnter, onM
 return (
     <article className="video-block">
     <video
+        className={"video-block__video"}
         ref={videoRef}
         muted={true}
-        width={width}
-        height={height}
+         width={null}
+         height={null}
          src={src}
          poster={poster}
            onMouseEnter={onMouseEnter}
@@ -49,9 +50,11 @@ return (
 
     <section className="video-block__order">
         <div className="video-block__order__wrapper">
+            <section className="video-block__order__headline-container">
         <div className="video-block__order__badge"/>
        <h1 className="video-block__order__headline"> Процесс
            производства</h1>
+            </section>
         <p className="video-block__order__text">По просьбам наших любимых фолловеров
             мы сняли для вас подробное видео о
             том, как появляются наши товары.</p>

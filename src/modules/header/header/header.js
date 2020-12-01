@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import './header.scss';
 import BasketPopupBasketPopup from "./components/basket-popup";
@@ -16,24 +16,33 @@ export const Header = ({
 
                        }) => {
 
+    const [menuDisplay, setMenuDisplay] = useState('flex');
+
+    const handleToggleMenu = () => {
+        if (menuDisplay === "none") {
+            setMenuDisplay('flex');
+        } else
+            setMenuDisplay('none');
+    };
     return <div className="main-header">
         <div className="main-header__wrapper">
             <div className="nav-container">
 
-                <ul className="nav-container container-two">
-                    <NavLink to="/catalog" className="nav-container__item nav-catalog">
+                <ul className="nav-container container-two" style={{display: menuDisplay}} >
+                    <NavLink  to="/catalog" className="nav-container__item nav-catalog">
                         Каталог товаров</NavLink>
 
                     <NavLink to="/form" className="nav-container__item nav-form">Вязание на заказ</NavLink>
                 </ul>
 
-                <NavLink name="navigation" to="/" exact className="nav-container__item nav-main"/>
+                <NavLink name="navigation" to="/" exact className="nav-container__item nav-main">
+                    <button onClick={handleToggleMenu} className="nav-main--button"/></NavLink>
 
             </div>
 
 
             <div className="helper-container">
-                <div className="helper-container__search"/>
+                <div className="helper-container__search">Поиск по сайту</div>
 
                 <div onClick={togglePopup}  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
                      className={cn(`helper-container__basket`,

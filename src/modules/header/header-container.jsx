@@ -4,7 +4,7 @@ import {Header} from "./header/header";
 
 export const HeaderContainer = () => {
 
-    const [display,setDisplay] = useState('none');
+    const [display,setDisplay] = useState('flex');
 
     const basketItems = useSelector((state) => state.basketItems.basketItems);
     const totalQuantity = basketItems.reduce((currentTotal, item) => {
@@ -15,7 +15,7 @@ export const HeaderContainer = () => {
 
     const isMoreThenOneItem =  totalQuantity > 1 ? 'товара' : 'товар';
 
-    const basketTextContent = isActiveBasket ? totalQuantity  +  isMoreThenOneItem : 'Пока пуста';
+    const basketTextContent = isActiveBasket ? totalQuantity  +  isMoreThenOneItem : 'пока пуста';
     let timerId;
 let timerIdTwo;
 

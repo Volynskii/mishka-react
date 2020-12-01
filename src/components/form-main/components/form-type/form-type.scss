@@ -6,7 +6,7 @@
     display: flex;
     width: 1050px;
     height: 130px;
-    border: 1px solid;
+    //border: 1px solid;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid;
+    //border: 1px solid;
   }
 
   input[type="radio"] {
@@ -100,7 +100,7 @@
     display: flex;
     width: 100%;
     height: 130px;
-    border: 1px solid;
+    //border: 1px solid;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -134,7 +134,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid;
+
   }
 
   input[type="radio"] {
@@ -205,10 +205,10 @@
     display: flex;
     width: 320px;
     height: 175px;
-    border: 1px solid;
+    //border: 1px solid;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
   }
   .form__type__wrapper {
     display: flex;
@@ -216,9 +216,9 @@
     justify-content: flex-start;
     width: 260px;
     height: 100%;
-    border: 1px solid green;
+    //border: 1px solid green;
     margin: 0 auto;
-    padding-right:200px;
+  //  padding-right:200px;
     padding-left: auto;
   }
   legend {
@@ -226,11 +226,16 @@
   }
   .form__span {
     width: 260px;
+    margin-bottom: 25px;
     color: $span-catalog-color;
     font-size: $basic-font-size-desktop;
+    background-image: url("./images/Layer 3.png");
+    background-position: center right;
+    background-repeat: no-repeat;
   }
   .form__type__list {
     width: 260px;
+    height: 100px;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -242,19 +247,19 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid;
+    //border: 1px solid;
   }
 
   input[type="radio"] {
     transition: $transition-radio;
     display: none;
     margin-top: 0;
-    margin-right: 28px;
+    margin-right: 20px;
     margin-left: 0;
     margin-bottom: 0;
   }
   input[type="radio"] + label {
-    font-size: 17px;
+    font-size: 15px;
     transition: $transition;
     display: flex;
     align-items: center;
@@ -267,7 +272,7 @@
     content: "";
     display: inline-block;
     margin-top: 0;
-    margin-right: 23px;
+    margin-right: 20px;
     margin-left: 0;
     margin-bottom: 0;
     width: 38px;
@@ -288,7 +293,7 @@
     content: "";
     display: inline-block;
     margin-top: 0;
-    margin-right: 28px;
+    margin-right: 20px;
     margin-left: 0;
     margin-bottom: 0;
     border: 1px solid #000000;

@@ -1,5 +1,146 @@
 @import "../../utilities/variables";
 
+
+
+/*mobile-mobile-mobile */
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+    .introduction-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 260px;
+        min-height: 550px;
+        //border: 1px solid;
+        margin: 0 auto ;
+        background: url("../../images/main-headline/desktop/hero-desktop.png");
+        background-position: center -50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .introduction-container__headline {
+        margin: 50px auto 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 260px;
+        font-size: $headline-font-size-mobile;
+        line-height: $headline-font-size-mobile;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .introduction-container__buttons-container {
+        font-weight: bold;
+        font-size: $second-font-size-desktop;
+        color: white;
+        line-height: 30px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style-type: none;
+        background-position: bottom;
+        position: absolute;
+        bottom: 0;
+    }
+    .zigzag-container {
+        display: none;
+    }
+
+    .introduction-container__buttons-container__interior-decorations {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style-type: none;
+        width: 100%;
+        height: 70px;
+        margin: 0;
+        padding: 0;
+        padding-left: 30px;
+        background: #63d1bb url("../../images/main-headline/desktop/left-button-green-desktop.png") no-repeat right;
+        transition: 500ms ease-in-out;
+    }
+
+    .introduction-container__buttons-container__interior-decorations:hover {
+        background-image: url("../../images/main-headline/desktop/left-button-green-desktop-hover.png");
+        background-position: right;
+    }
+
+    .introduction-container__buttons-container__interior-decorations:active {
+        background-image: url("../../images/main-headline/desktop/left-button-green-desktop-active.png");
+        background-position: right;
+    }
+
+    .introduction-container__buttons-container__interior-decorations__name {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 58px;
+        transition: 500ms;
+
+    }
+
+    .introduction-container__buttons-container__interior-decorations__name:hover {
+        height: 68px;
+    }
+    .introduction-container__buttons-container__interior-decorations__name:active {
+        opacity: 0.5;
+    }
+
+    .introduction-container__buttons-container__interior-decorations__picture {
+        height: 62px;
+    }
+
+    .introduction-container__buttons-container__kids-toys {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+        height: 70px;
+        margin: 0;
+        padding-left: 30px;
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: #56c3b2;
+        transition: 500ms ease-in-out;
+    }
+
+    .introduction-container__buttons-container__kids-toys:hover {
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop-hover.png");
+        background-position: right;
+    }
+
+    .introduction-container__buttons-container__kids-toys:active {
+        background-image:url("../../images/main-headline/desktop/right-button-green-desktop-active.png");
+        background-position: right;
+    }
+
+    .introduction-container__buttons-container__kids-toys__name {
+        height: 58px;
+        transition: 500ms ease-in-out;
+    }
+
+    .introduction-container__buttons-container__kids-toys__name:hover {
+        height: 68px;
+    }
+    .introduction-container__buttons-container__kids-toys__name:active {
+        opacity: 0.5;
+    }
+
+    .introduction-container__buttons-container__kids-toys__picture {
+        height: 62px;
+    }
+};
+
+
+
 /*tablet-tablet-tablet */
 @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
     .introduction-container {
@@ -8,10 +149,10 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 670px;
+        width: 87%;
         height: 650px;
-        border: 1px solid;
-        margin: 0 auto 72px;
+        //border: 1px solid;
+        margin: 0 auto ;
         background: url("../../images/main-headline/desktop/hero-desktop.png") bottom;
     }
 
@@ -59,15 +200,18 @@
         margin: 0;
         padding: 37px;
         background-image:url("../../images/main-headline/desktop/left-button-green-desktop.png");
+        background-position: right;
         transition: 500ms ease-in-out;
     }
 
     .introduction-container__buttons-container__interior-decorations:hover {
         background-image: url("../../images/main-headline/desktop/left-button-green-desktop-hover.png");
+        background-position: right;
     }
 
     .introduction-container__buttons-container__interior-decorations:active {
         background-image: url("../../images/main-headline/desktop/left-button-green-desktop-active.png");
+        background-position: right;
     }
 
     .introduction-container__buttons-container__interior-decorations__name {
@@ -98,15 +242,18 @@
         margin: 0;
         padding: 37px;
         background-image:url("../../images/main-headline/desktop/right-button-green-desktop.png");
+        background-position: right;
         transition: 500ms ease-in-out;
     }
 
     .introduction-container__buttons-container__kids-toys:hover {
         background-image:url("../../images/main-headline/desktop/right-button-green-desktop-hover.png");
+        background-position: right;
     }
 
     .introduction-container__buttons-container__kids-toys:active {
         background-image:url("../../images/main-headline/desktop/right-button-green-desktop-active.png");
+        background-position: right;
     }
 
     .introduction-container__buttons-container__kids-toys__name {
@@ -144,7 +291,7 @@
     align-items: center;
     width: 1050px;
     height: 650px;
-    border: 1px solid;
+    //border: 1px solid;
     margin: 0 auto 72px;
     background: url("../../images/main-headline/desktop/hero-desktop.png") bottom;
 }

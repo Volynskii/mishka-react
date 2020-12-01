@@ -3,17 +3,44 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/features/features.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/features.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/features/features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/features.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/form-main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/form-main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/google-map/google-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-map/google-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/map/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-headline/main-headline.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-product/week-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-product/week-product.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/header/desktop/70757.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/header/desktop/depositphotos_361517336-stock-illustration-euro-shop-basket-icon-outline.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/header/desktop/праховник-значок-корзины-удаление-символа-знак-вектор-векторный-157653943.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mocks/catalog-items-mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mocks/catalog-items-mock.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/video/video-block-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block-container.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_variables.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +185,38 @@
       <workItem from="1605259139966" duration="16060000" />
       <workItem from="1605355877579" duration="5592000" />
       <workItem from="1605429857150" duration="2237000" />
-      <workItem from="1605433111693" duration="12442000" />
+      <workItem from="1605433111693" duration="22031000" />
+      <workItem from="1605513224667" duration="34643000" />
+      <workItem from="1605682935237" duration="600000" />
+      <workItem from="1605714183846" duration="3844000" />
+      <workItem from="1606011272119" duration="1217000" />
+      <workItem from="1606013091589" duration="1507000" />
+      <workItem from="1606014941898" duration="1597000" />
+      <workItem from="1606017116163" duration="1114000" />
+      <workItem from="1606178325524" duration="1363000" />
+      <workItem from="1606180454181" duration="1782000" />
+      <workItem from="1606182273352" duration="1712000" />
+      <workItem from="1606184085874" duration="1082000" />
+      <workItem from="1606281773875" duration="1783000" />
+      <workItem from="1606283588425" duration="1278000" />
+      <workItem from="1606286922731" duration="1857000" />
+      <workItem from="1606288839229" duration="1488000" />
+      <workItem from="1606290705229" duration="968000" />
+      <workItem from="1606294138039" duration="1955000" />
+      <workItem from="1606306105234" duration="1782000" />
+      <workItem from="1606307922485" duration="1781000" />
+      <workItem from="1606309740419" duration="1925000" />
+      <workItem from="1606312044792" duration="1787000" />
+      <workItem from="1606313863210" duration="1119000" />
+      <workItem from="1606370573759" duration="1909000" />
+      <workItem from="1606372517774" duration="1780000" />
+      <workItem from="1606374383541" duration="2293000" />
+      <workItem from="1606376866389" duration="685000" />
+      <workItem from="1606396624658" duration="603000" />
+      <workItem from="1606453743787" duration="25707000" />
+      <workItem from="1606711391271" duration="16063000" />
+      <workItem from="1606795624985" duration="12853000" />
+      <workItem from="1606837051007" duration="128000" />
     </task>
     <servers />
   </component>

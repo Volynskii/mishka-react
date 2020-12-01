@@ -3,7 +3,7 @@ import cn from "classnames";
 import {addItemToBasket} from "../../../../store/basket-items/actions";
 import {useDispatch} from "react-redux";
 
-const CatalogItem = ({catalogItems, basketItems}) => {
+const CatalogItem = ({catalogItem, basketItem}) => {
     const dispatch = useDispatch();
 
     const {src,
@@ -15,27 +15,27 @@ const CatalogItem = ({catalogItems, basketItems}) => {
         itemParamTwoValue,
         itemParamTwoUnit,
         itemPrice
-    } = catalogItems;
+    } = catalogItem;
 
-const isActiveItem = () => {
-    const basketIds = basketItems.map((item) => {
+const onIsActiveItem = () => {
+    const basketItemId = basketItem.map((item) => {
         return item.id
     });
-    const catalogIds = catalogItems.id;
+    const catalogItemId = catalogItem.id;
 
-
-    return basketIds.includes(catalogIds);
+    return basketItemId.includes(catalogItemId);
 };
 
 
     const onClick = () => {
-        dispatch(addItemToBasket(catalogItems))
+        dispatch(addItemToBasket(catalogItem))
     };
 
     return (
         <li className="catalog__list__item">
-
-            <img src={src} alt="картинка товара" className="catalog__list__item__image"/>
+            <div className="catalog__list__item__image">
+            <img className="catalog__list__item__image-picture"  src={src} alt="картинка товара"/>
+            </div>
             <div className="catalog__list__item__wrapper">
                 <section className="catalog__list__item__param">
                     <div className="catalog__list__item__param__name">{itemName}</div>
@@ -46,7 +46,7 @@ const isActiveItem = () => {
                 <ul className="catalog__list__item__order">
                     <li className="catalog__list__item__order__price">{itemPrice} р</li>
                     <li onClick={onClick} className={cn(`catalog__list__item__order__basket`, {
-                        [`tabs__item--active`]: isActiveItem()
+                        [`tabs__item--active`]: onIsActiveItem()
                     })}/>
                 </ul>
             </div>

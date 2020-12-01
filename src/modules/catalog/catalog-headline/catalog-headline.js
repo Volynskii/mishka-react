@@ -6,18 +6,19 @@ export const CatalogHeadline = ({catalogItemsData,basketItemsData}) => {
 
     return (
         <article className="catalog">
-   <h5 className="catalog__headline">Каталог товаров</h5>
-
+            <div className="catalog__headline">Каталог товаров
+   {/*<h5>Каталог товаров</h5>*/}
+            </div>
 <ul className="catalog__list">
     {catalogItemsData.map((catalogItem, index) => {
         return (
 
-           <CatalogItem
-                key={catalogItemsData[index].id}
-               basketItems={basketItemsData}
-               catalogItems={catalogItem}
-           />
-        )
+            <CatalogItem
+        key={catalogItemsData[index].id}
+        basketItem={basketItemsData}
+        catalogItem={catalogItem}
+        />
+        );
     })}
 </ul>
         </article>

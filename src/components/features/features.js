@@ -26,18 +26,19 @@ export const Features = () => {
             </li>
 
         <li className="features__list__item">
-            <div className="features__list__item__picture--four"></div>
+            <div className="features__list__item__picture--four"/>
             <div>Поддержка отечественного производителя</div>
             </li>
 
+
         <li className="features__list__item">
-            <div className="features__list__item__picture--five"></div>
+            <div className="features__list__item__picture--five"/>
             <div>Увеличивает лайки
             на фотографиях</div>
             </li>
 
         <li className="features__list__item">
-            <div className="features__list__item__picture--six"></div>
+            <div className="features__list__item__picture--six"/>
             <div>Поставляется в
             подарочной упаковке</div>
             </li>

@@ -9,7 +9,8 @@
   align-items: center;
   position: absolute;
   top:90px;
-  width: 320px;
+  //width: 320px;
+  width: 350px;
   min-height: 400px;
   border: 2px solid #555555;
   z-index: 10;
@@ -38,21 +39,32 @@
 }
 
 .basket-popup__main {
-max-height: 250px;
-overflow: auto;
+max-height: 200px;
+overflow-x: hidden;
+  overflow-y: auto;
+  //border: 5px solid;
 }
 
 .basket-popup__main__wrapper {
+
   display: flex;
-  border: 1px solid blue;
-  width: 280px;
+  //border: 1px solid blue;
+  //width: 280px;
+  width: 300px;
   height: 200px;
+}
+
+.basket-popup__main__wrapper__item {
+  display: flex;
+  height: 200px;
+  margin-bottom: 20px;
+  border-top: 2px solid #0c0101;
 }
 
 .basket-popup__main__picture {
   background-position: center center;
   background-size: 120% 120%;
-  border: 1px solid;
+  //border: 1px solid;
   width: 50%;
   height: 200px;
 }
@@ -74,7 +86,7 @@ overflow: auto;
 }
 
 .basket-popup__table {
-  border:1px solid;
+ // border:1px solid;
   width: 100%;
   margin: 0;
   font-size: 17px;
@@ -92,10 +104,15 @@ overflow: auto;
 .remove-item-sign {
   min-width: 25px;
   min-height: 25px;
-  border: 1px solid;
+  border: 0;
   position: relative;
   left: 128px;
   bottom: 45px;
+  background-color: transparent;
+  background-image: url("../../../../images/header/mobile/menu-close.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
 }
 
 .basket-popup__footer {
@@ -104,11 +121,12 @@ overflow: auto;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100px;
-  border: 1px solid;
+  //border: 1px solid;
 }
 
 .basket-popup__price-block {
-  height: 70px;
+  margin-top: 20px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
 }

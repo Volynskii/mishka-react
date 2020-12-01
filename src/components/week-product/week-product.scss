@@ -1,16 +1,15 @@
 @import "../../utilities/variables";
 
 
-/*tablet-tablet-tablet */
-@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+/*mobile-mobile-mobile */
+@media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
     .week-product {
-        width: 670px;
+        width: 100%;
         display: flex;
-        justify-content: flex-start;
-        height: 730px;
-        border: 1px solid;
+        justify-content: center;
+        min-height: 730px;
+       // border: 1px solid;
         margin: 0;
-        margin-bottom: 40px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -19,14 +18,134 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 50%;
-        border: 1px solid;
+        align-items: center;
+        width: 100%;
+        min-height: 636px;
+    }
+    .week-product__picture {
+        display: none;
+    }
+
+    .week-product__description__image {
+        background: #f1f1f1 url("images/triple-set-desktop.png") no-repeat right;
+        background-size: contain;
+        width: 100%;
+        height: 316px;
+        margin-bottom: 30px;
+    }
+    .week-product__description__headline-block {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0;
+       // margin-left: 30px;
+        padding: 0;
+    }
+    .week-product__description__headline-block__name {
+        color: #63d1bb;
+        font-size: 17px;
+        line-height: 17px;
+        order: 1;
+    }
+    .week-product__description__headline-block__headline {
+        font-size: $headline-font-size-mobile;
+        line-height: 50px;
+        font-weight: bold;
+        order: 0;
+    }
+    .week-product__description__wrapper {
+        width: 260px;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        //border: 1px solid red;
+        margin-top: 30px;
+        margin-bottom: 36px;
+    }
+    .week-product__description__text {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .week-product__description__price {
+        width: 100%;
+        margin: 0;
+    }
+
+    .week-product__description__price__param {
+        width: 98px;
+    }
+    .week-product__description__order {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+        min-height: 106px;
+    }
+    .week-product__description__order__price {
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    .week-product__description__order__button {
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: bold;
+        height: 48px;
+        width: 100%;
+        border: 2px solid #444444;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        color: inherit;
+    }
+
+    .week-product__description__order__button:active {
+        opacity: 0.5;
+    }
+};
+
+
+
+/*tablet-tablet-tablet */
+@media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+    .week-product {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 730px;
+        //border: 1px solid;
+        margin: 0;
+        margin-bottom: 40px;
+        //margin-left: auto;
+        //margin-right: auto;
+    }
+    .week-product__description {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 43.5%;
+        //border: 1px solid;
         min-height: 636px;
     }
     .week-product__picture {
         background: #f1f1f1 url("images/triple-set-desktop.png") no-repeat right;
         background-size: contain;
-        width: 50%;
+        width: 43.5%;
         max-height: 556px;
         position: relative;
         top:170px
@@ -60,7 +179,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        border: 1px solid red;
+        //border: 1px solid red;
     }
     .week-product__description__text {
         margin: 0;
@@ -79,8 +198,8 @@
     }
     .week-product__description__order {
         margin: 0;
-        margin-left: auto;
-        margin-right: auto;
+        //margin-left: auto;
+        //margin-right: auto;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -96,6 +215,7 @@
         line-height: 24px;
     }
     .week-product__description__order__button {
+        color: $button-font-color;
         font-size: 17px;
         line-height: 20px;
         font-weight: bold;
@@ -123,10 +243,11 @@
 /*desktop-desktop-desktop */
 @media (min-width: $desktop-width-min) {
     .week-product {
+        overflow: hidden;
         width: 1050px;
         display: flex;
         min-height: 730px;
-        border: 1px solid;
+        //border: 1px solid;
         margin: 0;
         margin-bottom: 72px;
         margin-left: auto;
@@ -138,7 +259,7 @@
         flex-direction: column;
         justify-content: flex-start;
         width: 50%;
-        border: 1px solid;
+        //border: 1px solid;
         min-height: 636px;
     }
     .week-product__picture {
@@ -173,7 +294,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        border: 1px solid red;
+        //border: 1px solid red;
         margin-left: 87px;
     }
     .week-product__description__text {
@@ -207,6 +328,7 @@
         line-height: 24px;
     }
     .week-product__description__order__button {
+        color: $button-font-color;
         font-size: 17px;
         line-height: 20px;
         font-weight: bold;

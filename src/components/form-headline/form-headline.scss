@@ -9,15 +9,18 @@
     justify-content: space-between;
     align-items: center;
     width: 1050px;
-    height: 320px;
-    border: 1px solid;
+    height: 350px;
+    //border: 1px solid;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+    background-image: url("../../images/header/desktop/mishka-catalog-desktopv2.png");
+    background-repeat: no-repeat;
   }
   .form-introduction__headline {
     font-size: $headline-font-size-desktop;
     line-height: $headline-font-size-desktop;
+    margin-top: 45px;
   }
   .form-introduction__text {
     margin: 0;
@@ -37,15 +40,21 @@
     justify-content: space-between;
     width: 100%;
     height: 320px;
-    border: 1px solid;
+    //border: 1px solid;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+  //  background-image: url("../../../images/header/desktop/mishka-catalog-desktop.png");
+background-image: url("../../images/header/desktop/mishka-catalog-desktopv2.png");
+    background-size: 770px;
+    background-position: top;
+    background-repeat: no-repeat;
   }
   .form-introduction__headline {
     text-align: center;
     font-size: $headline-font-size-tablet;
     line-height: $headline-font-size-tablet;
+    margin-top: 25px;
   }
   .form-introduction__text {
     margin: 0;
@@ -65,7 +74,7 @@
     justify-content: space-between;
     width: 320px;
     height: 320px;
-    border: 1px solid;
+    //border: 1px solid;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
@@ -77,8 +86,8 @@
     height: 180px;
     width: 320px;
     background-color: #f1f1f1;
-    font-size: $headline-font-size-desktop;
-    line-height: $headline-font-size-desktop;
+    font-size: $headline-font-size-mobile;
+    line-height: $headline-font-size-mobile;
   }
   .form-introduction__text {
     margin: 0;

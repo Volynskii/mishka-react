@@ -2,6 +2,7 @@
 @import "utilities/variables";
 
 body {
+  //overflow: hidden;
   max-width: 1090px;
   min-width: $mobile-width-min;
   margin: 0 auto;
@@ -20,4 +21,8 @@ tr {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
 }

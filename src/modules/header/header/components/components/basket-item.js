@@ -25,6 +25,7 @@ export default function BasketItem({basketItem}) {
     return (
 <>
     <div className="basket-popup__main__wrapper">
+<div className="basket-popup__main__wrapper__item">
 
         <img alt="basket-popup__main__picture" src={src} className="basket-popup__main__picture"/>
         <div className="basket-popup__main__item-decription">
@@ -50,6 +51,8 @@ export default function BasketItem({basketItem}) {
             </table>
             <button onClick={onClick} className="remove-item-sign"/>
         </div>
+</div>
+
     </div>
 
 </>

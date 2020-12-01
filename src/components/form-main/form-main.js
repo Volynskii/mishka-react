@@ -10,11 +10,13 @@ export const FormMain = () => {
     return (
         <>
     <form>
+
 <FormType/>
 <FormColor/>
 <FormPersonalData/>
 <FormContactInformation/>
 <FormWishes/>
+
     </form>
             </>
     )

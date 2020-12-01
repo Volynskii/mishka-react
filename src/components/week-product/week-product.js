@@ -1,5 +1,7 @@
 import React,{Fragment} from "react";
 import './week-product.scss'
+import {Link} from "react-router-dom";
+
 
 export const WeekProduct = () => {
     return <Fragment>
@@ -30,10 +32,13 @@ export const WeekProduct = () => {
                         <td className="week-product__description__price__param-two">15 см</td>
                     </tr>
                     </tbody>
+
                 </table>
+                    <div className="week-product__description__image"/>
+                    {/*<section style={{border:"2px solid blue"}} className="week-product__picture"/>*/}
 <ul className="week-product__description__order">
     <li className="week-product__description__order__price">Цена: 990 руб.</li>
-    <li className="week-product__description__order__button">ЗАКАЗАТЬ</li>
+    <Link  to={`/catalog`} className="week-product__description__order__button">ЗАКАЗАТЬ</Link>
 </ul>
                 </div>
             </section>

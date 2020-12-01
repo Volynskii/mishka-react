@@ -16,7 +16,12 @@ const totalPrice = basketItems.reduce((currentTotal, item) => {
 }, 0);
 
     return (
-        <article onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={{display: display}} className="basket-popup">
+        <article
+            onMouseEnter={handleMouseEnter}
+            // onMouseLeave={handleMouseLeave}
+            style={{display: display}}
+            className="basket-popup">
+
             <section className="basket-popup__header">
                 <p className="basket-popup__header__text"/>
 
