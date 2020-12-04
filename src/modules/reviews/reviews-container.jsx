@@ -32,20 +32,20 @@ setComments(commentsData)
     };
 
     const [display,setDisplay] = useState("none");
-const openPopup = () => {
+const onOpenPopup = () => {
         setDisplay("flex");
     };
 
-    const closePopup = () => {
+    const onClosePopup = () => {
         setDisplay("none");
     };
 
     const [successPopupDisplay, setSuccessPopupDisplay] = useState("none")
 
-    const openSuccessPopup = () => {
+    const onOpenSuccessPopup = () => {
         setSuccessPopupDisplay("flex");
     };
-    const closeSuccessPopup = () => {
+    const onCloseSuccessPopup = () => {
         setSuccessPopupDisplay("none");
     };
     return (
@@ -55,18 +55,18 @@ const openPopup = () => {
         index={index}
         nextComment={nextComment}
         prevComment={prevComment}
-        openPopup={openPopup}
+        openPopup={onOpenPopup}
     />
     <FormReviews
     isOpened={display}
-    closePopup={closePopup}
-    openSuccessPopup={openSuccessPopup}
+    closePopup={onClosePopup}
+    openSuccessPopup={onOpenSuccessPopup}
     />
     <SuccessPopup
         className={'success-container'}
         textContent={'Ваш отзыв отправлен!'}
         successPopupDisplay={successPopupDisplay}
-        closeSuccessPopup={closeSuccessPopup}
+        closeSuccessPopup={onCloseSuccessPopup}
     />
             </>
     );

@@ -39,7 +39,7 @@ let timerIdTwo;
         }, 1000);
     };
 
-    const togglePopup = () => {
+    const handleTogglePopup = () => {
         clearTimeout(timerId);
         clearTimeout(timerIdTwo);
         if(display === "none") {
@@ -48,7 +48,7 @@ let timerIdTwo;
         setDisplay('none');
     };
 
-    const closePopup = () => {
+    const handleClosePopup = () => {
         clearTimeout(timerId);
         clearTimeout(timerIdTwo);
         setDisplay('none');
@@ -62,8 +62,8 @@ let timerIdTwo;
              handleMouseEnter={handleMouseEnter}
              handleMouseLeave={handleMouseLeave}
              basketItems={basketItems}
-             closePopup={closePopup}
-             openPopup={togglePopup}
+             closePopup={handleClosePopup}
+             openPopup={handleTogglePopup}
          />
         </>
     );

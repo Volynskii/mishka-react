@@ -35,7 +35,7 @@ const totalPrice = basketItems.reduce((currentTotal, item) => {
 
             </section>
             <section className="basket-popup__main">
-                {basketItems.map((basketItem, index) =>
+                {basketItems.map((basketItem) =>
                     <BasketItem
                         basketItem={basketItem}
                         key={basketItem.id}
