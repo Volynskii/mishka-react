@@ -3,9 +3,8 @@ import types from "../basket-items/types";
 import {modifyComment} from "../../helpers/modifyComment";
 
 const initialState = {
-    index: 0,
     comments : customerReviews,
-
+    
 };
 
 export const commentsReducer = (state = initialState,{type,payload}) => {

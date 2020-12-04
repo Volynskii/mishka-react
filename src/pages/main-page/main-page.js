@@ -7,7 +7,7 @@ import {ReviewsContainer} from "../../modules/reviews/reviews-container";
 import {OurContacts} from "../../components/our-contacts/our-contacts";
 
 
-export const Main = (props) => {
+export const Main = () => {
 
         return (
             <>

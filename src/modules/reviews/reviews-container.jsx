@@ -7,14 +7,13 @@ import SuccessPopup from "../../components/success-popup/success-popup";
 export const ReviewsContainer = () => {
 
     const commentsData = useSelector((state) => state.comments.comments);
-    const indexData = useSelector((state) => state.comments.index);
 
 
     const [comments, setComments] = useState(commentsData);
     useEffect(() => {
 setComments(commentsData)
     }, [commentsData]);
-         const [index, setIndex] = useState(indexData);
+         const [index, setIndex] = useState(0);
 
     const nextComment = () => {
         if(index === comments.length - 1) {
