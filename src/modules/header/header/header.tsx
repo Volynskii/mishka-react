@@ -4,7 +4,28 @@ import './header.scss';
 import BasketPopupBasketPopup from "./components/basket-popup";
 import cn from "classnames";
 
-export const Header = ({
+type Props = {
+display: string;
+isActiveBasket: boolean;
+    basketTextContent: string;
+    handleMouseEnter: () => void;
+    handleMouseLeave: () => void;
+    basketItems: { id: number;
+        src: string;
+        itemPrice: number;
+        itemName: string;
+        itemParamOneName: string;
+        itemParamOneValue: number;
+        itemParamOneUnit : string;
+        itemParamTwoValue: number;
+        itemParamTwoName: string;
+        itemParamTwoUnit: string;
+        itemQuantity: number;} [];
+    closePopup: () => void;
+    togglePopup: () => void;
+}
+
+export const Header: React.FC<Props> = ({
                            display,
                            isActiveBasket,
                            basketTextContent,
@@ -35,7 +56,7 @@ export const Header = ({
                     <NavLink to="/form" className="nav-container__item nav-form">Вязание на заказ</NavLink>
                 </ul>
 
-                <NavLink name="navigation" to="/" exact className="nav-container__item nav-main">
+                <NavLink  to="/" exact className="nav-container__item nav-main">
                     <button onClick={handleToggleMenu} className="nav-main--button"/></NavLink>
 
             </div>

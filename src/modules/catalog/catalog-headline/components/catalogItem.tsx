@@ -3,7 +3,33 @@ import cn from "classnames";
 import {addItemToBasket} from "../../../../store/basket-items/actions";
 import {useDispatch} from "react-redux";
 
-const CatalogItem = ({catalogItem, basketItem}) => {
+type Props = {
+    catalogItem: {
+        id: number;
+        src: string;
+        itemName: string;
+        itemParamOneName: string;
+        itemParamOneValue: string;
+        itemParamOneUnit: string;
+        itemParamTwoName: string;
+        itemParamTwoValue: string;
+        itemParamTwoUnit: string;
+        itemPrice: number;
+    };
+    basketItem: {
+        id: number;
+        src: string;
+        itemName: string;
+        itemParamOneName: string;
+        itemParamOneValue: string;
+        itemParamOneUnit: string;
+        itemParamTwoName: string;
+        itemParamTwoValue: string;
+        itemParamTwoUnit: string;
+        itemPrice: number; }[];
+}
+
+const CatalogItem: React.FC<Props> = ({catalogItem, basketItem}) => {
     const dispatch = useDispatch();
 
     const {
@@ -18,14 +44,15 @@ const CatalogItem = ({catalogItem, basketItem}) => {
         itemPrice
     } = catalogItem;
 
-const onIsActiveItem = () => {
-    const basketItemId = basketItem.map((item) => {
-        return item.id
-    });
-    const catalogItemId = catalogItem.id;
+    const onIsActiveItem = () => {
 
-    return basketItemId.includes(catalogItemId);
-};
+        const basketItemId = basketItem.map((item) => {
+            return item.id
+        });
+        const catalogItemId = catalogItem.id;
+
+        return basketItemId.includes(catalogItemId);
+    };
 
 
     const onClick = () => {
@@ -35,7 +62,7 @@ const onIsActiveItem = () => {
     return (
         <li className="catalog__list__item">
             <div className="catalog__list__item__image">
-            <img className="catalog__list__item__image-picture"  src={src} alt="картинка товара"/>
+                <img className="catalog__list__item__image-picture"  src={src} alt="картинка товара"/>
             </div>
             <div className="catalog__list__item__wrapper">
                 <section className="catalog__list__item__param">

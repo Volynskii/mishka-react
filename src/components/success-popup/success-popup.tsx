@@ -1,11 +1,18 @@
-import React, { useEffect } from "react";
- import "./success-popup.scss";
+import React, {useEffect} from "react";
+import "./success-popup.scss";
 import cx from "classnames";
 
+type Props = {
+    className: string;
+    title: null | string;
+    successPopupDisplay:string;
+    closeSuccessPopup: () => void;
+    textContent: string;
+};
 
-const SuccessPopup = ({ className, title,  successPopupDisplay ,closeSuccessPopup, textContent }) => {
+const SuccessPopup: React.FC<Props> = ({ className, title,  successPopupDisplay ,closeSuccessPopup, textContent }) => {
     useEffect(() => {
-        const onEscKeyDown = (evt) => {
+        const onEscKeyDown = (evt: any) => {
             if (evt.key === `Escape`) {
                 closeSuccessPopup();
             }
@@ -14,7 +21,7 @@ const SuccessPopup = ({ className, title,  successPopupDisplay ,closeSuccessPopu
         return () => document.removeEventListener(`keydown`, onEscKeyDown);
     }, [closeSuccessPopup]);
 
-    const onConfirmClick = (evt) => {
+    const onConfirmClick = (evt: any) => {
         evt.stopPropagation();
         if (evt.target === evt.currentTarget) {
             closeSuccessPopup();

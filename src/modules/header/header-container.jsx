@@ -1,71 +1,54 @@
-import React, {useState, useEffect} from "react";
-import {useSelector} from "react-redux";
-import {Header} from "./header/header";
-
-export const HeaderContainer = () => {
-
-    const [display,setDisplay] = useState('flex');
-
-    const basketItems = useSelector((state) => state.basketItems.basketItems);
-    const totalQuantity = basketItems.reduce((currentTotal, item) => {
-        return item.itemQuantity + currentTotal
+"use strict";
+exports.__esModule = true;
+exports.HeaderContainer = void 0;
+var react_1 = require("react");
+var react_redux_1 = require("react-redux");
+var header_1 = require("./header/header");
+var HeaderContainer = function () {
+    var _a = react_1.useState('flex'), display = _a[0], setDisplay = _a[1];
+    var basketItems = react_redux_1.useSelector(function (state) { return state.basketItems.basketItems; });
+    var totalQuantity = basketItems.reduce(function (currentTotal, item) {
+        return item.itemQuantity + currentTotal;
     }, 0);
-
-    const isActiveBasket = basketItems.length >= 1;
-
-    const isMoreThenOneItem =  totalQuantity > 1 ? 'товара' : 'товар';
-
-    const basketTextContent = isActiveBasket ? totalQuantity  +  isMoreThenOneItem : 'пока пуста';
-    let timerId;
-let timerIdTwo;
-
-    useEffect(() => {
-        return () => clearTimeout(timerId);
+    var isActiveBasket = basketItems.length >= 1;
+    var isMoreThenOneItem = totalQuantity > 1 ? 'товара' : 'товар';
+    var basketTextContent = isActiveBasket ? totalQuantity + isMoreThenOneItem : 'пока пуста';
+    var timerId;
+    var timerIdTwo;
+    react_1.useEffect(function () {
+        return function () { return clearTimeout(timerId); };
     }, [timerId]);
-    useEffect(() => {
-        return () => clearTimeout(timerIdTwo);
+    react_1.useEffect(function () {
+        return function () { return clearTimeout(timerIdTwo); };
     }, [timerIdTwo]);
-    const handleMouseEnter = () => {
+    var handleMouseEnter = function () {
         clearTimeout(timerIdTwo);
-        timerId = setTimeout(() => {
+        timerId = setTimeout(function () {
             setDisplay('flex');
         }, 500);
     };
-
-    const handleMouseLeave = () => {
+    var handleMouseLeave = function () {
         clearTimeout(timerId);
-        timerIdTwo = setTimeout(() => {
+        timerIdTwo = setTimeout(function () {
             setDisplay('none');
         }, 1000);
     };
-
-    const handleTogglePopup = () => {
+    var handleTogglePopup = function () {
         clearTimeout(timerId);
         clearTimeout(timerIdTwo);
-        if(display === "none") {
+        if (display === "none") {
             setDisplay('flex');
-        } else
-        setDisplay('none');
+        }
+        else
+            setDisplay('none');
     };
-
-    const handleClosePopup = () => {
+    var handleClosePopup = function () {
         clearTimeout(timerId);
         clearTimeout(timerIdTwo);
         setDisplay('none');
     };
-    return (
-        <>
-         <Header
-             display={display}
-             isActiveBasket={isActiveBasket}
-             basketTextContent={basketTextContent}
-             handleMouseEnter={handleMouseEnter}
-             handleMouseLeave={handleMouseLeave}
-             basketItems={basketItems}
-             closePopup={handleClosePopup}
-             openPopup={handleTogglePopup}
-         />
-        </>
-    );
-
+    return (<>
+            <header_1.Header display={display} isActiveBasket={isActiveBasket} basketTextContent={basketTextContent} handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave} basketItems={basketItems} closePopup={handleClosePopup} togglePopup={handleTogglePopup}/>
+        </>);
 };
+exports.HeaderContainer = HeaderContainer;

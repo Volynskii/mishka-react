@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main-page/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main-page/main-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/comments/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/comments/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/basket-items/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +62,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../../../[Udemy] [Владилен Минин] React JS с Нуля до Профи. Полное руководство/9. Практика. Формы/5.1 09-05/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -68,6 +85,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.eject" />
       </list>
     </recent_temporary>
@@ -184,6 +202,16 @@
       <workItem from="1606837051007" duration="128000" />
       <workItem from="1606837241659" duration="642000" />
       <workItem from="1607095990838" duration="1277000" />
+      <workItem from="1607155207174" duration="4280000" />
+      <workItem from="1607162072996" duration="7450000" />
+      <workItem from="1607235780409" duration="22515000" />
+      <workItem from="1607317461899" duration="16520000" />
+      <workItem from="1607402217435" duration="2311000" />
+      <workItem from="1608293807355" duration="4265000" />
+      <workItem from="1608374804708" duration="5443000" />
+      <workItem from="1608468268494" duration="10119000" />
+      <workItem from="1608530852974" duration="24198000" />
+      <workItem from="1608614342248" duration="11749000" />
     </task>
     <servers />
   </component>
@@ -193,6 +221,8 @@
       <list>
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+        <option value="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.jsx" />
+        <option value="$PROJECT_DIR$/src/modules/header/header-container.jsx" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
       </list>
     </option>
