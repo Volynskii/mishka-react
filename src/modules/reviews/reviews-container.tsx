@@ -36,7 +36,9 @@ export const ReviewsContainer = () => {
         setDisplay("flex");
     };
 
-    const onClosePopup = () => {
+    const onClosePopup = (evt: any) => {
+       // const form = document.querySelector('.popup');
+       //  form.getElementById('myform').reset();
         setDisplay("none");
     };
 

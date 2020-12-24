@@ -15,7 +15,6 @@ const initialState : {
 };
 
 export const commentsReducer = (state = initialState,{type,payload}: {type:string, payload: object}) => {
-
     switch (type) {
         case types.CREATE_REVIEW:
             return {

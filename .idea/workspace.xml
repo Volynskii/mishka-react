@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/basket-items/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/basket-items/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/modifyComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/modifyComment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/comments/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/comments/reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +207,9 @@
       <workItem from="1608374804708" duration="5443000" />
       <workItem from="1608468268494" duration="10119000" />
       <workItem from="1608530852974" duration="24198000" />
-      <workItem from="1608614342248" duration="11749000" />
+      <workItem from="1608614342248" duration="16812000" />
+      <workItem from="1608697351901" duration="19731000" />
+      <workItem from="1608787009574" duration="9254000" />
     </task>
     <servers />
   </component>

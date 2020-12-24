@@ -5,7 +5,7 @@ import {createReview} from "../../store/comments/actions";
 
 type Props = {
     isOpened: string;
-    closePopup: () => void;
+    closePopup: (evt:any) => void;
     openSuccessPopup: ()=> void;
 };
 export const FormReviews: React.FC<Props> = ({isOpened, closePopup,openSuccessPopup}) => {
@@ -19,14 +19,14 @@ export const FormReviews: React.FC<Props> = ({isOpened, closePopup,openSuccessPo
         evt.currentTarget.reset();
         const review = { name, email, comment };
         dispatch(createReview(review));
-        closePopup();
+        closePopup(evt);
         openSuccessPopup();
     };
 
     useEffect(() => {
         const onEscKeyDown = (evt: any) => {
             if (evt.key === `Escape`) {
-                closePopup();
+                closePopup(evt);
             }
         };
         document.addEventListener(`keydown`, onEscKeyDown);
@@ -36,7 +36,7 @@ export const FormReviews: React.FC<Props> = ({isOpened, closePopup,openSuccessPo
     const onConfirmClick = (evt: any) => {
         evt.stopPropagation();
         if (evt.target === evt.currentTarget) {
-            closePopup();
+            closePopup(evt);
         }
     };
 

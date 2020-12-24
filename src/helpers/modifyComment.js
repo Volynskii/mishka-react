@@ -5,7 +5,7 @@ export const modifyComment = (state, payload) => {
             ...state,
             {
                 comment: payload.comment,
-                author: payload.name,
+                author: payload.userName,
                 email: payload.email
             }
         ]
