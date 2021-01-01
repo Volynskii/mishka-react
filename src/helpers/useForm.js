@@ -17,7 +17,6 @@ setValues({
     ...values,
     [name]: value
 });
-    console.log(values)
 };
 
 const handleSubmit = (evt) => {

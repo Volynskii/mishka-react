@@ -44,7 +44,7 @@ const CatalogItem: React.FC<Props> = ({catalogItem, basketItem}) => {
         itemPrice
     } = catalogItem;
 
-    const onIsActiveItem = () => {
+    const onIsActiveItem: () => boolean = () => {
 
         const basketItemId = basketItem.map((item) => {
             return item.id
@@ -55,7 +55,7 @@ const CatalogItem: React.FC<Props> = ({catalogItem, basketItem}) => {
     };
 
 
-    const onClick = () => {
+    const onClick: () => void = () => {
         dispatch(addItemToBasket(catalogItem))
     };
 

@@ -4,7 +4,7 @@ import './header.scss';
 import BasketPopupBasketPopup from "./components/basket-popup";
 import cn from "classnames";
 
-type Props = {
+type headerContainerProps = {
 display: string;
 isActiveBasket: boolean;
     basketTextContent: string;
@@ -25,7 +25,7 @@ isActiveBasket: boolean;
     togglePopup: () => void;
 }
 
-export const Header: React.FC<Props> = ({
+export const Header: React.FC<headerContainerProps> = ({
                            display,
                            isActiveBasket,
                            basketTextContent,
@@ -37,9 +37,9 @@ export const Header: React.FC<Props> = ({
 
                        }) => {
 
-    const [menuDisplay, setMenuDisplay] = useState('flex');
+    const [menuDisplay, setMenuDisplay] = useState<string>('flex');
 
-    const handleToggleMenu = () => {
+    const handleToggleMenu: () => void = () => {
         if (menuDisplay === "none") {
             setMenuDisplay('flex');
         } else

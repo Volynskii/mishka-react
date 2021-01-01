@@ -8,15 +8,13 @@ import validate from "./validate-info"
 export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
 
     const { handleChange, values, handleSubmit, errors } = useForm(validate);
-    
+
     const dispatch = useDispatch();
 
     const onSubmit =  (evt) => {
          handleSubmit(evt);
-
          const errorsAmount = Object.keys(errors).length;
         const eachInputHasValues = Object.keys(values).every((k) => values[k]);
-
          if (!errorsAmount && eachInputHasValues) {
              let review = values;
              dispatch(createReview(review));

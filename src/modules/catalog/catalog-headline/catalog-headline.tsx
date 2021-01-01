@@ -2,7 +2,7 @@ import './catalog-headline.scss';
 import React from "react";
 import CatalogItem from "./components/catalogItem";
 
-type Props = {
+type catalogContainerProps = {
     catalogItemsData: {
         id: number;
         src: string;
@@ -31,7 +31,7 @@ type Props = {
 
 }
 
-export const CatalogHeadline: React.FC<Props> = ({catalogItemsData,basketItemsData}) => {
+export const CatalogHeadline: React.FC<catalogContainerProps> = ({catalogItemsData,basketItemsData}) => {
 
     return (
         <article className="catalog">

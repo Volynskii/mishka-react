@@ -5,7 +5,7 @@ import {rootReducer} from "../../store/reducer";
 
 export const HeaderContainer = () => {
 
-    const [display,setDisplay] = useState('flex');
+    const [display,setDisplay] = useState<string>('flex');
 
     const basketItems = useSelector((state: rootReducer) => state.basketItems.basketItems);
     const totalQuantity = basketItems.reduce((currentTotal: number, item: {itemQuantity: number}) => {
@@ -33,14 +33,14 @@ export const HeaderContainer = () => {
         }, 500);
     };
 
-    const handleMouseLeave = () => {
+    const handleMouseLeave: () => void = () => {
         clearTimeout(timerId);
         timerIdTwo = setTimeout(() => {
             setDisplay('none');
         }, 1000);
     };
 
-    const handleTogglePopup = () => {
+    const handleTogglePopup: () => void = () => {
         clearTimeout(timerId);
         clearTimeout(timerIdTwo);
         if(display === "none") {
@@ -49,7 +49,7 @@ export const HeaderContainer = () => {
             setDisplay('none');
     };
 
-    const handleClosePopup = () => {
+    const handleClosePopup: () => void = () => {
         clearTimeout(timerId);
         clearTimeout(timerIdTwo);
         setDisplay('none');

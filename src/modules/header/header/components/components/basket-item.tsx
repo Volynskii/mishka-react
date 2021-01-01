@@ -35,7 +35,7 @@ export const BasketItem: React.FC<Props> = ({basketItem}) =>  {
     } = basketItem;
 
     const dispatch = useDispatch();
-    const onClick = () => {
+    const onClick: () => void = () => {
         dispatch(removeItemFromBasket(id))
     };
     return (

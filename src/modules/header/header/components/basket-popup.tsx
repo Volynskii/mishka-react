@@ -3,7 +3,7 @@ import React from "react";
 
 import BasketItem from './components/basket-item'
 
-type Props = {
+type headerProps= {
     basketItems: {
         id: number;
         src: string;
@@ -23,7 +23,7 @@ type Props = {
     closePopup:() => void;
 }
 
-export  const BasketPopup : React.FC<Props> = ({
+export  const BasketPopup : React.FC<headerProps> = ({
                                         basketItems,
                                         display,
                                         handleMouseEnter,

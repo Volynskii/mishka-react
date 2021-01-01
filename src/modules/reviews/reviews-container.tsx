@@ -9,14 +9,18 @@ export const ReviewsContainer = () => {
 
     const commentsData = useSelector((state: rootReducer) => state.comments.comments);
 
-
+type commentsProps = {
+    comment: string;
+    author: string;
+    email: string;
+};
     const [comments, setComments] = useState(commentsData);
     useEffect(() => {
         setComments(commentsData)
     }, [commentsData]);
     const [index, setIndex] = useState(0);
 
-    const nextComment = () => {
+    const nextComment: () => void = () => {
         if(index === comments.length - 1) {
             return;
         }
@@ -24,30 +28,28 @@ export const ReviewsContainer = () => {
 
     };
 
-    const prevComment = () => {
+    const prevComment: () => void = () => {
         if(index === 0) {
             return;
         }
         setIndex(index - 1);
     };
 
-    const [display,setDisplay] = useState("none");
-    const onOpenPopup = () => {
+    const [display,setDisplay] = useState<string>("none");
+    const onOpenPopup: () => void = () => {
         setDisplay("flex");
     };
 
-    const onClosePopup = (evt: any) => {
-       // const form = document.querySelector('.popup');
-       //  form.getElementById('myform').reset();
+    const onClosePopup: () => void = () => {
         setDisplay("none");
     };
 
-    const [successPopupDisplay, setSuccessPopupDisplay] = useState("none");
+    const [successPopupDisplay, setSuccessPopupDisplay] = useState<string>("none");
 
-    const onOpenSuccessPopup = () => {
+    const onOpenSuccessPopup: () => void = () => {
         setSuccessPopupDisplay("flex");
     };
-    const onCloseSuccessPopup = () => {
+    const onCloseSuccessPopup: () => void = () => {
         setSuccessPopupDisplay("none");
     };
     return (

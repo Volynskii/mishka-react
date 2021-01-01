@@ -3,12 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/modifyComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/modifyComment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/validate-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/validate-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/useForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/comments/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/comments/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +40,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\Антон\Desktop\mishka\mishka\mishka-react-master\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,9 +85,31 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test:coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.test:coverage" />
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.eject" />
       </list>
@@ -209,7 +238,16 @@
       <workItem from="1608530852974" duration="24198000" />
       <workItem from="1608614342248" duration="16812000" />
       <workItem from="1608697351901" duration="19731000" />
-      <workItem from="1608787009574" duration="9254000" />
+      <workItem from="1608787009574" duration="16186000" />
+      <workItem from="1608968366825" duration="7738000" />
+      <workItem from="1609157048758" duration="4740000" />
+      <workItem from="1609218234136" duration="13032000" />
+      <workItem from="1609310928861" duration="8260000" />
+      <workItem from="1609336225658" duration="3133000" />
+      <workItem from="1609495562273" duration="2226000" />
+      <workItem from="1609509338225" duration="544000" />
+      <workItem from="1609509898250" duration="91000" />
+      <workItem from="1609510070625" duration="248000" />
     </task>
     <servers />
   </component>
@@ -221,6 +259,12 @@
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
         <option value="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.jsx" />
         <option value="$PROJECT_DIR$/src/modules/header/header-container.jsx" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
       </list>
     </option>
