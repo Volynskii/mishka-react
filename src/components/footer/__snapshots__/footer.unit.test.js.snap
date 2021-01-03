@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render Footer Component 1`] = `
+<article
+  className="footer"
+>
+  <section
+    className="footer__wrapper"
+  >
+    <a
+      className="footer__wrapper__logotype"
+      href="#navigation"
+    >
+       
+    </a>
+    <div
+      className="footer__wrapper__social-media"
+    >
+      <a
+        className="footer__wrapper__social-media__instagram"
+        href="https://www.instagram.com/?hl=ru"
+      >
+         
+      </a>
+      <a
+        className="footer__wrapper__social-media__facebook"
+        href="https://www.facebook.com/"
+      >
+         
+      </a>
+      <a
+        className="footer__wrapper__social-media__twitter"
+        href="https://www.twitter.com/"
+      >
+         
+      </a>
+    </div>
+    <ul
+      className="copyright"
+    >
+      <li
+        className="copyright__name"
+      >
+        Разработано
+      </li>
+      <li
+        className="copyright__logotype"
+      >
+         
+      </li>
+    </ul>
+  </section>
+</article>
+`;
