@@ -4,8 +4,7 @@
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +29,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Users\Антон\Desktop\mishka\mishka\mishka-react-master\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\Антон\Desktop\mishka\mishka\react-create-app jest enzyme\enzyme-jest\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.test:coverage">
     <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../../../[Udemy] [Владилен Минин] React JS с Нуля до Профи. Полное руководство/9. Практика. Формы/5.1 09-05/package.json" />
       <command value="run" />
@@ -97,10 +96,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test:coverage" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.test (1)" />
-        <item itemvalue="npm.test:coverage" />
         <item itemvalue="npm.start (1)" />
       </list>
     </recent_temporary>
@@ -239,7 +238,10 @@
       <workItem from="1609509898250" duration="91000" />
       <workItem from="1609510070625" duration="248000" />
       <workItem from="1609585798458" duration="2580000" />
-      <workItem from="1609678457293" duration="401000" />
+      <workItem from="1609678457293" duration="2296000" />
+      <workItem from="1609767974035" duration="1206000" />
+      <workItem from="1609770333240" duration="353000" />
+      <workItem from="1609771530497" duration="761000" />
     </task>
     <servers />
   </component>
