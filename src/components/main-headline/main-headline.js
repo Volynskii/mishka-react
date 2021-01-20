@@ -22,3 +22,5 @@ export const MainHeadline = () => {
 </div>
     )
 };
+
+export default MainHeadline;
