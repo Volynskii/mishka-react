@@ -1,9 +1,9 @@
 import {useSelector} from "react-redux";
 import {rootReducer} from "../../store/reducer";
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 
 export const useReviews = () => {
-    
+
     const commentsData = useSelector((state: rootReducer) => state.comments.comments);
 
     const customerReviews = [
@@ -45,19 +45,19 @@ export const useReviews = () => {
 
     ];
 
-    const [comments, setComments] = React.useState<Array<any>>(commentsData);
+     const [comments, setComments] = React.useState(customerReviews.concat(commentsData));
 
     useEffect(() => {
-        setComments(commentsData)
-    }, [commentsData]);
+        setComments(comments)
+    }, [comments]);
 
     const [index, setIndex] = React.useState(0);
 
     const nextComment: () => void = () => {
 
-        // if (index === comments.length - 1) {
-        //     return;
-        // }
+        if (index === comments.length - 1) {
+            return;
+        }
         setIndex(index + 1);
 
     };
@@ -90,8 +90,6 @@ export const useReviews = () => {
     };
 
     return {
-        commentsData,
-        customerReviews,
         comments,
         index,
         nextComment,

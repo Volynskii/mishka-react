@@ -31,14 +31,14 @@ export const FormReviews: React.FC<reviewsContainerProps> = ({isOpened, closePop
         handleSubmit();
         const errorsAmount = Object.keys(errors).length;
         // @ts-ignore
-        const eachInputHasValues = Object.keys(values).every((k): Array<string> => values[k]);
-        if (!errorsAmount && eachInputHasValues) {
+        // const eachInputHasValues = Object.keys(values).every((k): Array<string> => values[k]);
+        // if (!errorsAmount && eachInputHasValues) {
             let review = values;
             dispatch(createReview(review));
             evt.currentTarget.reset();
             closePopup();
             openSuccessPopup();
-        }
+        // }
     };
 
 

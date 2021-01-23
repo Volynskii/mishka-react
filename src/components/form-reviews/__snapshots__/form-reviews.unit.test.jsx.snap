@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reviews work should render Reviews Component 1`] = `
+<div
+  className="popup"
+  onClick={[Function]}
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <form
+    className="form-popup"
+    onSubmit={[Function]}
+  >
+    <section
+      className="form-reviews__personal-data"
+    >
+      <div
+        className="form-reviews__personal-data__wrapper"
+      >
+        <ul
+          className="form-reviews__personal-data__list"
+        >
+          <li
+            className="form-reviews__personal-data__list__item"
+          >
+            <label
+              className="label-name"
+              htmlFor="name"
+            >
+              Имя: 
+            </label>
+            <input
+              id="name"
+              name="userName"
+              onChange={[Function]}
+              placeholder="Введите ваше имя*"
+              type="text"
+            />
+          </li>
+          <li
+            className="form-reviews__personal-data__list__item"
+          >
+            <label
+              className="label-family-name"
+              htmlFor="family-name"
+            >
+              email: 
+            </label>
+            <input
+              id="family-name"
+              name="email"
+              onChange={[Function]}
+              placeholder="Укажите фамилию*"
+              type="text"
+            />
+          </li>
+          <textarea
+            className="form-reviews__textarea"
+            id="patronymic"
+            name="comment"
+            onChange={[Function]}
+            placeholder="Пожалуйста, оставьте отзыв!"
+          />
+          <div
+            className="form-reviews__button-container"
+          >
+            <input
+              className="form-reviews__button-container__button"
+              type="submit"
+              value="Оставить отзыв"
+            />
+            <strong
+              className="form-reviews__button-container__span"
+            >
+              *Поля обязательны для заполнения
+            </strong>
+          </div>
+        </ul>
+      </div>
+    </section>
+  </form>
+</div>
+`;

@@ -1,11 +1,12 @@
 import React from "react";
 import {mount, shallow} from "enzyme";
 import {Provider} from "react-redux";
-import {Reviews} from "./reviews";
-import {useReviews} from "../useReviews";
+import {useReviews} from "../../modules/reviews/useReviews";
 import configureStore from "redux-mock-store";
 import {act} from "react-dom/test-utils";
 import renderer from "react-test-renderer";
+import {FormReviews} from "./form-reviews";
+import {Reviews} from "../../modules/reviews/reviews/reviews";
 import * as redux from "react-redux";
 
 let comments = [
@@ -57,6 +58,7 @@ const store = mockStore(initialState);
 
 let results;
 const renderHook = (hook) => {
+
     function HookWrapper() {
         results = hook();
         return null;
@@ -72,49 +74,35 @@ const renderHook = (hook) => {
 renderHook(useReviews)
 
 const initialProps = {
-    comments:results.comments,
-    index: results.index,
-    nextComment: results.nextComment,
-    prevComment: results.prevComment
+    isOpened:results.isOpened,
+    closePopup: results.onClosePopup,
+    openSuccessPopup: results.onOpenSuccessPopup,
+
 };
 
 const container = mount(
     <Provider store={store}>
-    <Reviews {...initialProps}  />
+        <FormReviews {...initialProps}/>
     </Provider>
-    );
+);
 
 const useDispatchSpy = jest.spyOn(redux, 'useDispatch');
 const mockDispatchFn = jest.fn()
 useDispatchSpy.mockReturnValue(mockDispatchFn);
-
 describe('Reviews work', () => {
 
     it('should render Reviews Component', ()=> {
-        const dom = <Reviews {...initialProps} />;
+        const submitButton = container.find('#name');
+
+        const dom = <FormReviews isOpened={results.display} closePopup={results.onClosePopup}
+                                 openSuccessPopup={results.openSuccessPopup} />;
         const component = renderer.create(dom);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+        // const dom = <FormReviews {...initialProps} />;
+        // const component = renderer.create(dom);
+        // const tree = component.toJSON();
+        // expect(tree).toMatchSnapshot();
     });
-
-    it('nextComment function and prevComment function work', () => {
-        act(() => {
-             results.nextComment();
-        });
-        expect(results.index).toEqual(1)
-
-        act(() => {
-           results.prevComment();
-        });
-        expect(results.index).toEqual(0)
-
-    });
-
-    it('reviews contain comment, author name, email' , () => {
- expect(container.find('.reviews__comment').text()).toBe(comments[0].comment);
- expect(container.find('.reviews__author__name').text()).toBe(comments[0].author);
- expect(container.find('.reviews__author__email').text()).toBe(comments[0].email);
-
-    })
 
 });
