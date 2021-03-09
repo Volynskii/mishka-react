@@ -36,7 +36,7 @@ export const CatalogHeadline: React.FC<catalogContainerProps> = ({catalogItemsDa
     return (
         <article className="catalog">
             <div className="catalog__headline">Каталог товаров
-                <h5>Каталог товаров</h5>
+
             </div>
             <ul className="catalog__list">
                 {catalogItemsData.map((catalogItem: {

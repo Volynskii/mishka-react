@@ -39,7 +39,7 @@ export  const BasketPopup : React.FC<headerProps> = ({
     return (
         <article
             onMouseEnter={handleMouseEnter}
-            // onMouseLeave={handleMouseLeave}
+            onMouseLeave={handleMouseLeave}
             style={{display: display}}
             className="basket-popup">
 

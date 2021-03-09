@@ -38,19 +38,28 @@ export default function MyMap () {
                    zoom={17}
                    center={center}
                    options={options}
-                   onClick={(event) => {
-                       setMarkers((current) => [
-                           ...current,
-                           {
-                               lat: event.latLng.lat(),
-                               lng: event.latLng.lng(),
-                               time: new Date(),
-                           },
-                       ]);
-                   }}
+                   // onClick={(event) => {
+                   //     setMarkers((current) => [
+                   //         ...current,
+                   //         {
+                   //             lat: event.latLng.lat(),
+                   //             lng: event.latLng.lng(),
+                   //             time: new Date(),
+                   //         },
+                   //     ]);
+                   // }}
+
+
         >
-            {markers.map(marker => <Marker key={marker.time.toISOString()}
-                                           position={{lat: marker.lat, lng: marker.lng}}/>)}
+            {/*{markers.map(marker => */}
+                    <Marker key={1}
+                                           position={{lat: center.lat, lng: center.lng}}
+                            icon={{
+                                url: `/map-pin.png`,
+                                scaledSize: new window.google.maps.Size(100,100)
+                            }}
+                    />
+                                           {/*)}*/}
         </GoogleMap>
     );
 }

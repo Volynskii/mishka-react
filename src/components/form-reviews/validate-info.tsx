@@ -1,9 +1,9 @@
 type formValuesProps = {
     values: {
-    userName: string,
-    email: string,
-    comment: string
-}
+        userName: string,
+        email: string,
+        comment: string
+    }
 
 };
 
@@ -14,7 +14,7 @@ export const validateInfo: React.FC<formValuesProps> = ({values}) => {
     if (!values.userName.trim()) {
         errors.userName = "Username required"
     }   else if ((values.userName.length < 5) || (values.userName.length > 15)) {
-        errors.userName = "&bull; Username must have 5-15 characters";
+        errors.userName = "Username must have 5-15 characters";
     } else if (illegalChars.test(values.userName)) {
         errors.userName = "&bull; Please enter valid Username. Use only numbers and alphabets";
     }
@@ -37,4 +37,4 @@ export const validateInfo: React.FC<formValuesProps> = ({values}) => {
 
     return errors;
 };
- export default validateInfo;
+export default validateInfo;

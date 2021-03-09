@@ -2,8 +2,6 @@ import React from "react";
 import Reviews from "./reviews/reviews";
 import {FormReviews} from "../../components/form-reviews/form-reviews";
 import SuccessPopup from "../../components/success-popup/success-popup";
-import {rootReducer} from "../../store/reducer";
-import { Provider } from 'react-redux'
 import {useReviews} from "./useReviews";
 
 export const ReviewsContainer = () => {

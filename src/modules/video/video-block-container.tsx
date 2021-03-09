@@ -1,25 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {VideoBlock} from "./video-block/video-block";
+import {useVideo} from "./useVideo";
 
 export const VideoBlockContainer = () => {
-    const [isPlaying, setPlaying] = useState(false);
-
-    let timerId: any;
-
-    useEffect(() => {
-        return () => clearTimeout(timerId);
-    }, [timerId]);
-
-    const handleMouseEnter: () => void = () => {
-        timerId = setTimeout(() => {
-            setPlaying(true);
-        }, 1000);
-    };
-
-    const handleMouseLeave: () => void = () => {
-        clearTimeout(timerId);
-        setPlaying(false);
-    };
+const {isPlaying, handleMouseEnter, handleMouseLeave} = useVideo();
     return (
         <VideoBlock
             width={`100%`}

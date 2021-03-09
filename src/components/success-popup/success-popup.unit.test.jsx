@@ -4,8 +4,8 @@ import {Provider} from "react-redux";
 import {useReviews} from "../../modules/reviews/useReviews";
 import configureStore from "redux-mock-store";
 import renderer from "react-test-renderer";
-import {FormReviews} from "./form-reviews";
 import * as redux from "react-redux";
+import SuccessPopup from "./success-popup";
 import {act} from "react-dom/test-utils";
 
 let comments = [
@@ -49,7 +49,6 @@ let comments = [
 
 const initialState = {
     comments: comments,
-    preventDefault: jest.fn(),
 };
 const mockStore = configureStore();
 const store = mockStore(initialState);
@@ -72,40 +71,39 @@ const renderHook = (hook) => {
 renderHook(useReviews)
 
 const initialProps = {
-    isOpened:results.display,
-    closePopup: results.onClosePopup,
-    openSuccessPopup: results.onOpenSuccessPopup,
+    className: 'success-container',
+    textContent:'Ваш отзыв отправлен!',
+    successPopupDisplay:results.successPopupDisplay,
+    closeSuccessPopup:results.onCloseSuccessPopup,
+    title:null
 
 };
 
 const container = mount(
     <Provider store={store}>
-        <FormReviews {...initialProps}
+        <SuccessPopup {...initialProps}
         />
     </Provider>
 );
 
-const useDispatchSpy = jest.spyOn(redux, 'useDispatch');
-const mockDispatchFn = jest.fn()
-useDispatchSpy.mockReturnValue(mockDispatchFn);
-describe('Reviews work', () => {
+describe('SuccessPopup works', () => {
 
-    it('should render FormReviews Component', ()=> {
-        const dom = <FormReviews {...initialProps} />;
+    it('should render SuccessPopup Component', ()=> {
+        const dom = container;
         const component = renderer.create(dom);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
 
-    it('FormReviews can be opened and closed', () => {
-        expect(results.display).toBe('none')
+    it('SuccessPopup can be opened and closed', ()=> {
         act(() => {
-            results.onOpenPopup()
+           results.onOpenSuccessPopup()
         });
-        expect(results.display).toEqual('flex')
+        expect(results.successPopupDisplay).toBe('flex')
         act(() => {
-            results.onClosePopup()
+            results.onCloseSuccessPopup()
         });
-        expect(results.display).toEqual('none')
+        expect(initialProps.successPopupDisplay).toBe('none')
     });
+
 });

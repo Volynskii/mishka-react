@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`СatalogItem works should render СatalogItem Component 1`] = `
+<li
+  className="catalog__list__item"
+>
+  <div
+    className="catalog__list__item__image"
+  >
+    <img
+      alt="картинка товара"
+      className="catalog__list__item__image-picture"
+    />
+  </div>
+  <div
+    className="catalog__list__item__wrapper"
+  >
+    <section
+      className="catalog__list__item__param"
+    >
+      <div
+        className="catalog__list__item__param__name"
+      />
+      <div
+        className="catalog__list__item__param__description"
+      >
+         
+        , 
+         
+         
+      </div>
+    </section>
+    <ul
+      className="catalog__list__item__order"
+    >
+      <li
+        className="catalog__list__item__order__price"
+      >
+         р
+      </li>
+      <li
+        className="catalog__list__item__order__basket"
+        onClick={[Function]}
+      />
+    </ul>
+  </div>
+</li>
+`;

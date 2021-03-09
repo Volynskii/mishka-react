@@ -1,12 +1,11 @@
-import React from "react";
+import React, {useRef} from "react";
 import {mount} from "enzyme";
 import {Provider} from "react-redux";
-import {useReviews} from "../../modules/reviews/useReviews";
 import configureStore from "redux-mock-store";
-import renderer from "react-test-renderer";
-import {FormReviews} from "./form-reviews";
+import renderer, {act} from "react-test-renderer";
 import * as redux from "react-redux";
-import {act} from "react-dom/test-utils";
+import {useVideo} from "../useVideo";
+import {VideoBlock} from "./video-block.tsx";
 
 let comments = [
     {
@@ -48,8 +47,7 @@ let comments = [
 ];
 
 const initialState = {
-    comments: comments,
-    preventDefault: jest.fn(),
+comments:comments,
 };
 const mockStore = configureStore();
 const store = mockStore(initialState);
@@ -68,44 +66,51 @@ const renderHook = (hook) => {
     );
     return results;
 };
+// const video = jest.fn();
+// const useRefSpy = jest.spyOn(React, 'useRef').mockReturnValueOnce({ current: { video } });
 
-renderHook(useReviews)
+renderHook(useVideo)
+
+// const useDispatchSpy = jest.spyOn(React, 'useRef');
+// const mockDispatchFn = jest.fn()
+// useDispatchSpy.mockReturnValue(mockDispatchFn);
 
 const initialProps = {
-    isOpened:results.display,
-    closePopup: results.onClosePopup,
-    openSuccessPopup: results.onOpenSuccessPopup,
+    width:`100%`,
+height:'100%',
+src:null,
+poster: null,
+isPlaying:results.isPlaying,
+onMouseEnter:results.handleMouseEnter,
+onMouseLeave:results.handleMouseLeave
 
 };
 
 const container = mount(
     <Provider store={store}>
-        <FormReviews {...initialProps}
+        <VideoBlock {...initialProps}
         />
     </Provider>
 );
 
-const useDispatchSpy = jest.spyOn(redux, 'useDispatch');
-const mockDispatchFn = jest.fn()
-useDispatchSpy.mockReturnValue(mockDispatchFn);
-describe('Reviews work', () => {
+describe('VideoBlock works', () => {
 
-    it('should render FormReviews Component', ()=> {
-        const dom = <FormReviews {...initialProps} />;
+    it('should render VideoBlock Component', ()=> {
+        const dom = container;
         const component = renderer.create(dom);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
     });
 
-    it('FormReviews can be opened and closed', () => {
-        expect(results.display).toBe('none')
-        act(() => {
-            results.onOpenPopup()
-        });
-        expect(results.display).toEqual('flex')
-        act(() => {
-            results.onClosePopup()
-        });
-        expect(results.display).toEqual('none')
-    });
+    // it('VideoBlock props work', ()=> {
+    //     expect(results.isPlaying).toBe(false)
+    //     act(() => {
+    //         results.handleMouseEnter();
+    //     });
+    //     expect(results.isPlaying).toBe(false)
+    //     act(() => {
+    //         results.handleMouseLeave();
+    //     });
+    //     expect(results.isPlaying).toBe(false)
+    // });
 });

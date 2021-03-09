@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SuccessPopup works should render SuccessPopup Component 1`] = `
+<div
+  className="popup"
+  onClick={[Function]}
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+>
+  <div
+    className="success__container success-container"
+  >
+    <div
+      className="popup__block"
+    />
+    <div
+      className="popup__dialog"
+    >
+      Ваш отзыв отправлен!
+    </div>
+    <button
+      className="popup__button btn"
+      onClick={[Function]}
+    >
+      ОК
+    </button>
+  </div>
+</div>
+`;

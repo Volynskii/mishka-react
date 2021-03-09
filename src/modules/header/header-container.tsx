@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { useSelector} from "react-redux";
-import {Header} from "./header/header";
+import Header from "./header/header";
 import {rootReducer} from "../../store/reducer";
 
 export const HeaderContainer = () => {
@@ -37,7 +37,7 @@ export const HeaderContainer = () => {
         clearTimeout(timerId);
         timerIdTwo = setTimeout(() => {
             setDisplay('none');
-        }, 1000);
+        }, 500);
     };
 
     const handleTogglePopup: () => void = () => {

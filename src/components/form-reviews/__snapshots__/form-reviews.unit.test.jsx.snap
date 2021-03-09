@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Reviews work should render Reviews Component 1`] = `
+exports[`Reviews work should render FormReviews Component 1`] = `
 <div
   className="popup"
   onClick={[Function]}
@@ -45,12 +45,12 @@ exports[`Reviews work should render Reviews Component 1`] = `
           >
             <label
               className="label-family-name"
-              htmlFor="family-name"
+              htmlFor="email"
             >
               email: 
             </label>
             <input
-              id="family-name"
+              id="email"
               name="email"
               onChange={[Function]}
               placeholder="Укажите фамилию*"

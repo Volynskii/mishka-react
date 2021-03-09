@@ -57,7 +57,11 @@ export const Header: React.FC<headerContainerProps> = ({
                 </ul>
 
                 <NavLink  to="/" exact className="nav-container__item nav-main">
-                    <button onClick={handleToggleMenu} className="nav-main--button"/></NavLink>
+                    <button onClick={handleToggleMenu}
+                            className={cn(`nav-main--button`, {
+                                [`nav-main--button-open`]: menuDisplay === 'flex'
+                            })}
+                    /></NavLink>
 
             </div>
 
@@ -95,3 +99,4 @@ export const Header: React.FC<headerContainerProps> = ({
         </div>
     </div>;
 };
+export default Header;

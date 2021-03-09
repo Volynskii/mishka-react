@@ -1,6 +1,6 @@
 import {useSelector} from "react-redux";
 import {rootReducer} from "../../store/reducer";
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 
 export const useReviews = () => {
 
@@ -21,6 +21,7 @@ export const useReviews = () => {
             author: 'Анастасия Красильникова',
             email: '@misssssiskras'
         },
+
         {
             comment: 'Я молодой парень и мои мои' +
                 ' фотографии обычно не набирали' +

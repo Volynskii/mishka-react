@@ -1,31 +1,29 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 const useForm = (validate) => {
 
-   const [values, setValues] = useState({
-       userName: '',
-       email: '',
-       comment: ''
-   });
+    const [values, setValues] = useState({
+        userName: '',
+        email: '',
+        comment: ''
+    });
     const [errors,setErrors] = useState({});
-    const [isSubmitting, setIsSubmitting] = useState(false);
 
-const handleChange = e => {
+    const handleChange = e => {
 
-    const {name, value} = e.target;
-setValues({
-    ...values,
-    [name]: value
-});
-};
+        const {name, value} = e.target;
+        setValues({
+            ...values,
+            [name]: value
+        });
+    };
 
-const handleSubmit = (evt) => {
-    evt.preventDefault();
-  setErrors(validate(values));
-setIsSubmitting(true);
-};
+    const handleSubmit = (evt) => {
+        evt.preventDefault();
+        setErrors(validate({values}));
+    };
 
-return { handleChange, values, errors, handleSubmit }
+    return { handleChange, values, errors, handleSubmit }
 
 
 

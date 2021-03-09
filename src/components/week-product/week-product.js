@@ -1,7 +1,5 @@
 import React from "react";
-import './week-product.scss'
-import {Link} from "react-router-dom";
-
+import './week-product.scss';
 
 export const WeekProduct = () => {
 

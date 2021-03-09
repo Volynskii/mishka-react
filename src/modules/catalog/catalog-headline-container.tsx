@@ -1,12 +1,10 @@
 import React from "react";
-import {useSelector} from "react-redux";
 import {CatalogHeadline} from "./catalog-headline/catalog-headline";
-import {rootReducer} from "../../store/reducer";
+import {useCatalogHeadline} from "./useCatalogHeadline";
 
 export const CatalogHeadlineContainer = () => {
 
-    const catalogItems = useSelector((state: rootReducer) => state.basketItems.catalogItems);
-    const basketItems = useSelector((state: rootReducer) => state.basketItems.basketItems);
+    const {catalogItems,basketItems} = useCatalogHeadline();
 
     return (
         <>

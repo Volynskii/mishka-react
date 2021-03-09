@@ -1,7 +1,5 @@
 import './video-block.scss';
-import React, {useState, useRef, useEffect} from "react";
-import { Link } from "react-router-dom";
-
+import React from "react";
 
 type videoBlockContainerProps = {
 src: string;
@@ -13,14 +11,20 @@ width: string;
 height: string;
 }
 
-export const VideoBlock: React.FC<videoBlockContainerProps> = ({src,poster,isPlaying, onMouseEnter, onMouseLeave, width,
-                                                               height}) => {
+export const VideoBlock: React.FC<videoBlockContainerProps> = ({
+         src,
+         poster,
+         isPlaying,
+         onMouseEnter,
+         onMouseLeave,
+         width,
+         height}) => {
 
-    const videoRef = useRef(null);
+    const videoRef = React.useRef(null);
 
-    const [isLoading, setLoading] = useState(true);
+    const [isLoading, setLoading] = React.useState(true);
 
-    useEffect(() => {
+    React.useEffect(() => {
         const { current: video } : { current:any } = videoRef;
         video.oncanplaythrough = () => {
             setLoading(false);
@@ -31,7 +35,7 @@ export const VideoBlock: React.FC<videoBlockContainerProps> = ({src,poster,isPla
         };
     }, []);
 
-    useEffect(() => {
+    React.useEffect(() => {
         const { current: video }: {current: any} = videoRef;
         if (isLoading) {
             return;
@@ -56,8 +60,6 @@ export const VideoBlock: React.FC<videoBlockContainerProps> = ({src,poster,isPla
     poster={poster}
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}
-
-
     />
 
     <section className="video-block__order">
@@ -70,7 +72,7 @@ export const VideoBlock: React.FC<videoBlockContainerProps> = ({src,poster,isPla
     <p className="video-block__order__text">По просьбам наших любимых фолловеров
     мы сняли для вас подробное видео о
     том, как появляются наши товары.</p>
-    <Link  to={`/form`} className="video-block__order__button">СДЕЛАТЬ ЗАКАЗ</Link>
+    <a  href={`/form`} className="video-block__order__button">СДЕЛАТЬ ЗАКАЗ</a>
     </div>
     </section>
     </article>

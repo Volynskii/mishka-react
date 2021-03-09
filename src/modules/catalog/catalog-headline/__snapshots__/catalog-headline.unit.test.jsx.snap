@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoBlock works should render VideoBlock Component 1`] = `
+<article
+  className="catalog"
+>
+  <div
+    className="catalog__headline"
+  >
+    Каталог товаров
+    <h5>
+      Каталог товаров
+    </h5>
+  </div>
+  <ul
+    className="catalog__list"
+  >
+    <li
+      className="catalog__list__item"
+    >
+      <div
+        className="catalog__list__item__image"
+      >
+        <img
+          alt="картинка товара"
+          className="catalog__list__item__image-picture"
+          src="./images/catalog/catalog-item-1.png"
+        />
+      </div>
+      <div
+        className="catalog__list__item__wrapper"
+      >
+        <section
+          className="catalog__list__item__param"
+        >
+          <div
+            className="catalog__list__item__param__name"
+          >
+            Зайчик-попрыгайчик
+          </div>
+          <div
+            className="catalog__list__item__param__description"
+          >
+            рост
+             
+            30
+            см
+            , 
+            вес
+             
+            200
+             
+            г
+          </div>
+        </section>
+        <ul
+          className="catalog__list__item__order"
+        >
+          <li
+            className="catalog__list__item__order__price"
+          >
+            1200
+             р
+          </li>
+          <li
+            className="catalog__list__item__order__basket tabs__item--active"
+            onClick={[Function]}
+          />
+        </ul>
+      </div>
+    </li>
+    <li
+      className="catalog__list__item"
+    >
+      <div
+        className="catalog__list__item__image"
+      >
+        <img
+          alt="картинка товара"
+          className="catalog__list__item__image-picture"
+          src="./images/catalog/catalog-item-2.png"
+        />
+      </div>
+      <div
+        className="catalog__list__item__wrapper"
+      >
+        <section
+          className="catalog__list__item__param"
+        >
+          <div
+            className="catalog__list__item__param__name"
+          >
+            Корзинка для белья
+          </div>
+          <div
+            className="catalog__list__item__param__description"
+          >
+            Диаметр
+             
+            15
+            см
+            , 
+            высота
+             
+            10
+             
+            см
+          </div>
+        </section>
+        <ul
+          className="catalog__list__item__order"
+        >
+          <li
+            className="catalog__list__item__order__price"
+          >
+            690
+             р
+          </li>
+          <li
+            className="catalog__list__item__order__basket tabs__item--active"
+            onClick={[Function]}
+          />
+        </ul>
+      </div>
+    </li>
+    <li
+      className="catalog__list__item"
+    >
+      <div
+        className="catalog__list__item__image"
+      >
+        <img
+          alt="картинка товара"
+          className="catalog__list__item__image-picture"
+          src="./images/catalog/catalog-item-3.png"
+        />
+      </div>
+      <div
+        className="catalog__list__item__wrapper"
+      >
+        <section
+          className="catalog__list__item__param"
+        >
+          <div
+            className="catalog__list__item__param__name"
+          >
+            Большая корзинка для игрушек
+          </div>
+          <div
+            className="catalog__list__item__param__description"
+          >
+            Диаметр
+             
+            30
+            см
+            , 
+            высота
+             
+            30
+             
+            см
+          </div>
+        </section>
+        <ul
+          className="catalog__list__item__order"
+        >
+          <li
+            className="catalog__list__item__order__price"
+          >
+            1500
+             р
+          </li>
+          <li
+            className="catalog__list__item__order__basket tabs__item--active"
+            onClick={[Function]}
+          />
+        </ul>
+      </div>
+    </li>
+  </ul>
+</article>
+`;

@@ -121,6 +121,9 @@ text-align: left;
   .catalog__list__item__order__basket:active {
     background-image: url("../../../images/header/desktop/cart-active.png");
   }
+  .tabs__item--active {
+    background-image: url("../../../images/header/desktop/cart-hover.png");
+  }
 };
 
 /*tablet-tablet-tablet */
@@ -236,6 +239,9 @@ text-align: left;
   .catalog__list__item__order__basket:active {
     background-image: url("../../../images/header/desktop/cart-active.png");
   }
+  .tabs__item--active {
+    background-image: url("../../../images/header/desktop/cart-hover.png");
+  }
 };
 
 
@@ -318,19 +324,20 @@ text-align: left;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 320px;
+
+    width: 316px;
     height: 76px;
   }
   .catalog__list__item__order__price {
     font-size: 17px;
     font-weight: bold;
+    margin-left: 30px;
   }
   .catalog__list__item__order__basket {
     height: 18px;
     width: 22px;
     background-image: url("../../../images/header/desktop/cart.png");
+    margin-right: 30px;
   }
   .catalog__list__item__order__basket:hover {
     background-image: url("../../../images/header/desktop/cart-hover.png");

@@ -222,6 +222,7 @@
     }
 
     .container-two {
+
         order: 1;
         display: flex;
         flex-direction: row;
@@ -331,10 +332,11 @@
 
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
     .main-header {
-        //background-color: #e7e7e7;
-        //position: sticky;
-        //top: 0;
-        //z-index: 1;
+        //opacity: 0.5;
+        background-color: #fbfbfb;
+        position: sticky;
+        top: 0;
+        z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -373,39 +375,44 @@
     .nav-main {
         display: flex;
         width: 260px;
-        //border: 1px solid red;
         background-image: url("../../../images/header/mobile/mishka-logo-mobile.png");
         background-repeat: no-repeat;
-        background-position: center;
-        //margin-left: 30px;
-        //margin-right: 30px;
-        //padding-left: 30px;
-        //padding-right: 30px;
-
+        background-position:110px;
     }
 
     .nav-main--button {
+         border: 0;
+         width: 20px;
+         height: 20px;
+         background-image: url("../../../images/header/mobile/menu-close.png");
+         background-position: right;
+         background-repeat: no-repeat;
+         margin-left: auto;
+        outline: 0;
+     }
+
+    .nav-main--button-open {
         border: 0;
         width: 20px;
         height: 20px;
-        background-image: url("../../../images/header/mobile/menu-close.png");
+        background-image: url("../../../images/header/mobile/menu-open.png");
         background-position: right;
         background-repeat: no-repeat;
         margin-left: auto;
+        outline: 0;
+
 
     }
 
     .nav-container__item {
         height: 88px;
         width: 260px;
-        //border: 1px solid red;
         border-bottom: 3px solid #e7e7e7;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: $navigation-color;
-        padding-left: 45px;
-      //  padding-left: 23.7%;
+        padding-left: 100px;
     }
 
     .nav-container__item:active {
@@ -419,14 +426,14 @@
     }
 
     .helper-container__basket {
-        width: 320px;
+        width: 260px;
         height: 88px;
         border-bottom: 3px solid #e7e7e7;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         color: $navigation-color;
-        padding-left: 23.7%;
+        padding-left: 75px;
         background: url("../../../images/header/desktop/cart.png");
         background-repeat: no-repeat;
         background-position: 32px center;
@@ -447,13 +454,13 @@
     }
 
     .helper-container__search {
-        width: 320px;
+        width: 260px;
         height: 88px;
         border-bottom: 3px solid #e7e7e7;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding-left: 23.7%;
+        padding-left: 75px;
         color: $navigation-color;
         background-image: url("../header/../../../images/header/desktop/search-sign.png");
         background-repeat: no-repeat;
