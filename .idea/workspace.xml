@@ -3,39 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Link.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Link.unit.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/__snapshots__/Link.unit.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/__snapshots__/form-reviews.unit.test.jsx.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/__snapshots__/form-reviews.unit.test.jsx.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.unit.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.unit.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/validate-info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/validate-info.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/google-map/google-map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/google-map/google-map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-product/week-product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/useForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/useForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline-container.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/components/basket-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reviews/useReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/useReviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/sample/sample.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/sample/sample.unit.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block-container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -301,6 +269,7 @@
       <workItem from="1611761701831" duration="3765000" />
       <workItem from="1614955300242" duration="5227000" />
       <workItem from="1615292785355" duration="14563000" />
+      <workItem from="1616057745330" duration="611000" />
     </task>
     <servers />
   </component>

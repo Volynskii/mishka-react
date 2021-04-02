@@ -20,7 +20,7 @@ export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
         const errorsAmount = Object.keys(errors).length;
         const eachInputHasValues = Object.keys(values).every((k) => values[k]);
 
-        if (!errorsAmount && eachInputHasValues) {
+        if (errorsAmount && eachInputHasValues) {
             let review = values;
             dispatch(createReview(review));
             evt.currentTarget.reset();

@@ -29,7 +29,7 @@ export default function MyMap () {
        libraries
     });
 
-    const [markers, setMarkers] = React.useState([]);
+    
 
     if (loadError) return "Error loading maps";
     if (!isLoaded) return "Loading Maps"
