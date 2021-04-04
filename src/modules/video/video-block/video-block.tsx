@@ -1,5 +1,6 @@
 import './video-block.scss';
 import React from "react";
+import {VideoPlayer} from "./components/video-player";
 
 type videoBlockContainerProps = {
 src: string;
@@ -20,47 +21,50 @@ export const VideoBlock: React.FC<videoBlockContainerProps> = ({
          width,
          height}) => {
 
-    const videoRef = React.useRef(null);
+    // const videoRef = React.useRef(null);
+    //
+    // const [isLoading, setLoading] = React.useState(true);
+    //
+    // React.useEffect(() => {
+    //     const { current: video } : { current:any } = videoRef;
+    //     video.oncanplaythrough = () => {
+    //         setLoading(false);
+    //     };
+    //
+    //     return () => {
+    //         video.oncanplaythrough = null;
+    //     };
+    // }, []);
 
-    const [isLoading, setLoading] = React.useState(true);
-
-    React.useEffect(() => {
-        const { current: video } : { current:any } = videoRef;
-        video.oncanplaythrough = () => {
-            setLoading(false);
-        };
-
-        return () => {
-            video.oncanplaythrough = null;
-        };
-    }, []);
-
-    React.useEffect(() => {
-        const { current: video }: {current: any} = videoRef;
-        if (isLoading) {
-            return;
-        }
-
-        if (isPlaying) {
-            video.play();
-        } else {
-            video.load();
-        }
-    }, [isLoading,isPlaying]);
+    // React.useEffect(() => {
+    //     const { current: video }: {current: any} = videoRef;
+    //     if (isLoading) {
+    //         return;
+    //     }
+    //
+    //     if (isPlaying) {
+    //         video.play();
+    //     } else {
+    //         video.load();
+    //     }
+    // }, [isLoading,isPlaying]);
 
     return (
         <article className="video-block">
-        <video
-            className={"video-block__video"}
-    ref={videoRef}
-    muted={true}
-    width={width}
-    height={height}
-    src={src}
-    poster={poster}
-    onMouseEnter={onMouseEnter}
-    onMouseLeave={onMouseLeave}
-    />
+            <VideoPlayer
+                poster={poster}
+            />
+    {/*    <video*/}
+    {/*        className={"video-block__video"}*/}
+    {/*ref={videoRef}*/}
+    {/*muted={true}*/}
+    {/*width={width}*/}
+    {/*height={height}*/}
+    {/*src={src}*/}
+    {/*poster={poster}*/}
+    {/*onMouseEnter={onMouseEnter}*/}
+    {/*onMouseLeave={onMouseLeave}*/}
+    {/*/>*/}
 
     <section className="video-block__order">
     <div className="video-block__order__wrapper">

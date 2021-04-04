@@ -6,10 +6,20 @@ import {FormPersonalData} from "./components/form-personal-data/form-personal-da
 import {FormContactInformation} from "./components/form-contact-information/form-contact-information";
 import {FormWishes} from "./components/form-wishes/form-wishes";
 
+import { useHistory } from "react-router-dom";
+
 export const FormMain = () => {
+    let history = useHistory();
+
+    const onSubmit = (evt) => {
+        evt.preventDefault();
+        evt.currentTarget.reset();
+        history.push("/");
+        window.scrollTo(0, 0)
+    }
     return (
         <>
-    <form>
+    <form onSubmit={onSubmit}>
 
 <FormType/>
 <FormColor/>

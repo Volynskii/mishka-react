@@ -6,51 +6,11 @@ export const useReviews = () => {
 
     const commentsData = useSelector((state: rootReducer) => state.comments.comments);
 
-    const customerReviews = [
-        {
-            comment: 'Я молодая мама,' +
-                ' но всё равно фотографии' +
-                ' не набирали и близко такого ' +
-                'количества лайков, как у ' +
-                'популярных инстамамочек.' +
-                ' В отчаянии, я накупила ' +
-                'аксессуаров и игрушек в ' +
-                'Мишке, и мои фотографии ' +
-                'сразу стали более стильными,' +
-                ' а также набирают больше лайков!',
-            author: 'Анастасия Красильникова',
-            email: '@misssssiskras'
-        },
-
-        {
-            comment: 'Я молодой парень и мои мои' +
-                ' фотографии обычно не набирали' +
-                ' большого количества лайков, ' +
-                'но как только я купил игрушки ' +
-                'разных форматов цветов и форматов' +
-                ' количество лайков пошло в гору!' +
-                ' Я очень доволен! ',
-            author: 'Михаил Соколов!',
-            email: 'sokolov@gmail.com'
-        },
-        {
-            comment: 'Я очень доволен данными' +
-                ' товарами,товары имеют' +
-                ' чрезвычайно высокое качество,' +
-                ' ' +
-                'заказал себе, друзьям, бабушке,дедушке, папе и маме!',
-
-            author: 'Илья Перевалов!',
-            email: 'perevalov@gmail.com'
-        }
-
-    ];
-
-     const [comments, setComments] = React.useState(customerReviews.concat(commentsData));
+     const [comments, setComments] = React.useState(commentsData);
 
     useEffect(() => {
-        setComments(comments)
-    }, [comments]);
+        setComments(commentsData)
+    }, [commentsData]);
 
     const [index, setIndex] = React.useState(0);
 
