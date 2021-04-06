@@ -1,8 +1,8 @@
 # Mishka
 
-### [Live Site](https://wizardly-swartz-7574ec.netlify.app/)
+### [Live Site](https://elated-chandrasekhar-575b20.netlify.app/)
 
-![Cat-Energy](https://i.ibb.co/DwJxhGT/React-Mishka.png)
+![React-Mishka](https://i.ibb.co/DwJxhGT/React-Mishka.png)
 
 
 ## Introduction

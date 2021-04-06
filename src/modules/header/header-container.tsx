@@ -5,7 +5,7 @@ import {rootReducer} from "../../store/reducer";
 
 export const HeaderContainer = () => {
 
-    const [display,setDisplay] = useState<string>('flex');
+    const [display,setDisplay] = useState<string>('none');
 
     const basketItems = useSelector((state: rootReducer) => state.basketItems.basketItems);
     const totalQuantity = basketItems.reduce((currentTotal: number, item: {itemQuantity: number}) => {
