@@ -1,5 +1,6 @@
 import React from "react";
 import './week-product.scss';
+import {Link} from "react-router-dom";
 
 export const WeekProduct = () => {
 
@@ -38,7 +39,7 @@ export const WeekProduct = () => {
                         <div className="week-product__description__image"/>
                         <ul className="week-product__description__order">
                             <li className="week-product__description__order__price">Цена: 990 руб.</li>
-                            <a href={`/catalog`} className="week-product__description__order__button">ЗАКАЗАТЬ</a>
+                            <Link to="/catalog" className="week-product__description__order__button">ЗАКАЗАТЬ</Link>
                         </ul>
                     </div>
                 </section>

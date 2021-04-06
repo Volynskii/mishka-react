@@ -17,8 +17,8 @@ const App = () => {
   <Route path={'/form'} component={Form}/>
     <Route path={'/catalog'} component={Catalog}/>
 </Switch>
-      </BrowserRouter>
 <Footer/>
+      </BrowserRouter>
     </>
   );
 };

@@ -1,12 +1,9 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 
-export const  VideoPlayer = ({poster}) => {
+export const  VideoPlayer = () => {
 
     const opts = {
-        height: '390',
-        width: '730',
-        poster: poster,
         playerVars: {
             // https://developers.google.com/youtube/player_parameters
             autoplay: 2,
@@ -19,7 +16,8 @@ export const  VideoPlayer = ({poster}) => {
         }
 
     return (
-        <YouTube poster={poster} videoId="F6gnmChf7fM" opts={opts} onReady={onReady} />
+
+        <YouTube className={"video-block__video"}  videoId="F6gnmChf7fM" opts={opts} onReady={onReady} />
     )
     }
 

@@ -1,6 +1,7 @@
 import './video-block.scss';
 import React from "react";
 import {VideoPlayer} from "./components/video-player";
+import {Link} from "react-router-dom";
 
 type videoBlockContainerProps = {
 src: string;
@@ -21,50 +22,11 @@ export const VideoBlock: React.FC<videoBlockContainerProps> = ({
          width,
          height}) => {
 
-    // const videoRef = React.useRef(null);
-    //
-    // const [isLoading, setLoading] = React.useState(true);
-    //
-    // React.useEffect(() => {
-    //     const { current: video } : { current:any } = videoRef;
-    //     video.oncanplaythrough = () => {
-    //         setLoading(false);
-    //     };
-    //
-    //     return () => {
-    //         video.oncanplaythrough = null;
-    //     };
-    // }, []);
-
-    // React.useEffect(() => {
-    //     const { current: video }: {current: any} = videoRef;
-    //     if (isLoading) {
-    //         return;
-    //     }
-    //
-    //     if (isPlaying) {
-    //         video.play();
-    //     } else {
-    //         video.load();
-    //     }
-    // }, [isLoading,isPlaying]);
 
     return (
         <article className="video-block">
             <VideoPlayer
-                poster={poster}
             />
-    {/*    <video*/}
-    {/*        className={"video-block__video"}*/}
-    {/*ref={videoRef}*/}
-    {/*muted={true}*/}
-    {/*width={width}*/}
-    {/*height={height}*/}
-    {/*src={src}*/}
-    {/*poster={poster}*/}
-    {/*onMouseEnter={onMouseEnter}*/}
-    {/*onMouseLeave={onMouseLeave}*/}
-    {/*/>*/}
 
     <section className="video-block__order">
     <div className="video-block__order__wrapper">
@@ -76,7 +38,7 @@ export const VideoBlock: React.FC<videoBlockContainerProps> = ({
     <p className="video-block__order__text">По просьбам наших любимых фолловеров
     мы сняли для вас подробное видео о
     том, как появляются наши товары.</p>
-    <a  href={`/form`} className="video-block__order__button">СДЕЛАТЬ ЗАКАЗ</a>
+    <Link to={`/form`} className="video-block__order__button">СДЕЛАТЬ ЗАКАЗ</Link>
     </div>
     </section>
     </article>
