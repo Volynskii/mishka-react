@@ -9,10 +9,10 @@
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+justify-content: center;
     align-items: center;
     //border: 1px solid;
-    width: 460px;
+    width: 320px;
   }
   .video-block__video {
     width: 260px;
@@ -33,10 +33,10 @@
     align-items: center;
     width: 260px;
     min-height: 260px;
-   // margin-top: 50px;
-   // margin-right: 80px;
-   // margin-left: 80px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    //margin-right: 80px;
+    //margin-left: 80px;
+    //margin-bottom: 50px;
   }
   .video-block__order__headline-container {
     display: flex;

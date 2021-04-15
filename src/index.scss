@@ -17,6 +17,7 @@
 @import "utilities/variables";
 
 body {
+
  // min-width: $mobile-width-min;
   margin: 0 auto;
   padding: 0 auto;
@@ -38,4 +39,8 @@ code {
 img {
   max-height: 100%;
   max-width: 100%;
+}
+button {
+
+  outline: 0;
 }

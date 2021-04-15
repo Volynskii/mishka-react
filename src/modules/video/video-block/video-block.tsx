@@ -4,23 +4,11 @@ import {VideoPlayer} from "./components/video-player";
 import {Link} from "react-router-dom";
 
 type videoBlockContainerProps = {
-src: string;
-poster: string;
-isPlaying: boolean;
-onMouseEnter: () => void;
-onMouseLeave: () => void;
-width: string;
-height: string;
+
 }
 
 export const VideoBlock: React.FC<videoBlockContainerProps> = ({
-         src,
-         poster,
-         isPlaying,
-         onMouseEnter,
-         onMouseLeave,
-         width,
-         height}) => {
+         }) => {
 
 
     return (

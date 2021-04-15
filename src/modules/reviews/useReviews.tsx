@@ -17,17 +17,15 @@ export const useReviews = () => {
     const nextComment: () => void = () => {
 
         if (index === comments.length - 1) {
-            return;
-        }
-        setIndex(index + 1);
+            setIndex(0)
+        } else setIndex(index + 1);
 
     };
 
     const prevComment: () => void = () => {
         if (index === 0) {
-            return;
-        }
-        setIndex(index - 1);
+            setIndex(comments.length - 1)
+        } else setIndex(index - 1);
     };
 
     const [display, setDisplay] = React.useState<string>("none");

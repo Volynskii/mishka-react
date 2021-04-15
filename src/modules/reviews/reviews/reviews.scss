@@ -32,8 +32,6 @@
         //margin-top: 80px;
     }
     .reviews__headline {
-        //position: relative;
-        //bottom: 8px;
         order: 0;
         font-size: $headline-font-size-mobile;
         line-height: $headline-font-size-mobile;
@@ -42,6 +40,7 @@
        // margin-right: 185px;
         padding: 0;
         text-align: left;
+
     }
 
     .reviews__button {
@@ -70,9 +69,12 @@
         opacity: 0.5;
     }
     .reviews__comment {
-     //   text-align:justify;
+     display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        max-height: 910px;
+        min-height: 270px;
+        max-height: 270px;
         font-size: 15px;
         line-height: 30px;
         margin: 0;
@@ -85,9 +87,6 @@
         flex-direction: column;
         justify-content: space-between;
         height: 45px;
-        //position: absolute;
-        //left: 0;
-        //bottom: 10px;
         list-style-type: none;
         margin: 0;
         margin-bottom: 40px;
