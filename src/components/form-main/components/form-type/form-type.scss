@@ -203,7 +203,8 @@
 @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
   .form__type {
     display: flex;
-    width: 320px;
+    //width: 320px;
+    width: 100%;
     height: 175px;
     //border: 1px solid;
     margin-left: auto;
@@ -214,7 +215,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 260px;
+    align-items: flex-end;
+    width: 81.25%;
     height: 100%;
     //border: 1px solid green;
     margin: 0 auto;
@@ -225,16 +227,21 @@
 
   }
   .form__span {
-    width: 260px;
+    width: 100%;
     margin-bottom: 25px;
     color: $span-catalog-color;
     font-size: $basic-font-size-desktop;
     background-image: url("./images/Layer 3.png");
-    background-position: center right;
+    //background-color: #63d1bb;
+    background-size: 80% 1px;
+
+    background-position: right;
     background-repeat: no-repeat;
+    //height: 2px;
   }
   .form__type__list {
-    width: 260px;
+    //width: 260px;
+    width: 80%;
     height: 100px;
     margin: 0;
     padding: 0;

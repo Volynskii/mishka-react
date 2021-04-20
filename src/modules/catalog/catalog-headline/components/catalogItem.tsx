@@ -62,6 +62,14 @@ const CatalogItem: React.FC<Props> = ({catalogItem, basketItem}) => {
     return (
         <li className="catalog__list__item">
             <div className="catalog__list__item__image">
+                {/*<picture className="catalog__list__item__image-picture">*/}
+                {/*    <source type="image/png"   media="(min-width: 320px)"*/}
+                {/*            srcSet={''}/>*/}
+                {/*        <source type="image/webp" media="(min-width: 370px)"*/}
+                {/*                srcSet={''}/>*/}
+                {/*    <img className="catalog__list__item__image-picture"  src={src} alt="картинка товара"/>*/}
+
+                {/*</picture>*/}
                 <img className="catalog__list__item__image-picture"  src={src} alt="картинка товара"/>
             </div>
             <div className="catalog__list__item__wrapper">

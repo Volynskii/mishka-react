@@ -12,6 +12,7 @@ type Props = {
 
 const SuccessPopup: React.FC<Props> = ({ className, title,  successPopupDisplay ,closeSuccessPopup, textContent }) => {
     useEffect(() => {
+
         const onEscKeyDown = (evt: any) => {
             if (evt.key === `Escape`) {
                 closeSuccessPopup();
@@ -21,15 +22,16 @@ const SuccessPopup: React.FC<Props> = ({ className, title,  successPopupDisplay 
         return () => document.removeEventListener(`keydown`, onEscKeyDown);
     }, [closeSuccessPopup]);
 
-    const onConfirmClick = (evt: any) => {
-        evt.stopPropagation();
-        if (evt.target === evt.currentTarget) {
-            closeSuccessPopup();
-        }
-    };
+        const onConfirmClick = (evt: any) => {
+              evt.stopPropagation();
+            if (evt.target === evt.currentTarget) {
+                closeSuccessPopup();
+            }
+        };
 
     return (
         <div className="popup" style={{display:successPopupDisplay }} onClick={onConfirmClick}>
+
             <div className={cx(`success__container`, className)}>
                 <div className="popup__block">
                     {title && <h2 className="popup__title">{title}</h2>}

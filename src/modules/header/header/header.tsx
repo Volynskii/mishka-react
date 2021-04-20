@@ -39,7 +39,7 @@ export const Header: React.FC<headerContainerProps> = ({
 
                        }) => {
 
-    const [menuDisplay, setMenuDisplay] = useState<string>('flex');
+    const [menuDisplay, setMenuDisplay] = useState<string>('none');
 
     const handleToggleMenu: () => void = () => {
         // removeOnScroll()
@@ -50,29 +50,29 @@ export const Header: React.FC<headerContainerProps> = ({
     };
 
 
-        React.useEffect(() => {
-            function handleResize() {
-               // if(window.innerWidth > 770) {
-                   console.log('handleResize')
-                   // show header when viewport bigger then mobile then scroll to top
-                   setVisible(true);
-                   setMenuDisplay('flex');
-                   window.scrollTo(0, 0)
-               // }
-
-            }
-
-            window.addEventListener('resize', handleResize)
-
-            if(window.innerWidth > 770) {
-            console.log('RESIZED REMOVE')
-
-                return () => window.removeEventListener('resize', handleResize);
-            }
-
-
-
-    }, []);
+    //     React.useEffect(() => {
+    //         function handleResize() {
+    //            // if(window.innerWidth > 770) {
+    //                console.log('handleResize')
+    //                // show header when viewport bigger then mobile then scroll to top
+    //                setVisible(true);
+    //                setMenuDisplay('flex');
+    //                window.scrollTo(0, 0)
+    //            // }
+    //
+    //         }
+    //
+    //         window.addEventListener('resize', handleResize)
+    //
+    //         if(window.innerWidth > 770) {
+    //         console.log('RESIZED REMOVE')
+    //
+    //             return () => window.removeEventListener('resize', handleResize);
+    //         }
+    //
+    //
+    //
+    // }, []);
 
 
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -81,11 +81,12 @@ const [visible, setVisible] = useState(true);
     const handleScroll = debounce(() => {
 
         if(window.innerWidth > 320 && window.innerWidth < 770) {
+            console.log('scroll')
             setMenuDisplay('none');
             // find current scroll position
             const currentScrollPos = window.pageYOffset;
             // set state based on location info (explained in more detail below)
-            setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 170) || currentScrollPos < 30);
+            setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 170) || currentScrollPos < 60);
 
             // set state to new scroll position
             setPrevScrollPos(currentScrollPos);
@@ -108,18 +109,25 @@ const [visible, setVisible] = useState(true);
          >
 
         <div className="main-header__wrapper">
-            <button onClick={handleToggleMenu}
-                    className={cn(`nav-main--button`, {
-                        [`nav-main--button-open`]: menuDisplay === 'flex'
-                    })}
-            />
-            <div className="nav-container">
 
+            <div className="nav-container">
+                <button onClick={handleToggleMenu}
+                        className={cn(`nav-main--button`, {
+                            [`nav-main--button-open`]: menuDisplay === 'flex'
+                        })}
+                />
                 <ul className="nav-container container-two" style={{display: menuDisplay}} >
                     <NavLink  to="/catalog" className="nav-container__item nav-catalog">
-                        Каталог товаров</NavLink>
+                        <div className="text-container"><p className="text-container__text">
+                            Каталог товаров
+                        </p></div>
+                    </NavLink>
 
-                    <NavLink to="/form" className="nav-container__item nav-form">Вязание на заказ</NavLink>
+                    <NavLink to="/form" className="nav-container__item nav-form">
+                        <div className="text-container"><p className="text-container__text">
+                            Вязание на заказ
+                        </p></div>
+                        </NavLink>
                 </ul>
 
                 <NavLink  to="/" exact className="nav-container__item nav-main">
@@ -130,15 +138,25 @@ const [visible, setVisible] = useState(true);
 
 
             <div className="helper-container">
-                <div className="helper-container__search" style={{display: menuDisplay}}>Поиск по сайту</div>
+                <div className="helper-container__search" style={{display: menuDisplay}}>
+                    <div className="text-container text-search"><p className="text-container__text">
+                        Поиск по сайту
+                    </p></div>
+                    </div>
 
                 <div onClick={togglePopup}  onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
-                     className={cn(`helper-container__basket`,
-                         {
-                             [`helper-container__basket-active`]:
-                             isActiveBasket
-                         })}>Корзина:  &nbsp;
-                    {basketTextContent}</div>
+                     className="helper-container__basket"
+                >
+                    <div className={cn(`text-container text-basket`,
+                             {
+                                 [`text-container text-basket-active`]:
+                                 isActiveBasket
+                             })}
+                    >
+                        <p className="text-container__text">
+                        {`Корзина: ${basketTextContent}`}
+                    </p></div>
+                </div>
                 <BasketPopupBasketPopup
                     display={display}
                     basketItems={basketItems}

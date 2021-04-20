@@ -16,7 +16,7 @@ export const HeaderContainer = () => {
 
     const isMoreThenOneItem = totalQuantity > 1 ? 'товара' : 'товар';
 
-    const basketTextContent = isActiveBasket ? totalQuantity + isMoreThenOneItem : 'пока пуста';
+    const basketTextContent = isActiveBasket ? `${totalQuantity} ${isMoreThenOneItem}` : 'пока пуста';
     let timerId: any ;
     let timerIdTwo:  any;
 

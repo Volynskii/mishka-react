@@ -11,6 +11,7 @@ export const ReviewsContainer = () => {
         index,
         nextComment,
         prevComment,
+        showFirstComment,
         onOpenPopup,
         onClosePopup,
         display,
@@ -32,6 +33,7 @@ export const ReviewsContainer = () => {
                 isOpened={display}
                 closePopup={onClosePopup}
                 openSuccessPopup={onOpenSuccessPopup}
+                showFirstComment={showFirstComment}
             />
             <SuccessPopup
                 className={'success-container'}

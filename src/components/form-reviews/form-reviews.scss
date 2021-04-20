@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    width: 100%;
   }
 
   .popup {
@@ -27,23 +27,27 @@
 
 
   .popup__container {
+
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 100%;
     min-height: 550px;
     padding: 20px;
     border-radius: 5px;
     background-color: #f8f8f8;
     justify-content: space-between;
-    border: 1px solid #c1c1c1;
+    border: 1px solid red;
+    //border: 1px solid #c1c1c1;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   }
   .form-reviews__personal-data {
+    border-radius: 10px;
     background-color: #ffffff;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 320px;
+    width: 90%;
+    //width: 320px;
     min-height: 370px;
     border: 1px solid;
 
@@ -52,42 +56,53 @@
     font-weight: bold;
   }
   .form-reviews__personal-data__wrapper {
-    flex-grow: 1;
+    width: 100%;
     display: flex;
+    justify-content: center;
     min-height: 210px;
   }
   .form-reviews__personal-data__list {
-    width: 320px;
-    margin: 0;
 
+    width: 100%;
+    margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   .form-reviews__personal-data__list__item {
+
     font-size: 19px;
-    width: 320px;
+    //width: 320px;
+    width: 100%;
     min-height: 57px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
   }
 
   .label-review-name,
   .label-review-email,
   .label-review-patronymic {
+    min-width: 50px;
+    font-size: 16px;
     margin: 0;
-    margin-right: 26px;
+    margin-left: 20px;
   }
 
   input#review-name,
   input#review-email {
-    padding-left: 18px;
+    font-size: 16px;
+    padding: 0;
+    padding-left: 20px;
     transition: $transition;
     margin: 0;
-    flex-grow: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    width: 75%;
     height: 52px;
     border: 0;
     border-bottom: 2px solid #555555;
@@ -109,7 +124,6 @@
   }
   input#review-name:focus,
   input#review-email:focus {
-    flex-grow: 1;
     height: 52px;
     border: 0;
     outline: 0;
@@ -117,9 +131,10 @@
   }
 
   .form-reviews__textarea {
+    font-size: 16px;
     margin-top: 50px;
     height: 100px;
-    width: 320px;
+    width: 80%;
     padding: 0;
   }
   .form-reviews__textarea:placeholder-shown {
@@ -130,12 +145,15 @@
 
   .form-reviews__button-container {
     margin-top: 50px;
-    width: 320px;
+    //width: 320px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .form-reviews__button-container__button {
+    //margin-left: 20px;
+    border-radius: 5px;
     transition: $transition;
     background-color: transparent;
     height: 52px;
@@ -152,8 +170,9 @@
     opacity: 0.5;
   }
   .form-reviews__button-container__span {
+    //margin-right: 20px;
     width: 170px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     display: flex;
     justify-content: center;
@@ -201,6 +220,7 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   }
   .form-reviews__personal-data {
+    border-radius: 10px;
     background-color: #ffffff;
     display: flex;
     justify-content: flex-start;
@@ -358,6 +378,8 @@
   }
   .form-reviews__personal-data {
     background-color: #ffffff;
+    border-radius: 10px;
+    //border-radius: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -372,6 +394,7 @@
     font-weight: bold;
   }
   .form-reviews__personal-data__wrapper {
+    //border-radius: 50%;
     flex-grow: 1;
     display: flex;
     min-height: 210px;

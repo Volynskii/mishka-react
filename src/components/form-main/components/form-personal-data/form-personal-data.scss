@@ -230,12 +230,11 @@ input#email:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    width: 100%;
+    //width: 320px;
     height: 330px;
     //border: 1px solid;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 60px;
     margin-bottom: 10px;
     font-size: 19px;
@@ -248,16 +247,18 @@ input#email:focus {
     margin-bottom: 10px;
   }
   .form__personal-data__wrapper {
-    width: 260px;
+    width: 81.25%;
+    //width: 260px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
     margin: 0;
   }
   .form__personal-data__list {
-    width: 260px;
+    //width: 260px;
+    width: 100%;
     height: 80%;
     margin: 0;
     padding: 0;
@@ -285,13 +286,24 @@ input#email:focus {
   input#family-name,
   input#patronymic {
     font-size: 18px;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
     transition: $transition;
     margin: 0;
-    flex-grow: 1;
+    padding: 0;
+    width: 100%;
     height: 52px;
-    width: 260px;
     border: 0;
     border-bottom: 2px solid #555555;
+    background-color: transparent;
+    //font-size: 18px;
+    //transition: $transition;
+    //margin: 0;
+    //flex-grow: 1;
+    //height: 52px;
+    //width: 100%;
+    //border: 0;
+    //border-bottom: 2px solid #555555;
   }
 
   input#name:focus,

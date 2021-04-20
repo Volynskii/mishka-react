@@ -6,7 +6,7 @@ import useForm from "../../helpers/useForm";
 import validate from "./validate-info"
 
 
-export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
+export const FormReviews = ({isOpened, closePopup,openSuccessPopup,showFirstComment}) => {
 
     const { handleChange, values, handleSubmit, errors} = useForm(validate);
 
@@ -26,6 +26,7 @@ export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
             evt.currentTarget.reset();
             closePopup();
             openSuccessPopup();
+            showFirstComment();
         }
     };
 
@@ -56,19 +57,19 @@ export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
                             <ul className="form-reviews__personal-data__list">
 
                                 <li className="form-reviews__personal-data__list__item">
-                                    <label className="label-name" htmlFor="name">Имя: </label>
+                                    <label className="label-review-name" htmlFor="review-name">Имя: </label>
                                     <input
                                         name="userName"
                                         onChange={handleChange}
-                                        type="text" id="name" placeholder="Введите ваше имя*"/>
+                                        type="text" id="review-name" placeholder="Введите ваше имя*"/>
                                 </li>
                                 {errors.userName && <p className="error-message">{errors.userName}</p>}
                                 <li className="form-reviews__personal-data__list__item">
-                                    <label className="label-family-name" htmlFor="email">email: </label>
+                                    <label className="label-review-email" htmlFor="review-email">Email: </label>
                                     <input
                                         name="email"
                                         onChange={handleChange}
-                                        type="text" id="email" placeholder="Укажите фамилию*"/>
+                                        type="text" id="review-email" placeholder="Укажите фамилию*"/>
                                 </li>
                                 {errors.email && <p className="error-message">{errors.email}</p>}
                                 <textarea
@@ -80,7 +81,7 @@ export const FormReviews = ({isOpened, closePopup,openSuccessPopup}) => {
                                 <div className="form-reviews__button-container">
                                     <input type="submit" className="form-reviews__button-container__button"
                                            value="Оставить отзыв"/>
-                                    <strong className="form-reviews__button-container__span">*Поля обязательны для
+                                    <strong className="form-reviews__button-container__span">*Поля обязательны<br/> для
                                         заполнения</strong>
                                 </div>
 

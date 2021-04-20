@@ -28,6 +28,10 @@ export const useReviews = () => {
         } else setIndex(index - 1);
     };
 
+    const showFirstComment: () => void = () => {
+      setIndex(0);
+    };
+
     const [display, setDisplay] = React.useState<string>("none");
 
     const onOpenPopup: () => void = () => {
@@ -53,6 +57,7 @@ export const useReviews = () => {
         index,
         nextComment,
         prevComment,
+        showFirstComment,
         onOpenPopup,
         onClosePopup,
         display,

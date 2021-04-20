@@ -13,8 +13,10 @@ export const VideoBlock: React.FC<videoBlockContainerProps> = ({
 
     return (
         <article className="video-block">
+            <div className="video-block__video">
             <VideoPlayer
             />
+            </div>
 
     <section className="video-block__order">
     <div className="video-block__order__wrapper">

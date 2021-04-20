@@ -72,7 +72,9 @@ background-image: url("../../images/header/desktop/mishka-catalog-desktopv2.png"
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 320px;
+    align-items: center;
+    //width: 320px;
+    width: 81.25%;
     height: 320px;
     //border: 1px solid;
     margin-left: auto;
@@ -85,7 +87,8 @@ background-image: url("../../images/header/desktop/mishka-catalog-desktopv2.png"
     vertical-align: center;
     padding-top: 75px;
     height: 180px;
-    width: 320px;
+    //width: 320px;
+    width: 100%;
     background-color: #f1f1f1;
     font-size: $headline-font-size-mobile;
     line-height: $headline-font-size-mobile;
@@ -97,7 +100,8 @@ background-image: url("../../images/header/desktop/mishka-catalog-desktopv2.png"
     margin-right: auto;
     margin-bottom: 20px;
     padding: 0;
-    width: 260px;
+    //width: 260px;
+    width: 100%;
     font-size: $basic-font-size-mobile;
     line-height: 24px;
   }

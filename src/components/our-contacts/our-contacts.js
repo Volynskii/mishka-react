@@ -20,7 +20,7 @@ export const OurContacts = () => {
                             <td className="our-contacts__contacts__table__param-second">
                                 адрес:
                             </td>
-                            <td className="our-contacts__contacts__table__param-two">г. Санкт-Петербург,
+                            <td className="our-contacts__contacts__table__param-two address">г. Санкт-Петербург,
                                 ул. Большая Конюшенная,
                                 д. 19/8, офис 101
                             </td>

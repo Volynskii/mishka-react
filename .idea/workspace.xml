@@ -4,25 +4,37 @@
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/features/features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/features.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-headline/form-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-headline/form-headline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-main/form-main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/form-main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-headline/main-headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-product/week-product.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/reviews/useReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/useReviews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/video/video-block-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utilities/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilities/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/form-page/form-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/form-page/form-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -303,7 +315,12 @@
       <workItem from="1618307189483" duration="19219000" />
       <workItem from="1618411868542" duration="1520000" />
       <workItem from="1618414799824" duration="10783000" />
-      <workItem from="1618486955162" duration="739000" />
+      <workItem from="1618486955162" duration="19781000" />
+      <workItem from="1618564068554" duration="22197000" />
+      <workItem from="1618656148623" duration="11833000" />
+      <workItem from="1618752844732" duration="5911000" />
+      <workItem from="1618759489641" duration="1303000" />
+      <workItem from="1618845157809" duration="10427000" />
     </task>
     <servers />
   </component>

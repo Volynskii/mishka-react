@@ -10,13 +10,14 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 260px;
+        width: 100%;
         min-height: 550px;
         //border: 1px solid;
         margin: 0 auto ;
         background: url("../../images/main-headline/desktop/hero-desktop.png");
         background-position: center -50px;
         background-repeat: no-repeat;
+        //background-size: 100% 100%;
         background-size: cover;
         margin-top: 100px;
     }
@@ -26,7 +27,7 @@
         padding: 0;
         display: flex;
         justify-content: center;
-        width: 260px;
+        width: 320px;
         font-size: $headline-font-size-mobile;
         line-height: $headline-font-size-mobile;
         font-weight: bold;
@@ -58,12 +59,13 @@
         justify-content: flex-start;
         align-items: flex-start;
         list-style-type: none;
-        width: 230px;
+        //width: 230px;
+        width: 100%;
         height: 70px;
         margin: 0;
         padding: 0;
-        padding-left: 30px;
-        background: #63d1bb url("../../images/main-headline/desktop/left-button-green-desktop.png") no-repeat right;
+        background: #63d1bb url("../../images/main-headline/desktop/left-button-green-desktop.png") no-repeat;
+        background-position: right 11.25% center;
         transition: 500ms ease-in-out;
     }
 
@@ -78,6 +80,7 @@
     }
 
     .introduction-container__buttons-container__interior-decorations__name {
+        margin-left: 9.3%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -102,12 +105,12 @@
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        width: 230px;
+        width: 100%;
         height: 70px;
         margin: 0;
-        padding-left: 30px;
+        padding: 0;
         background-image:url("../../images/main-headline/desktop/right-button-green-desktop.png");
-        background-position: right;
+        background-position: right 8.4% center;
         background-repeat: no-repeat;
         background-color: #56c3b2;
         transition: 500ms ease-in-out;
@@ -124,6 +127,7 @@
     }
 
     .introduction-container__buttons-container__kids-toys__name {
+        margin-left: 9.3%;
         height: 58px;
         transition: 500ms ease-in-out;
     }
