@@ -8,7 +8,6 @@ import {FormWishes} from "./components/form-wishes/form-wishes";
 import SuccessPopup from "../success-popup/success-popup";
 import {useReviews} from "../../modules/reviews/useReviews";
 
-import { useHistory } from "react-router-dom";
 
 export const FormMain = () => {
 
@@ -18,16 +17,12 @@ export const FormMain = () => {
         onCloseSuccessPopup
     } = useReviews();
 
-    let history = useHistory();
 
     const onSubmit = (evt) => {
         evt.preventDefault();
         evt.currentTarget.reset();
         onOpenSuccessPopup()
-        // onCloseSuccessPopup()
-        // history.push("/");
-        // window.scrollTo(0, 0)
-    }
+    };
     return (
         <>
     <form onSubmit={onSubmit}>

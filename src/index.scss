@@ -18,7 +18,7 @@
 
 body {
 
- // min-width: $mobile-width-min;
+  min-width: $mobile-width-min;
   margin: 0 auto;
   padding: 0 auto;
   font-family: 'Open Sans', serif;
@@ -41,8 +41,5 @@ img {
   max-width: 100%;
 }
 button {
-
   outline: 0;
 }
-
-

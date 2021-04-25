@@ -3,38 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="9d6bbb3b-cc26-47c0-8ef5-2c3997e9ab7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/features/features.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/features/features.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-headline/form-headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-color/form-color.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-contact-information/form-contact-information.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-personal-data/form-personal-data.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-type/form-type.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/components/form-wishes/form-wishes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/form-main/form-main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-main/form-main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-reviews/form-reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-headline/main-headline.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-headline/main-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-headline/main-headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/our-contacts/our-contacts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/success-popup/success-popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/success-popup/success-popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/week-product/week-product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/week-product/week-product.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/catalog-headline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/catalog/catalog-headline/components/catalogItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/header/header-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/context.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/header/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/reviews/reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reviews/useReviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reviews/useReviews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/video/video-block/video-block.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/video/video-block/video-block.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/header/header/header.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/form-page/form-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/form-page/form-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main-page/main-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main-page/main-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../../../../WTW-HOOKS/react-what-to-watch-cf9e21d7ecd2cfaeaef8a98e311bca4aa86fe2c5/react-what-to-watch-cf9e21d7ecd2cfaeaef8a98e311bca4aa86fe2c5/package.json" />
       <command value="run" />
@@ -129,8 +111,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.start (2)" />
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.build (1)" />
@@ -321,6 +303,13 @@
       <workItem from="1618752844732" duration="5911000" />
       <workItem from="1618759489641" duration="1303000" />
       <workItem from="1618845157809" duration="10427000" />
+      <workItem from="1618911037148" duration="3186000" />
+      <workItem from="1618983802888" duration="5494000" />
+      <workItem from="1619054753494" duration="25118000" />
+      <workItem from="1619163805489" duration="22845000" />
+      <workItem from="1619232249584" duration="25921000" />
+      <workItem from="1619322868301" duration="15941000" />
+      <workItem from="1619346893146" duration="12101000" />
     </task>
     <servers />
   </component>
@@ -328,13 +317,11 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/modules/header/header/components/components/basket-item.jsx" />
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
-        <option value="$PROJECT_DIR$/src/modules/header/header-container.jsx" />
         <option value="$PROJECT_DIR$/src/components/reviews/reviews.unit.test.js" />
-        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
         <option value="$PROJECT_DIR$/src/components/form-reviews/form-reviews.jsx" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
       </list>
     </option>
   </component>
