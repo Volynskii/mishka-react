@@ -1,15 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import './main-headline.scss'
-import {useSelector} from "react-redux";
 
 export const MainHeadline = () => {
-    const headerHeight = useSelector((state) => state.headerHeight.headerHeight);
-    const isMobileWidth = window.innerWidth > 320 && window.innerWidth < 770;
-    console.log('isMobileWidth', isMobileWidth)
+
     return (
 <div className="main-page"
-       //  style={{marginTop: `${headerHeight}` + 53 + 'px'}}
-     //  style={isMobileWidth === true ? {marginTop: `${headerHeight}px`}: null}
+
 >
     <article className="introduction-container">
             <h1 className="introduction-container__headline">Милые штуки ручной работы для дома</h1>

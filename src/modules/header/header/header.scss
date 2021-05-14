@@ -101,7 +101,6 @@
     }
 
     .helper-container__basket {
-        background-color: $navigation-color;
         font-size: $basic-font-size-desktop;
         line-height: 17px;
         font-weight: bold;
@@ -112,14 +111,15 @@
         text-align: center;
         align-items: center;
         border-bottom: 1px solid #e7e7e7;
-        background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
+        //background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
         transition: 500ms ease-in-out;
         cursor: pointer;
     }
-    .helper-container__basket:hover {
-        background-image: url("../../../images/header/desktop/cart-hover.png");
-        opacity: 0.6;
-    }
+    //.helper-container__basket:hover {
+    //    background-image: url("../../../images/header/desktop/cart-hover.png");
+    //    background-repeat: no-repeat;
+    //    opacity: 0.6;
+    //}
     .helper-container__basket:active {
         background-image: url("../../../images/header/desktop/cart-active.png");
         opacity: 0.4;
@@ -127,6 +127,23 @@
     .helper-container__basket-active {
         background-image: url("../../../images/header/desktop/cart-hover.png");
         opacity: 0.6;
+    }
+
+    .text-basket {
+        background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
+        width: 350px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .text-basket:hover {
+        background-image: url("../../../images/header/desktop/cart-hover.png");
+    }
+
+    .text-basket-active {
+        width: 350px;
+        background-image: url("../../../images/header/desktop/cart-active.png");
+        background-repeat: no-repeat;
+        background-position: 32px center;
     }
 
     .container-filter {
@@ -281,7 +298,6 @@
 
 
     .helper-container__basket {
-        background-color: $navigation-color;
         font-size: $basic-font-size-desktop;
         line-height: 17px;
         font-weight: bold;
@@ -292,15 +308,12 @@
         text-align: center;
         align-items: center;
         border-bottom: 1px solid #e7e7e7;
-        background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
+        background-color: white;
+        //background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
         transition: $transition;
         cursor: pointer;
     }
 
-    .helper-container__basket-active {
-        background-image: url("../../../images/header/desktop/cart-hover.png");
-        opacity: 0.6;
-    }
 
     .container-filter {
         display: none;
@@ -326,6 +339,23 @@
         flex-grow: 1;
         text-align: right;
         background-color: #f1f1f1;
+    }
+
+
+    .text-basket {
+        background: url("../../../images/header/desktop/cart.png") no-repeat 30px;
+        width: 350px;
+    }
+
+    .text-basket:hover {
+        background-image: url("../../../images/header/desktop/cart-hover.png");
+    }
+
+    .text-basket-active {
+        width: 350px;
+        background-image: url("../../../images/header/desktop/cart-active.png");
+        background-repeat: no-repeat;
+        background-position: 32px center;
     }
 };
 
@@ -359,7 +389,7 @@
         //border: 10px solid red;
         margin: 0 auto;
         font-size: $nav-font-size-mobile;
-        border-bottom: 3px solid #d9d9d9;
+        //border-bottom: 3px solid #d9d9d9;
     }
 
     .nav-container {
@@ -455,10 +485,6 @@
     }
 
     .helper-container__basket {
-        //background: url("../../../images/header/desktop/cart.png");
-        //background-repeat: no-repeat;
-        //background-position: left 30% center;
-        //width: 225px;
         width: 100%;
         height: 68px;
         border-bottom: 3px solid #e7e7e7;
@@ -468,14 +494,6 @@
         color: $navigation-color;
     }
 
-    //.helper-container__basket-active {
-    //    background-image: url("../../../images/header/desktop/cart-active.png");
-    //    background-repeat: no-repeat;
-    //    background-position: 32px center;
-    //    //background-repeat: no-repeat;
-    //    //background-position: 32px center;
-    //   // opacity: 0.4;
-    //}
 
     .helper-container__search {
         //width: 225px;

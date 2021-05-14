@@ -16,6 +16,7 @@
 
 @import "utilities/variables";
 
+
 body {
 
   min-width: $mobile-width-min;
@@ -23,6 +24,11 @@ body {
   padding: 0 auto;
   font-family: 'Open Sans', serif;
   color:#444444;
+}
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 label {
   cursor: $button-cursor;

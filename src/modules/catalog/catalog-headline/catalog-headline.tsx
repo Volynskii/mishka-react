@@ -1,5 +1,5 @@
 import './catalog-headline.scss';
-import React from "react";
+import React, {useState} from "react";
 import CatalogItem from "./components/catalogItem";
 
 type catalogContainerProps = {
@@ -33,8 +33,9 @@ type catalogContainerProps = {
 
 export const CatalogHeadline: React.FC<catalogContainerProps> = ({catalogItemsData,basketItemsData}) => {
 
+
     return (
-        <article className="catalog">
+        <article className="catalog" >
             <div className="catalog__headline">Каталог товаров
 
             </div>

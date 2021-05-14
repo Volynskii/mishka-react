@@ -4,7 +4,6 @@ import WeekProduct from "../../components/week-product/week-product"
 import {Features} from "../../components/features/features"
 import ReviewsContainer from "../../modules/reviews/reviews-container";
 import {OurContacts} from "../../components/our-contacts/our-contacts";
-import {useHeader} from "../../modules/header/useHeader";
 
 export const Main = () => {
 
@@ -12,10 +11,10 @@ export const Main = () => {
         window.scrollTo(0, 0)
     }, []);
 
-    const {headerHeight} = useHeader();
+
         return (
             <>
-            <MainHeadline headerHeight={headerHeight}/>
+            <MainHeadline/>
             <WeekProduct/>
             <Features/>
             <ReviewsContainer />
